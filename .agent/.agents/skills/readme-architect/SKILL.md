@@ -16,19 +16,26 @@ Generate the ultimate project documentation. The README must not be boring. It m
 
 ## Required Structure
 
-The generated `README.md` MUST follow this exact sequence:
+The generated `README.md` MUST follow this exact premium sequence:
 
-1. **The Hook**: Start with a relevant, funny coding quote or a profound thought from a great researcher (e.g., Nikola Tesla, Alan Turing) formatted as a blockquote. Use emojis strategically to make it visually interesting.
-2. **Objective & Links**: Provide a clear, layman's explanation of what the project does. Include placeholder links for GitHub, Vercel, Render, or other deployment platforms.
-3. **Deep-Scan Schematic**: Trigger or use the output of `deep-scan` to print a folder tree. **Explain the reason each core file/folder exists**.
-4. **Algorithm Tree**: Provide a Mermaid.js flowchart mapping out the core logic or process of the software/report. This makes complex code easy to understand visually.
-5. **Acronym Dictionary**: State the full forms of any acronyms or code words used in the project (e.g., API, SSR, TTS).
-6. **Pros & Cons Table**: Create an objective table evaluating the project's current state, strengths, and limitations.
-7. **Monetization & License Table**: Add a table detailing the commercial and free usage terms, strictly aligning with the output of the `commercial-license` skill (i.e., Pay for Commercial, Free for active Contributors).
-8. **Installation Guide**: Clear, step-by-step instructions on how to install and run the project from the GitHub repository.
+1.  **The Centered Header**:
+    - Use `<div align="center">`.
+    - **Banner**: Instruct the user to generate or provide a premium banner image.
+    - **Title & Subtitle**: Engaging and bold.
+    - **Badges**: Include Shields.io badges for Version, Languages (Python, Rust, etc.), and License.
+    - **The Hook**: A profound quote (e.g., Tesla, Turing) in a blockquote.
+2.  **Architecture Section**: Explain the core structure (e.g., the "Dual-Skill" pattern if applicable, or the high-level logic flow).
+3.  **Quick Start & Usage Guides**:
+    - **Method A**: For Native AI IDEs (Slash commands, Workflows).
+    - **Method B**: For Plain Chat (Copy-pasting SKILL.md).
+4.  **Agent/Component Reference Table**: A clean table mapping commands/files to their purposes and "brand colors".
+5.  **Visual Logic**: Include a Mermaid.js algorithm tree to map the core logic.
+6.  **Session Memory Section**: Explicitly explain how to use `session-context.md` or similar for cross-chat persistence.
+7.  **Release & Legal**:
+    - **Pros & Cons Table**: Objective evaluation.
+    - **Monetization & License**: Details on commercial vs free usage.
 
-## Banned Patterns
-
-- Do not use generic boilerplate text.
-- Do not skip the visual elements (Mermaid charts, tables, emojis).
-- Do not assume the reader knows advanced terminology without checking the Acronym Dictionary.
+## Design Principles
+- **Rich Aesthetics**: Use emojis, horizontal rules, and alignment divs.
+- **No Placeholders**: If an image is needed, suggest a prompt for `generate_image`.
+- **Clarity first**: Use bolding for key terms.

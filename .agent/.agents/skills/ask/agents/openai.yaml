@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ask Agent"
+  short_description: "Quick precise answers"
+  brand_color: "#3B82F6"
+  default_prompt: "What is your doubt?"
+policy:
+  allow_implicit_invocation: true
