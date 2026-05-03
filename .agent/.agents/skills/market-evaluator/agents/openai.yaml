@@ -1,0 +1,7 @@
+interface:
+  display_name: "Market Evaluator"
+  short_description: "Estimate market value and suggest commercial pricing"
+  brand_color: "#14B8A6"
+  default_prompt: "Evaluate this project's market value and suggest licensing fees."
+policy:
+  allow_implicit_invocation: true

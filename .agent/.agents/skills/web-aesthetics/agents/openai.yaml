@@ -1,0 +1,7 @@
+interface:
+  display_name: "Premium Web Aesthetics"
+  short_description: "Enforce 'Wow' UI, animations, and typography"
+  brand_color: "#EC4899"
+  default_prompt: "Apply premium modern aesthetics to this interface."
+policy:
+  allow_implicit_invocation: true

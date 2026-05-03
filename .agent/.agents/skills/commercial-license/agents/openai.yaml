@@ -1,0 +1,7 @@
+interface:
+  display_name: "Commercial License Generator"
+  short_description: "Generate custom licenses enforcing commercial fees"
+  brand_color: "#EAB308"
+  default_prompt: "Generate a custom commercial license for this project."
+policy:
+  allow_implicit_invocation: true

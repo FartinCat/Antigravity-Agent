@@ -1,0 +1,7 @@
+interface:
+  display_name: "Synthesizer"
+  short_description: "Ensemble Plan Evaluation & Master Synthesis"
+  brand_color: "#A855F7"
+  default_prompt: "Compare the AI plans in the Plan/ folder and generate a master implementation file."
+policy:
+  allow_implicit_invocation: true

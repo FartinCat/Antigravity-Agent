@@ -1,0 +1,7 @@
+interface:
+  display_name: "Planner"
+  short_description: "Strategic breakdown of complex requirements"
+  brand_color: "#8B5CF6"
+  default_prompt: "Create a phased implementation plan for this feature."
+policy:
+  allow_implicit_invocation: true

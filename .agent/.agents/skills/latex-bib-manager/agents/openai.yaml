@@ -1,0 +1,7 @@
+interface:
+  display_name: "LaTeX Bib Manager"
+  short_description: "Enforce sequential citations and fix LaTeX floats"
+  brand_color: "#008080"
+  default_prompt: "Fix citation ordering and clean the bibliography."
+policy:
+  allow_implicit_invocation: true

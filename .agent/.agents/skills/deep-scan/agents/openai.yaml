@@ -1,0 +1,7 @@
+interface:
+  display_name: "Deep Scan"
+  short_description: "Protocol for comprehensively mapping the project directory"
+  brand_color: "#10B981"
+  default_prompt: "Perform a deep scan of the current directory to map resources and context."
+policy:
+  allow_implicit_invocation: true

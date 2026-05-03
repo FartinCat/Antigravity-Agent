@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scientific Writing"
+  short_description: "Rigorous rules for physics dissertations and LaTeX formatting"
+  brand_color: "#3B82F6"
+  default_prompt: "Write or revise this section following scientific writing guidelines."
+policy:
+  allow_implicit_invocation: true

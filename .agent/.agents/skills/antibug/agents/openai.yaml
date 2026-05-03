@@ -1,0 +1,7 @@
+interface:
+  display_name: "Antibug Diagnostics"
+  short_description: "Advanced logic flaw and memory leak detection"
+  brand_color: "#EF4444"
+  default_prompt: "Scan the directory for hidden bugs and logic flaws."
+policy:
+  allow_implicit_invocation: true

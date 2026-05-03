@@ -1,0 +1,7 @@
+interface:
+  display_name: "README Architect"
+  short_description: "Build an engaging, comprehensive README"
+  brand_color: "#3B82F6"
+  default_prompt: "Generate the ultimate README for this project."
+policy:
+  allow_implicit_invocation: true
