@@ -5,7 +5,7 @@
 # 🌌 Antigravity Agent Ecosystem
 **The Next-Gen Agentic Framework for Autonomous Coding**
 
-[![Version](https://img.shields.io/badge/version-1.5.1-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
+[![Version](https://img.shields.io/badge/version-2.0.0-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
 [![Language](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Language](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Language](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)

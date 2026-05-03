@@ -18,7 +18,7 @@ Generate rigorous, legally sound licensing files that protect the author's finan
 
 1. **No Charity**: The license must explicitly prohibit free commercial usage. Any commercial deployment, distribution, or monetization by a third party requires a paid fee.
 2. **Contributor Tier**: Individuals who actively contribute to the codebase (via accepted Pull Requests or significant bug fixes) may be granted free personal or commercial use, **strictly upon written validation by the author**.
-3. **Personal Use**: Academic or personal usage is free, but redistribution without credit is prohibited.
+3. **Personal & Academic Use**: Academic or personal usage is free, but **requires institutional verification** (e.g., a valid .edu email or student ID) before deployment or application building. Redistribution without credit is strictly prohibited.
 4. **Clarity**: The terms must be plainly written without excessive legal jargon, so users immediately understand they must pay for commercial use.
 
 ## Generation Workflow

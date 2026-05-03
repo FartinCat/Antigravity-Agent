@@ -33,7 +33,8 @@ The generated `README.md` MUST follow this exact premium sequence:
 6.  **Session Memory Section**: Explicitly explain how to use `session-context.md` or similar for cross-chat persistence.
 7.  **Release & Legal**:
     - **Pros & Cons Table**: Objective evaluation.
-    - **Monetization & License**: Details on commercial vs free usage.
+    - **Monetization & License**: Details on commercial vs free usage. Explicitly mention the **Student Verification** requirement (Institutional email/ID) for academic users.
+    - **Data Privacy**: Mention that sensitive files like `MARKET_EVALUATION.md` and `PROJECT_METADATA.md` are protected via `.gitignore`.
 
 ## Design Principles
 - **Rich Aesthetics**: Use emojis, horizontal rules, and alignment divs.

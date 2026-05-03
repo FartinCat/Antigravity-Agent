@@ -20,6 +20,7 @@ Analyze the commercial viability, complexity, and feature completeness of the cu
 2. **Requirement Alignment**: Cross-reference the built product with the original user requirements (found in the `Plan/` folder or `assets/information/`). Identify missing features that could increase market value.
 3. **Pricing Strategy**: Suggest tiered pricing models (e.g., Enterprise, Startup, Independent Contractor) based on the utility of the software.
 4. **Funding Focus**: Always frame the evaluation from the perspective of securing funding for a student developer. Highlight unique selling points (USPs) that can be pitched to investors or clients.
+5. **Data Sensitivity**: The resulting evaluation report contains sensitive commercial strategy. Ensure the generated `MARKET_EVALUATION.md` is added to `.gitignore` to prevent public leakage.
 
 ## Evaluation Workflow
 

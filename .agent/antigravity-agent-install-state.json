@@ -42,8 +42,9 @@
     "cross-agent-validator",
     "scanner"
   ],
-  "last_updated": "2026-05-03T18:40:00Z",
+  "last_updated": "2026-05-03T19:20:00Z",
   "changelog": {
+    "2.0.0": "Major Release! Executed release-project workflow. Generated MARKET_EVALUATION.md and custom commercial LICENSE.md. Bumped ecosystem out of beta.",
     "1.5.1": "Added 'metadata-awareness' rule. Fixed 'scanner.md' frontmatter for IDE visibility.",
     "1.5.0": "Added 'ask' agent for precise doubts and 'scanner' workflow for repo awareness. Consolidated documentation into a creative README.md.",
     "1.4.0": "Added tdd-guide agent, refactor.md and research-loop.md foundational skills, context-memory.md rule, cross-agent-validator workflow. Fixed YAML frontmatter on planner/deep-scan/synthesizer. Fixed multi-plan-synthesis path. Fixed asset-awareness src/ conditional. Scaffold-assets now creates PROJECT_METADATA.md.",
