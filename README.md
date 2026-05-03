@@ -65,20 +65,101 @@ Not all components act the same way. You must understand the two execution modes
 ## 🤖 The Arsenal: Agents (Explicit Triggers)
 These are your active tools. To use them in a plain chat, copy their `SKILL.md` file and paste the **Trigger Sentence** below.
 
-| Agent | Purpose | Slash Command | Plain Chat Trigger Sentence |
-| :--- | :--- | :--- | :--- |
-| **Ask** | Precise doubt resolution. | `/ask [query]` | *"Acting as the Ask Agent, clarify this doubt: [query]"* |
-| **Deep Scan** | Maps repo architecture. | `/deep-scan` | *"Run a Deep Scan on this directory structure and summarize it."* |
-| **Planner** | Generates phased roadmaps. | `/planner` | *"Acting as the Planner, build a phased roadmap for [feature]."* |
-| **Antibug** | Hunts and patches code bugs. | `/antibug` | *"Acting as Antibug, diagnose this error log and fix it."* |
-| **Synthesizer**| Merges multiple AI plans. | `/synthesizer` | *"Synthesize these attached plans into a single bugless master plan."* |
-| **Aesthetics** | Enforces premium UI design. | `/web-aesthetics` | *"Apply Web Aesthetics guidelines to redesign this interface."* |
-| **TDD Guide** | Enforces Test-Driven Dev. | `/tdd-guide` | *"Use TDD Guide to write tests for [feature] before implementing logic."* |
-| **Sci-Writing**| Academic tone formatting. | `/scientific-writing`| *"Format this text using the Scientific Writing skill."* |
-| **LaTeX Bib** | Citation management. | `/latex-bib-manager` | *"Run the LaTeX Bib Manager to fix my citation sequence."* |
-| **Evaluator** | Market value assessment. | `/market-evaluator`| *"Evaluate this codebase and suggest commercial pricing."* |
-| **License** | Generates custom terms. | `/commercial-license`| *"Generate a commercial license prohibiting free commercial use."* |
-| **Architect** | Builds premium READMEs. | `/readme-architect`| *"Acting as Readme Architect, generate a premium README."* |
+### 💬 Ask
+*   **Purpose**: Precise doubt resolution.
+*   **Slash Command**: `/ask [query]`
+*   **Plain Chat Trigger**:
+    ```text
+    Acting as the Ask Agent, clarify this doubt: [query]
+    ```
+
+### 🔍 Deep Scan
+*   **Purpose**: Maps repo architecture.
+*   **Slash Command**: `/deep-scan`
+*   **Plain Chat Trigger**:
+    ```text
+    Run a Deep Scan on this directory structure and summarize it.
+    ```
+
+### 🗺️ Planner
+*   **Purpose**: Generates phased roadmaps.
+*   **Slash Command**: `/planner`
+*   **Plain Chat Trigger**:
+    ```text
+    Acting as the Planner, build a phased roadmap for [feature].
+    ```
+
+### 🐛 Antibug
+*   **Purpose**: Hunts and patches code bugs.
+*   **Slash Command**: `/antibug`
+*   **Plain Chat Trigger**:
+    ```text
+    Acting as Antibug, diagnose this error log and fix it.
+    ```
+
+### 🧬 Synthesizer
+*   **Purpose**: Merges multiple AI plans.
+*   **Slash Command**: `/synthesizer`
+*   **Plain Chat Trigger**:
+    ```text
+    Synthesize these attached plans into a single bugless master plan.
+    ```
+
+### ✨ Aesthetics
+*   **Purpose**: Enforces premium UI design.
+*   **Slash Command**: `/web-aesthetics`
+*   **Plain Chat Trigger**:
+    ```text
+    Apply Web Aesthetics guidelines to redesign this interface.
+    ```
+
+### 🧪 TDD Guide
+*   **Purpose**: Enforces Test-Driven Dev.
+*   **Slash Command**: `/tdd-guide`
+*   **Plain Chat Trigger**:
+    ```text
+    Use TDD Guide to write tests for [feature] before implementing logic.
+    ```
+
+### 🔬 Sci-Writing
+*   **Purpose**: Academic tone formatting.
+*   **Slash Command**: `/scientific-writing`
+*   **Plain Chat Trigger**:
+    ```text
+    Format this text using the Scientific Writing skill.
+    ```
+
+### 📚 LaTeX Bib
+*   **Purpose**: Citation management.
+*   **Slash Command**: `/latex-bib-manager`
+*   **Plain Chat Trigger**:
+    ```text
+    Run the LaTeX Bib Manager to fix my citation sequence.
+    ```
+
+### ⚖️ Evaluator
+*   **Purpose**: Market value assessment.
+*   **Slash Command**: `/market-evaluator`
+*   **Plain Chat Trigger**:
+    ```text
+    Evaluate this codebase and suggest commercial pricing.
+    ```
+
+### 📜 License
+*   **Purpose**: Generates custom terms.
+*   **Slash Command**: `/commercial-license`
+*   **Plain Chat Trigger**:
+    ```text
+    Generate a commercial license prohibiting free commercial use.
+    ```
+
+### 🏗️ Architect
+*   **Purpose**: Builds premium READMEs.
+*   **Slash Command**: `/readme-architect`
+*   **Plain Chat Trigger**:
+    ```text
+    Acting as Readme Architect, generate a premium README.
+    ```
 
 ---
 
@@ -124,11 +205,15 @@ Workflows are multi-step recipes that combine specific Agents and Instincts for 
 Because AI models forget things when you close a chat, you must maintain the "Session Context."
 
 1. **To Save State**: At the end of your day, use this exact trigger sentence:
-   > *"Update the session context with our progress."*
+    ```text
+    Update the session context with our progress.
+    ```
    *(The `context-memory` instinct will write a summary to `.agent/session-context.md`).*
 
 2. **To Load State**: At the start of a new day, open `.agent/session-context.md`, copy its contents, and paste it into the chat:
-   > *"Here is the context from our last session: [paste content]. Let's continue."*
+    ```text
+    Here is the context from our last session: [paste content]. Let's continue.
+    ```
 
 ---
 
