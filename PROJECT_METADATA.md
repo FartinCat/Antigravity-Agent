@@ -1,20 +1,30 @@
 # Project Metadata
 
-**Project Name**: [TO BE FILLED]
-**Version**: 0.1.0
-**Author**: [TO BE FILLED]
+**Project Name**: Antigravity Agent Ecosystem
+**Version**: 1.5.1
+**Author**: FartinCat
 **Created**: 2026-05-03
-**Status**: In Development
+**Status**: Active / Production Ready
 
 ## Description
-[Brief description of the project — what it does, who it is for]
+A high-performance, modular AI agent framework designed for autonomous coding, architectural planning, and creative documentation. Features a dual-skill architecture (Waiters vs Recipe Book) and session-persistent memory.
 
 ## Tech Stack
-- [e.g., Python 3.11 / React 18 / LaTeX / Rust]
+- **Core**: HTML / Javascript / Markdown
+- **Framework**: Antigravity Agentic Ecosystem (Custom)
+- **Design**: Shields.io / Mermaid.js / Custom AI Assets
 
 ## Feature Checklist
-- [ ] Feature 1
-- [ ] Feature 2
+- [x] Dual-Skill Architecture
+- [x] Multi-Plan Synthesis
+- [x] Semantic Versioning
+- [x] Commercial Licensing Pipeline
+- [x] Creative README Generation
+- [x] Precision "Ask" Agent
+- [x] Repo Scanner Workflow
+- [x] Metadata Awareness Rule
 
 ## Changelog
+- v1.5.1 — Added metadata-awareness rule. Fixed scanner workflow visibility.
+- v1.5.0 — Integrated "Ask" agent and "Scanner" workflow. Merged documentation.
 - v0.1.0 — Project initialized. Antigravity Agent system bootstrapped.

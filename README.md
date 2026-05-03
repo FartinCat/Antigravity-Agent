@@ -5,7 +5,7 @@
 # 🌌 Antigravity Agent Ecosystem
 **The Next-Gen Agentic Framework for Autonomous Coding**
 
-[![Version](https://img.shields.io/badge/version-1.5.0-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
+[![Version](https://img.shields.io/badge/version-1.5.1-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
 [![Language](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Language](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Language](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
@@ -13,75 +13,126 @@
 
 ---
 
-"If you want to find the secrets of the universe, think in terms of energy, frequency and vibration." — **Nikola Tesla**
+> "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration." — **Nikola Tesla**
 
 </div>
 
-## 🧠 Part 1: The Architecture
-Antigravity uses a **Dual-Skill Architecture** inspired by enterprise agent frameworks. It separates the user interface from the underlying knowledge base.
-
-### 🍽️ The "Waiters" (UI-Facing Skills)
-**Location:** `.agent/.agents/skills/`
-These are the Agents you interact with directly. They have dedicated folders with a "Brain" (`SKILL.md`) and a "Uniform" (`openai.yaml`) that registers them as buttons in your chat UI.
-
-### 📖 The "Recipe Book" (Foundational Skills)
-**Location:** `.agent/skills/`
-Flat markdown files (e.g., `architectural-design.md`) that agents read silently to learn advanced rules before writing code. No UI presence, just raw intelligence.
+## 🧠 Introduction & Architecture
+Welcome! This repository doesn't just hold code; it holds **behaviors, rules, and AI personas**. Antigravity uses a **Dual-Skill Architecture**:
+- **🍽️ The "Waiters" (Agents)**: UI-facing skills that interact with you directly (`.agent/.agents/skills/`).
+- **📖 The "Recipe Book" (Foundational Rules)**: Hidden markdown files that dictate AI behavior in the background (`.agent/skills/` and `.agent/rules/`).
 
 ---
 
-## 🚀 Part 2: Quick Start & Usage
+## 📥 Installation & Deployment Guide
+You can seamlessly integrate the Antigravity Brain into **any** existing project directory on any OS.
 
-### Method A: AI IDE (Cursor, Windsurf, Copilot)
-1. **Slash Commands**: Type `/` in the chat bar (e.g., `/planner`) to invoke an agent.
-2. **Workflows**: Click the `+` button and select a workflow (e.g., `scanner`) to run a sequence of tasks.
+### Step 1: Download the Core
+You need to copy the `.agent` folder into your target project. 
 
-### Method B: Plain Chat (Claude, ChatGPT, Gemini)
-1. Open an agent's `SKILL.md` (e.g., `.agent/.agents/skills/ask/SKILL.md`).
-2. Copy the content and paste it as your first message:
-   > "You are operating under the following rules: [paste SKILL.md here]"
+**For PowerShell / CMD (Windows):**
+```powershell
+# Clone the repository to a temporary location
+git clone https://github.com/FartinCat/Antigravity-Agent.git temp_antigravity
+
+# Copy the .agent folder into your project directory
+Copy-Item -Path "temp_antigravity\.agent" -Destination ".\Your_Project_Directory\.agent" -Recurse
+
+# Clean up
+Remove-Item -Path temp_antigravity -Recurse -Force
+```
+
+**For Bash / Linux / Kali Linux:**
+```bash
+git clone https://github.com/FartinCat/Antigravity-Agent.git /tmp/antigravity
+cp -r /tmp/antigravity/.agent ./Your_Project_Directory/
+rm -rf /tmp/antigravity
+```
+
+### Step 2: Booting the AI
+Open your project in an AI IDE (like Cursor or Windsurf) or use a plain chat interface (ChatGPT, Claude). The AI will immediately detect the `.agent` folder and adopt the Antigravity ecosystem.
 
 ---
 
-## 📑 Agent Quick-Reference
+## ⚙️ Execution Modes Explained
+Not all components act the same way. You must understand the two execution modes:
 
-| Command | Name | Purpose | Brand Color |
+1. **Explicit (Manual) Triggers**: These are Agents and Workflows. You must explicitly call them using a `/slash-command` (in AI IDEs) or by providing a **Copiable Sentence** (in plain chat) to wake them up.
+2. **Automatic (Instincts)**: These are Rules and Foundational Skills. The AI applies these *passively in the background*. You do not need to call them; they are hardcoded into the AI's "subconscious."
+
+---
+
+## 🤖 The Arsenal: Agents (Explicit Triggers)
+These are your active tools. To use them in a plain chat, copy their `SKILL.md` file and paste the **Trigger Sentence** below.
+
+| Agent | Purpose | Slash Command | Plain Chat Trigger Sentence |
 | :--- | :--- | :--- | :--- |
-| `/ask` | **Ask Agent** | Quick, precise answers to doubts | Blue `#3B82F6` |
-| `/deep-scan` | **Deep Scan** | Repo mapping & awareness | Emerald `#10B981` |
-| `/planner` | **Planner** | Strategic roadmaps & phases | Purple `#8B5CF6` |
-| `/antibug` | **Antibug** | Bug hunting & patching | Red `#EF4444` |
-| `/web-aesthetics`| **Aesthetics** | Premium UI enforcement | Vibrant Gradient |
-| `/release` | **Releaser** | Market eval & licensing | Gold |
+| **Ask** | Precise doubt resolution. | `/ask [query]` | *"Acting as the Ask Agent, clarify this doubt: [query]"* |
+| **Deep Scan** | Maps repo architecture. | `/deep-scan` | *"Run a Deep Scan on this directory structure and summarize it."* |
+| **Planner** | Generates phased roadmaps. | `/planner` | *"Acting as the Planner, build a phased roadmap for [feature]."* |
+| **Antibug** | Hunts and patches code bugs. | `/antibug` | *"Acting as Antibug, diagnose this error log and fix it."* |
+| **Synthesizer**| Merges multiple AI plans. | `/synthesizer` | *"Synthesize these attached plans into a single bugless master plan."* |
+| **Aesthetics** | Enforces premium UI design. | `/web-aesthetics` | *"Apply Web Aesthetics guidelines to redesign this interface."* |
+| **TDD Guide** | Enforces Test-Driven Dev. | `/tdd-guide` | *"Use TDD Guide to write tests for [feature] before implementing logic."* |
+| **Sci-Writing**| Academic tone formatting. | `/scientific-writing`| *"Format this text using the Scientific Writing skill."* |
+| **LaTeX Bib** | Citation management. | `/latex-bib-manager` | *"Run the LaTeX Bib Manager to fix my citation sequence."* |
+| **Evaluator** | Market value assessment. | `/market-evaluator`| *"Evaluate this codebase and suggest commercial pricing."* |
+| **License** | Generates custom terms. | `/commercial-license`| *"Generate a commercial license prohibiting free commercial use."* |
+| **Architect** | Builds premium READMEs. | `/readme-architect`| *"Acting as Readme Architect, generate a premium README."* |
 
 ---
 
-## 💾 Session Context & Memory
-The system uses `.agent/session-context.md` to maintain state across chats.
+## 🧬 The Instincts: Rules & Foundations (Automatic)
+These run silently in the background. **Do not trigger them manually.**
 
-**How to use it effectively:**
-1. **At the end of a session**: The AI updates this file with your progress.
-2. **At the start of a new session**: Paste the contents of `session-context.md` into your first message.
-3. **Why?**: This gives the AI "long-term memory," ensuring it knows exactly what was done and what needs to happen next.
+| Instinct | Type | Background Action |
+| :--- | :--- | :--- |
+| `metadata-awareness` | Rule | Automatically updates `PROJECT_METADATA.md` when features or versions change. |
+| `self-improvement` | Rule | **Self-Upgrading Instinct**: If an agent builds something advanced (like a premium README), it automatically updates its own `SKILL.md` to encode that standard permanently. |
+| `dump-awareness` | Rule | Moves old, iterative reference folders into a read-only `dump/` directory to keep the root clean. |
+| `context-memory` | Rule | Ensures the AI writes to `session-context.md` to maintain long-term memory. |
+| `semantic-versioning`| Rule | Manages version bumps (v1.0.0) based on code impact. |
+| `silent-ingest` | Rule | Suppresses unnecessary conversational chatter during data ingestion. |
+| `architectural-design`| Foundation | Enforces modular, scalable code structure across all agents. |
+| `research-loop` | Foundation | Forces agents to check for contradictions before outputting code. |
+| `refactor` | Foundation | Cleans and optimizes code automatically during generation. |
 
 ---
 
-## 🔍 The Scanner Workflow
-Confused about the repo? Run the **Scanner Workflow**.
-1. It runs a `/deep-scan` to map everything.
-2. It uses the `/ask` agent to summarize recent changes.
-3. It explains how to use critical files like `session-context.md` and `PROJECT_METADATA.md`.
+## 🛤️ The Pipelines: Workflows Deconstructed
+Workflows are multi-step recipes that combine specific Agents and Instincts for complex tasks. 
+
+### 🔍 `scanner` (Repo Orientation)
+*   **Best Used For**: Getting your bearings in a new or changed repository.
+*   **Composition**: `/deep-scan` + `/ask` + `metadata-awareness` (Rule).
+
+### 🏗️ `build-app` & `build-website` (Full Stack Generation)
+*   **Best Used For**: Scaffolding and building an entire project from zero.
+*   **Composition**: `/planner` + `/tdd-guide` + `/antibug` + `architectural-design` (Foundation).
+
+### 🐛 `fix-bugs` (Deep Diagnostics)
+*   **Best Used For**: Fixing critical, persistent application errors.
+*   **Composition**: `/deep-scan` + `/antibug` + `research-loop` (Foundation).
+
+### 🚀 `release-project` (The Finalizer)
+*   **Best Used For**: Preparing a project for public launch and monetization.
+*   **Composition**: `dump-awareness` (Rule) + `/market-evaluator` + `/commercial-license` + `/readme-architect` + `semantic-versioning` (Rule).
 
 ---
 
-## 🛠️ Build Your Own Agent
-1. Create a folder in `.agent/.agents/skills/`.
-2. Add `SKILL.md` (The rules).
-3. Add `agents/openai.yaml` (The UI config).
-4. Register in `.agent/antigravity-agent-install-state.json`.
+## 💾 Mastering Session Memory
+Because AI models forget things when you close a chat, you must maintain the "Session Context."
+
+1. **To Save State**: At the end of your day, use this exact trigger sentence:
+   > *"Update the session context with our progress."*
+   *(The `context-memory` instinct will write a summary to `.agent/session-context.md`).*
+
+2. **To Load State**: At the start of a new day, open `.agent/session-context.md`, copy its contents, and paste it into the chat:
+   > *"Here is the context from our last session: [paste content]. Let's continue."*
 
 ---
 
 <div align="center">
 Developed by <b>FartinCat</b> | 2026 Antigravity Ecosystem
 </div>
+

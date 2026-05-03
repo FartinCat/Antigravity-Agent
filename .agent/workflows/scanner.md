@@ -1,6 +1,8 @@
-# 🔍 Scanner Workflow
+---
+description: "Repository awareness tool: Scans repo structure, summarizes recent changes, and clarifies file usage."
+---
 
-This workflow is designed to give you a comprehensive overview of the repository's current state, recent changes, and how to use key components effectively. It minimizes confusion by providing direct, precise context.
+# 🔍 Scanner Workflow
 
 ## 📋 Execution Sequence
 

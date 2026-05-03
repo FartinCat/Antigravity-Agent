@@ -7,16 +7,14 @@ Read this file at the start of every new session before doing any work.
 
 ---
 
-## 2026-05-03 — System Architecture Complete + Upgraded
-**Agent**: system
-**Action**: Full Antigravity Agent system built and upgraded. All bugs fixed. New agents and rules added.
+## 2026-05-03 — Ecosystem Polishing & Documentation Merge (v1.5.1)
+**Agent**: Antigravity
+**Action**: Consolidated documentation, added "Ask" agent, and implemented "Scanner" workflow.
 **State Change**:
-- Version: v1.3.1 (agent install-state)
-- Bugs fixed: YAML frontmatter added to planner, deep-scan, synthesizer; path corrected in multi-plan-synthesis; asset-awareness src/ conditional added; scaffold-assets now creates PROJECT_METADATA.md at root
-- New agents added: tdd-guide
-- New foundational skills added: refactor.md, research-loop.md
-- New rules added: context-memory.md
-- New workflows added: cross-agent-validator.md
-- Build workflows updated: build-website, build-app, fix-bugs now reference tdd-guide and cross-agent-validator
-- Root files added: HOW-TO-USE.md, PROJECT_METADATA.md, session-context.md
-**Next Step**: Fill in PROJECT_METADATA.md with actual project name, author, and tech stack. Run /scaffold-assets when starting a real project inside this repo.
+- **Version**: Bumped to **v1.5.1**.
+- **New Agent**: Added **Ask Agent** (`/ask`) for precision queries.
+- **New Workflow**: Added **Scanner Workflow** (`/scanner`) for repository awareness and doubt resolution. Fixed visibility issues by adding YAML frontmatter.
+- **Documentation**: Merged `HOW-TO-USE.md` into a creative, banner-led `README.md`. Generated premium AI assets in `assets/`.
+- **New Rule**: Implemented **Metadata Awareness** to automate `PROJECT_METADATA.md` maintenance.
+- **Skills Upgrade**: Upgraded `readme-architect` and `release-project` to adopt new creative standards.
+**Next Step**: The system is now fully production-ready. You can begin building features using the `/build-app` workflow or scan the repo at any time using `/scanner`.
