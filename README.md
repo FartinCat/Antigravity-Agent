@@ -199,6 +199,26 @@ Workflows are multi-step recipes that combine specific Agents and Instincts for 
 *   **Best Used For**: Preparing a project for public launch and monetization.
 *   **Composition**: `dump-awareness` (Rule) + `/market-evaluator` + `/commercial-license` + `/readme-architect` + `semantic-versioning` (Rule).
 
+### ⚖️ `cross-agent-validator` (Pipeline Audit)
+*   **Best Used For**: Auditing multi-agent workflows to ensure agents produced substantive artifacts instead of conversational hallucinations.
+*   **Composition**: Systematic checks across generated artifacts.
+
+### 🧠 `multi-plan-synthesis` (Strategy Merge)
+*   **Best Used For**: Merging multiple external AI-generated plans (ChatGPT, Claude, etc.) into one master, conflict-free blueprint.
+*   **Composition**: `/deep-scan` + `/synthesizer` + `code-synthesis` (Foundation).
+
+### 📂 `scaffold-assets` (Structure Bootstrap)
+*   **Best Used For**: Standardizing project taxonomy by creating a unified `assets/` directory and initializing project metadata.
+*   **Composition**: `asset-awareness` (Rule) + structural generation.
+
+### 🧪 `tdd` (Test-Driven Cycle)
+*   **Best Used For**: Ensuring high code quality by strictly enforcing the Red-Green-Refactor testing cycle.
+*   **Composition**: `/tdd-guide` + `refactor` (Foundation).
+
+### 📝 `write-report` (Academic Drafting)
+*   **Best Used For**: Generating high-quality, properly formatted academic or technical reports (like LaTeX dissertations).
+*   **Composition**: `/planner` + `/scientific-writing` + `/latex-bib-manager`.
+
 ---
 
 ## 💾 Mastering Session Memory
