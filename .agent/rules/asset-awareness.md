@@ -4,13 +4,21 @@
 
 ## Core Directives
 
-1. **Topological Assessment**: Automatically determine the project paradigm (e.g., SSR Web Application, SPA, Physics Simulation, Academic LaTeX Report).
-2. **Standardized Scaffolding Mandate**: Irrespective of the paradigm, the system MUST enforce a centralized asset repository. Verify the existence of an `assets/` directory at the project root or the primary `src/` boundary.
-3. **Rigid Sub-Directory Constraints**: The `assets/` repository must strictly adhere to the following taxonomy to ensure deterministic asset resolution:
-    - `images/`: Raster graphics, structural diagrams, and high-fidelity photographs.
-    - `videos/`: Temporal media, simulation recordings, and demonstration assets.
-    - `audios/`: Phonetic outputs, TTS generated waves, and sound effects.
-    - `texts/`: Raw contextual dumps, JSON fixtures, and unparsed string literals.
-    - `information/`: Core project metadata, architectural decision records (ADRs), and monetization requirement documents.
-    - `icons/`: Vector graphics (SVG), UI iconography, and favicons.
-4. **Autonomous Resolution**: If the topological assessment fails to locate this exact taxonomy, immediately execute or recommend the `/scaffold-assets` workflow to mutate the file system before any further asset-dependent code is synthesized.
+1. **Topological Assessment**: Automatically determine the project paradigm (e.g., SSR Web Application, SPA, Physics Simulation, Academic LaTeX Report, Python CLI).
+
+2. **Injection Point Resolution (Conditional)**:
+   - **If a `src/` directory exists at the project root** (indicating a framework like React, Next.js, Vue, Vite, Angular, or similar): place the `assets/` folder **inside `src/`** → `src/assets/`.
+   - **If no `src/` directory exists** (vanilla HTML/JS, Python, Rust, LaTeX projects): place the `assets/` folder **at the project root** → `assets/`.
+   - **Never** place `assets/` in both locations. Resolve once and broadcast the resolved path to all active agents.
+
+3. **Standardized Scaffolding Mandate**: Irrespective of the paradigm, the system MUST enforce a centralized asset repository. Verify the existence of the `assets/` directory at the resolved injection point.
+
+4. **Rigid Sub-Directory Constraints**: The `assets/` repository must strictly adhere to this taxonomy:
+   - `images/`: Raster graphics, structural diagrams, and high-fidelity photographs.
+   - `videos/`: Temporal media, simulation recordings, and demonstration assets.
+   - `audios/`: Phonetic outputs, TTS generated waves, and sound effects.
+   - `texts/`: Raw contextual dumps, JSON fixtures, and unparsed string literals.
+   - `information/`: Core project metadata (`PROJECT_METADATA.md`), architectural decision records (ADRs), and monetization requirement documents.
+   - `icons/`: Vector graphics (SVG), UI iconography, and favicons.
+
+5. **Autonomous Resolution**: If the topological assessment fails to locate this taxonomy, immediately execute or recommend the `/scaffold-assets` workflow to mutate the file system before any further asset-dependent code is synthesized.

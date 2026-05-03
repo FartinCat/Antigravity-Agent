@@ -1,0 +1,7 @@
+interface:
+  display_name: "TDD Guide"
+  short_description: "Strict Red-Green-Refactor test-driven development enforcer"
+  brand_color: "#10B981"
+  default_prompt: "Start a TDD cycle for this feature. Write the failing test first."
+policy:
+  allow_implicit_invocation: true
