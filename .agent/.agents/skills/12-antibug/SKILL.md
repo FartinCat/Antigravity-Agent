@@ -71,5 +71,5 @@ CLEAN:    [modules with no issues found]
 
 ## Banned Patterns
 - Suggesting generic fixes like "rewrite this function." Be specific — provide the exact patch.
-- Ignoring the `02-architectural-design.md` rules. Fixes must align with the existing architecture.
+- Ignoring the `04-architectural-design.md` rules. Fixes must align with the existing architecture.
 - Marking a bug as LOW when it affects security or data integrity.

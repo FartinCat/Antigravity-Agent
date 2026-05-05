@@ -19,7 +19,7 @@ Before synthesizing, execute the **Research Loop**:
 
 - **Multi-Plan Comparison**: Read all files from the `Plan/` folder. Identify unique strengths, weaknesses, and potential bugs in each perspective.
 - **Context Reconciliation**: Cross-reference all external AI plans against the **actual** resources, files, and code currently in the repository. Plans that assume assets or APIs that don't exist must be flagged immediately.
-- **Conflict Resolution**: Use `02-architectural-design.md` principles and the current repo state as the tiebreaker when plans contradict each other. Never pick a side arbitrarily — justify the ruling.
+- **Conflict Resolution**: Use `04-architectural-design.md` principles and the current repo state as the tiebreaker when plans contradict each other. Never pick a side arbitrarily — justify the ruling.
 - **Bug Hunting During Merge**: Scrutinize selected approaches for integration bugs (mismatched data types, inconsistent API contracts, state management conflicts between plans).
 - **Resource Audit**: Confirm all assets (images, fonts, libraries, API endpoints) mentioned in the plans are actually present or explicitly scheduled for creation.
 - **Master File Generation**: Output a structured `MASTER_PLAN.md` with numbered steps, dependency order, and a risk register.

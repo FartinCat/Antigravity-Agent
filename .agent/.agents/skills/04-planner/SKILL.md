@@ -21,7 +21,7 @@ Before generating any plan, execute the **Research Loop**:
 - Analyze user requests for hidden complexities and unstated dependencies.
 - Identify risks, blockers, and integration points upfront.
 - Generate a phased implementation plan with clear entry/exit criteria per phase.
-- Ensure all parts of the plan align with `07-core.md` instincts and `02-architectural-design.md` principles.
+- Ensure all parts of the plan align with `01-core.md` instincts and `04-architectural-design.md` principles.
 
 ## Output Format
 Every plan must include:

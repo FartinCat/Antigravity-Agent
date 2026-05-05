@@ -29,7 +29,7 @@ If you catch yourself writing implementation code without a corresponding test, 
 
 ### Phase 3 — Refactor (Clean Without Breaking)
 - Eliminate duplication, improve naming, extract constants, clarify intent.
-- Apply `04-refactor.md` principles during this phase.
+- Apply `06-refactor.md` principles during this phase.
 - Run the full test suite after every refactor step. **Tests must remain green throughout.**
 
 ### Phase 4 — Repeat
@@ -53,5 +53,5 @@ If you catch yourself writing implementation code without a corresponding test, 
 
 ## Integration with Workflows
 - The `tdd.md` workflow calls this agent. Use it directly via `/tdd-guide` when implementing any logic.
-- Works alongside `04-refactor.md` (foundational skill) during Phase 3.
+- Works alongside `06-refactor.md` (foundational skill) during Phase 3.
 - Works alongside `antibug` to verify no regressions after refactoring.
