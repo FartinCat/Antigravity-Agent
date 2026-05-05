@@ -3,11 +3,11 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 # 🌌 Antigravity Agent Ecosystem
-**The Ultimate AI Orchestration Framework for Professional Developers**
+**The v3.0.0 "Exponential" AI Orchestration Framework for Professional Developers**
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
-[![Buy License](https://img.shields.io/badge/GET_LICENSE-Click_Here-gold?style=for-the-badge&logo=gumroad)](https://antigravity.lemonsqueezy.com/checkout/buy/35a2a620-3f40-4aea-9e0d-1d58819ae5f1)
-[![Student Access](https://img.shields.io/badge/STUDENTS-Verify_&_Get_Free-blue?style=for-the-badge)](mailto:fartincat@proton.me)
+[![Version](https://img.shields.io/badge/version-3.0.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
+[![License](https://img.shields.io/badge/license-Commercial-gold?style=for-the-badge)](LICENSE.md)
+[![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
 ---
 
@@ -16,260 +16,162 @@
 </div>
 
 ### 💰 Commercial Licensing
-Antigravity is a **premium, paid ecosystem**. The core "Brain" (the `.agent` folder) is not included in this public repository. To unlock the full agentic power of the 12 autonomous skills and 10 workflows, you must purchase a license.
+Antigravity is a **premium, paid ecosystem**. The core "Brain" (the `.agent` folder) is a proprietary asset. To unlock the full agentic power of the 58 orchestrated components, you must purchase a license.
 
 **[Click here to purchase and download the Core (.agent folder)](https://antigravity.lemonsqueezy.com/checkout/buy/35a2a620-3f40-4aea-9e0d-1d58819ae5f1)**
+*Free institutional access is available for verified academic researchers.*
 
 ---
 
 ## 🧠 Introduction & Architecture
-Welcome! This repository doesn't just hold code; it holds **behaviors, rules, and AI personas**. Antigravity uses a **Dual-Skill Architecture**:
-- **🍽️ The "Waiters" (Agents)**: UI-facing skills that interact with you directly (`.agent/.agents/skills/`).
-- **📖 The "Recipe Book" (Foundational Rules)**: Hidden markdown files that dictate AI behavior in the background (`.agent/skills/` and `.agent/rules/`).
+Antigravity is not a single agent; it is a **portable AI Operating System**. It uses a **Dual-Skill Architecture** to govern development:
+
+- **🍽️ The "Waiters" (Agents)**: UI-facing specialists that interact with you directly via slash commands (`.agent/.agents/skills/`).
+- **📖 The "Recipe Book" (Foundational Rules)**: Hidden markdown files that dictate AI behavior, safety, and architectural standards in the background (`.agent/skills/` and `.agent/rules/`).
+
+### 🏗️ The 5-Phase Lifecycle
+Every action in Antigravity is bound by a rigorous execution model. This prevents "shotgun coding" and ensures enterprise-grade quality.
+
+```mermaid
+graph LR
+    P1[<b>P1: Awareness</b><br/>Discovery & Risk] --> P2[<b>P2: Strategy</b><br/>Plan & Synthesis]
+    P2 --> P3[<b>P3: Execution</b><br/>TDD & Specialists]
+    P3 --> P4[<b>P4: Quality</b><br/>Audit & Aesthetics]
+    P4 --> P5[<b>P5: Release</b><br/>README & Commit]
+    
+    style P1 fill:#0d47a1,color:#fff
+    style P2 fill:#1565c0,color:#fff
+    style P3 fill:#1976d2,color:#fff
+    style P4 fill:#1e88e5,color:#fff
+    style P5 fill:#2196f3,color:#fff
+```
 
 ---
 
 ## 📥 Installation & Deployment Guide
-You can seamlessly integrate the Antigravity Brain into **any** existing project directory on any OS. **You only ever need to copy the `.agent/` folder.** Everything else in this repository belongs to the source project and should NOT be copied.
+You can seamlessly integrate the Antigravity Brain into **any** project directory. **You only ever need to copy the `.agent/` folder.**
 
 ### Step 1: Copying the Core (`.agent/`)
 
 **Method 1: rsync (Recommended for Linux/WSL/macOS)**
 ```bash
-# The trailing slash on the source path is intentional.
-# It copies the contents of .agent/ into the destination .agent/ folder.
-rsync -av --exclude='.git' \
-  "/path/to/Antigravity Agent/.agent/" \
-  "/path/to/YOUR_PROJECT_NAME/.agent/"
+rsync -av --exclude='.git' "/path/to/Antigravity Agent/.agent/" "/path/to/YOUR_PROJECT/.agent/"
 ```
 
 **Method 2: PowerShell (Windows)**
 ```powershell
-Copy-Item -Recurse -Force `
-  "D:\path\to\Antigravity Agent\.agent" `
-  "D:\path\to\YOUR_PROJECT_NAME\.agent"
+Copy-Item -Recurse -Force "D:\path\to\Antigravity Agent\.agent" "D:\path\to\YOUR_PROJECT\.agent"
 ```
 
-**Method 3: Windows Explorer / File Manager**
-Copy the `.agent` folder from the Antigravity Agent repo and paste it into your target project directory.
-
-### Step 2: Booting the AI (First Steps in the New Project)
+### Step 2: First-Contact Booting
 1. **Open your AI IDE** (Cursor, Windsurf, VS Code) in the new project directory.
-2. **Run `/scanner`** — this is always the first step. It will detect that the `session-context.md` project name has changed, archive the old project's context, and initialize a fresh memory for your new project.
-3. **Run `/scaffold-assets`** — creates the `assets/` taxonomy and a fresh `PROJECT_METADATA.md` for the new project.
+2. **Run `/01-scanner`** — Always the first step. It detects the directory change, archives old context, and initializes fresh memory.
+3. **Run `/02-onboard-project`** — Analyzes your existing code and suggests the first 3 strategic moves.
 4. **Proceed with your workflow.**
-
-### 🛑 Troubleshooting Migration
-*   **"All agent files appeared in my project root"**: You ran rsync with a trailing slash on the source but NO target `.agent/` sub-path. Delete the dumped files and re-run with `"my-project/.agent/"` as the destination.
-*   **"I see a nested .agent/.agent/ folder"**: You ran rsync WITHOUT a trailing slash on the source. Move the contents up one level.
-*   **"Terminal hangs after command"**: You used a backslash `\` at the end of a path inside quotes. Use forward slashes `/`.
-*   **"session-context.md still shows old project name"**: Run `/scanner`. The `01-context-memory` rule will fix it automatically.
-
----
-
-## ⚙️ Execution Modes Explained
-Not all components act the same way. You must understand the two execution modes:
-
-1. **Explicit (Manual) Triggers**: These are Agents and Workflows. You must explicitly call them using a `/slash-command` (in AI IDEs) or by providing a **Copiable Sentence** (in plain chat) to wake them up.
-2. **Automatic (Instincts)**: These are Rules and Foundational Skills. The AI applies these *passively in the background*. You do not need to call them; they are hardcoded into the AI's "subconscious."
 
 ---
 
 ## 🤖 The Arsenal: Agents (Explicit Triggers)
-These are your active tools. To use them in a plain chat, copy their `SKILL.md` file and paste the **Trigger Sentence** below.
+These are your active tools. To use them in a plain chat (Claude.ai/ChatGPT), copy their `SKILL.md` and use the **Trigger Sentence**.
 
-### 💬 Ask
-*   **Purpose**: Precise doubt resolution.
-*   **Slash Command**: `/ask [query]`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as the Ask Agent, clarify this doubt: [query]
-    ```
+### 🔍 01-Deep Scan
+- **Purpose**: Maps the full project architecture and dependency tree.
+- **Trigger**: `/scanner` or *"Run a Deep Scan on this directory structure."*
 
-### 🔍 Deep Scan
-*   **Purpose**: Maps repo architecture.
-*   **Slash Command**: `/deep-scan`
-*   **Plain Chat Trigger**:
-    ```text
-    Run a Deep Scan on this directory structure and summarize it.
-    ```
+### 🛡️ 02-Failure Predictor
+- **Purpose**: Predicts bugs and rule violations before you write a single line.
+- **Trigger**: `/failure-predictor` or *"Predict potential failures for this proposed change."*
 
-### 🗺️ Planner
-*   **Purpose**: Generates phased roadmaps.
-*   **Slash Command**: `/planner`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as the Planner, build a phased roadmap for [feature].
-    ```
+### 💬 03-Ask
+- **Purpose**: High-precision doubt resolution and logic querying.
+- **Trigger**: `/ask [query]` or *"Acting as the Ask agent, clarify this: [query]."*
 
-### 🐛 Antibug
-*   **Purpose**: Hunts and patches code bugs.
-*   **Slash Command**: `/antibug`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as Antibug, diagnose this error log and fix it.
-    ```
+### 🗺️ 04-Planner
+- **Purpose**: Generates phased, dependency-aware implementation roadmaps.
+- **Trigger**: `/planner` or *"Build a phased roadmap for [feature]."*
 
-### 🧬 Synthesizer
-*   **Purpose**: Merges multiple AI plans.
-*   **Slash Command**: `/synthesizer`
-*   **Plain Chat Trigger**:
-    ```text
-    Synthesize these attached plans into a single bugless master plan.
-    ```
+### 🧬 05-Synthesizer
+- **Purpose**: Merges multiple AI plans (Claude + GPT + Gemini) into one MASTER_PLAN.md.
+- **Trigger**: `/synthesizer` or *"Synthesize these attached plans into one master blueprint."*
 
-### ✨ Aesthetics
-*   **Purpose**: Enforces premium UI design.
-*   **Slash Command**: `/web-aesthetics`
-*   **Plain Chat Trigger**:
-    ```text
-    Apply Web Aesthetics guidelines to redesign this interface.
-    ```
+### 🧪 06-TDD Guide
+- **Purpose**: Enforces strict Red-Green-Refactor development.
+- **Trigger**: `/tdd-guide` or *"Use TDD Guide to write tests before logic."*
 
-### 🧪 TDD Guide
-*   **Purpose**: Enforces Test-Driven Dev.
-*   **Slash Command**: `/tdd-guide`
-*   **Plain Chat Trigger**:
-    ```text
-    Use TDD Guide to write tests for [feature] before implementing logic.
-    ```
+### 🐍 07-Python / 🦀 08-Rust / ⚡ 09-JS-TS
+- **Purpose**: Language-specific specialists with custom optimization rules.
+- **Trigger**: `/python`, `/rust`, or `/jsts`.
 
-### 🔬 Sci-Writing
-*   **Purpose**: Academic tone formatting.
-*   **Slash Command**: `/scientific-writing`
-*   **Plain Chat Trigger**:
-    ```text
-    Format this text using the Scientific Writing skill.
-    ```
+### 🐛 12-Antibug
+- **Purpose**: Deep logic auditing and automated patching.
+- **Trigger**: `/antibug` or *"Diagnose this error and generate a patch."*
 
-### 📚 LaTeX Bib
-*   **Purpose**: Citation management.
-*   **Slash Command**: `/latex-bib-manager`
-*   **Plain Chat Trigger**:
-    ```text
-    Run the LaTeX Bib Manager to fix my citation sequence.
-    ```
+### ✨ 13-Web Aesthetics
+- **Purpose**: Premium UI/UX enforcement (Gradients, Glassmorphism, Micro-animations).
+- **Trigger**: `/web-aesthetics` or *"Apply premium aesthetics to this UI component."*
 
-### ⚖️ Evaluator
-*   **Purpose**: Market value assessment.
-*   **Slash Command**: `/market-evaluator`
-*   **Plain Chat Trigger**:
-    ```text
-    Evaluate this codebase and suggest commercial pricing.
-    ```
-
-### 📜 License
-*   **Purpose**: Generates custom terms.
-*   **Slash Command**: `/commercial-license`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as the Commercial License Agent, generate a custom LICENSE.md.
-    ```
-
-### 🏗️ Architect
-*   **Purpose**: Builds premium READMEs.
-*   **Slash Command**: `/readme-architect`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as Readme Architect, generate a premium README.
-    ```
-
-### 📝 Commit Author
-*   **Purpose**: Generates atomic git commits.
-*   **Slash Command**: `/commit-author`
-*   **Plain Chat Trigger**:
-    ```text
-    Acting as the Git Commit Author, analyze my changes and generate commit commands.
-    ```
+### 📝 19-Commit Author
+- **Purpose**: Generates atomic, Conventional Commit commands.
+- **Trigger**: `/commit-author` or *"Generate git commit commands for my changes."*
 
 ---
 
-## 🧬 The Instincts: Rules & Foundations (Automatic)
-These run silently in the background. **Do not trigger them manually.**
+## 📖 The Recipe Book: Rules & Skills (Automatic)
+These run silently in the background to ensure consistency and safety.
 
-| # | Instinct | Type | Background Action |
-| :--- | :--- | :--- | :--- |
-| 00 | `workflow-orchestration` | Rule | Enforces numeric prefix ordering on all workflows, agents, and skills. |
-| 01 | `context-memory` | Rule | Ensures the AI writes to `session-context.md` to maintain long-term memory. |
-| 02 | `metadata-awareness` | Rule | Automatically updates `PROJECT_METADATA.md` when features or versions change. |
-| 03 | `asset-awareness` | Rule | Detects `src/` vs root and places assets in the correct directory. |
-| 04 | `dump-awareness` | Rule | Moves old reference folders into a read-only `dump/` directory. `.agent/` is protected. |
-| 05 | `semantic-versioning`| Rule | Manages version bumps (vX.Y.Z) based on code impact. |
-| 06 | `silent-ingest` | Rule | Suppresses unnecessary conversational chatter during data ingestion. |
-| 07 | `core` | Rule | Master execution logic, `.agent/` isolation, and session memory. |
-| 08 | `self-improvement` | Rule | Self-Upgrading: agents encode new standards permanently after producing advanced work. |
-| 09 | `release-packaging` | Rule | Generates a distributable ZIP archive after every version bump. |
-| 10 | `git-awareness` | Rule | Enforces Conventional Commits and the Atomic Commit mandate. |
-| 01 | `research-loop` | Foundation | Forces agents to check for contradictions before outputting code. |
-| 02 | `architectural-design`| Foundation | Enforces Hexagonal Architecture (Ports & Adapters) and SOLID principles. |
-| 03 | `code-synthesis` | Foundation | Weighted Perspective Analysis for merging multi-AI plans. |
-| 04 | `refactor` | Foundation | Cleans and optimizes code automatically during generation. |
-| 05 | `commit-semantics` | Foundation | Diff chunking algorithm for splitting changes into atomic commits. |
+| # | Rule (Governance) | Background Action |
+| :--- | :--- | :--- |
+| 00 | `workflow-orchestration` | Enforces the 5-phase lifecycle numbering. |
+| 02 | `integrity` | Prohibits "shotgun coding" and protects system files. |
+| 03 | `instincts` | Fires warnings when code looks fragile or complex. |
+| 04 | `verification-gates` | Blocks execution if confidence scores are too low. |
+| 11 | `git-awareness` | Enforces atomic commits and semantic history. |
+| 13 | `self-improvement` | Evolves agent skills based on successful interactions. |
+
+| # | Skill (Foundational) | Background Action |
+| :--- | :--- | :--- |
+| 01 | `research-loop` | Forces agents to check `Plan/` and `dump/` before acting. |
+| 02 | `language-routing` | Dispatches tasks to the correct language specialist. |
+| 03 | `task-decomposition` | Breaks large tasks into atomic steps automatically. |
+| 07 | `cognitive-load-inspector`| Measures and reduces code complexity during generation. |
+| 08 | `side-effect-tracker` | Maps downstream impacts of every code change. |
 
 ---
 
 ## 🛤️ The Pipelines: Workflows Deconstructed
-Workflows are multi-step recipes that combine specific Agents and Instincts for complex tasks. 
+Workflows are multi-step recipes that combine Agents and Skills for complex operations.
 
-### 🔍 `scanner` (Repo Orientation)
-*   **Best Used For**: Getting your bearings in a new or changed repository.
-*   **Composition**: `/deep-scan` + `/ask` + `metadata-awareness` (Rule).
+### 🚀 `02-onboard-project` (First Contact)
+- **Best For**: Understanding a legacy codebase you've never seen before.
+- **Composition**: `/scanner` + `/ask` + `research-loop` + Language Specialist.
 
-### 🏗️ `build-app` & `build-website` (Full Stack Generation)
-*   **Best Used For**: Scaffolding and building an entire project from zero.
-*   **Composition**: `/planner` + `/tdd-guide` + `/antibug` + `architectural-design` (Foundation).
+### 🏗️ `05b-build-app` (End-to-End Build)
+- **Best For**: Building a production-ready application from scratch.
+- **Composition**: `/planner` → `/tdd-guide` → `/antibug` → `/readme-architect`.
 
-### 🐛 `fix-bugs` (Deep Diagnostics)
-*   **Best Used For**: Fixing critical, persistent application errors.
-*   **Composition**: `/deep-scan` + `/antibug` + `research-loop` (Foundation).
+### 🐛 `07-fix-bugs` (The Exterminator)
+- **Best For**: Resolving persistent, elusive logic errors.
+- **Composition**: `/scanner` + `/failure-predictor` + `/antibug` + `side-effect-tracker`.
 
-### 🚀 `release-project` (The Finalizer)
-*   **Best Used For**: Preparing a project for public launch and monetization.
-*   **Composition**: `dump-awareness` (Rule) + `/market-evaluator` + `/commercial-license` + `/readme-architect` + `semantic-versioning` (Rule).
+### ⚖️ `10-cross-agent-validator` (The Audit)
+- **Best For**: Verifying that previous agents didn't "hallucinate" progress.
+- **Composition**: Multi-step file existence and logic checks.
 
-### ⚖️ `cross-agent-validator` (Pipeline Audit)
-*   **Best Used For**: Auditing multi-agent workflows to ensure agents produced substantive artifacts instead of conversational hallucinations.
-*   **Composition**: Systematic checks across generated artifacts.
-
-### 🧠 `multi-plan-synthesis` (Strategy Merge)
-*   **Best Used For**: Merging multiple external AI-generated plans (ChatGPT, Claude, etc.) into one master, conflict-free blueprint.
-*   **Composition**: `/deep-scan` + `/synthesizer` + `code-synthesis` (Foundation).
-
-### 📂 `scaffold-assets` (Structure Bootstrap)
-*   **Best Used For**: Standardizing project taxonomy by creating a unified `assets/` directory and initializing project metadata.
-*   **Composition**: `asset-awareness` (Rule) + structural generation.
-
-### 🧪 `tdd` (Test-Driven Cycle)
-*   **Best Used For**: Ensuring high code quality by strictly enforcing the Red-Green-Refactor testing cycle.
-*   **Composition**: `/tdd-guide` + `refactor` (Foundation).
-
-### 📝 `write-report` (Academic Drafting)
-*   **Best Used For**: Generating high-quality, properly formatted academic or technical reports (like LaTeX dissertations).
-*   **Composition**: `/planner` + `/scientific-writing` + `/latex-bib-manager`.
-
-### 📝 `auto-commit` (Version Control Automation)
-*   **Best Used For**: Generating clean, atomic git commit commands after any work session with multiple file changes.
-*   **Composition**: `/commit-author` + `commit-semantics` (Foundation) + `git-awareness` (Rule).
+### 📝 `12-auto-commit` (The Closer)
+- **Best For**: Generating clean, professional git history at the end of a session.
+- **Composition**: `/commit-author` + `git-awareness` + `commit-semantics`.
 
 ---
 
 ## 💾 Mastering Session Memory
-Because AI models forget things when you close a chat, you must maintain the "Session Context."
+Antigravity maintains state across session restarts via `session-context.md`.
 
-1. **To Save State**: At the end of your day, use this exact trigger sentence:
-    ```text
-    Update the session context with our progress.
-    ```
-   *(The `context-memory` instinct will write a summary to `.agent/session-context.md`).*
-
-2. **To Load State**: At the start of a new day, open `.agent/session-context.md`, copy its contents, and paste it into the chat:
-    ```text
-    Here is the context from our last session: [paste content]. Let's continue.
-    ```
+1. **To Save State**: At the end of a session, use: *"Update the session context with our progress."*
+2. **To Load State**: At the start of a new session, copy `.agent/session-context.md` into the chat.
 
 ---
 
 <div align="center">
-Developed by <b>FartinCat</b> | 2026 Antigravity Ecosystem
+Developed by <b>FartinCat</b> | 2026 Antigravity Ecosystem<br/>
+<i>"Continuous improvement is better than delayed perfection."</i>
 </div>
-
