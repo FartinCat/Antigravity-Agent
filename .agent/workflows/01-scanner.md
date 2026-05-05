@@ -15,7 +15,7 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 1. **Session Memory Check**: Read `.agent/session-context.md`.
    - Check the `Project Directory:` field.
    - If it matches the current directory name → load history silently.
-   - If it does NOT match → this is a new project. Reinitialize session-context.md for this project per `01-context-memory.md` rule.
+   - If it does NOT match → this is a new project. Reinitialize session-context.md for this project per `06-context-memory.md` rule.
 
 2. **Project Tree**: List all project files and directories recursively, excluding `.agent/`, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.venv/`.
 
@@ -23,7 +23,7 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 
 4. **Plan Inventory**: List all files in `Plan/` if it exists.
 
-5. **Asset Check**: Verify if `assets/` or `src/assets/` exists per `03-asset-awareness.md` rules.
+5. **Asset Check**: Verify if `assets/` or `src/assets/` exists per `08-asset-awareness.md` rules.
 
 6. **Anomaly Detection**: Flag anything that violates project structure rules — missing `PROJECT_METADATA.md`, stray dump folders at root, missing `assets/` taxonomy.
 

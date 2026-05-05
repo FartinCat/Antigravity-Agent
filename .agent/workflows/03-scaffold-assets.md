@@ -1,6 +1,6 @@
 ---
-description: "Step 2 — Initialize the project directory structure and PROJECT_METADATA.md before any code is written."
-order: 2
+description: "Step 3 — Initialize the project directory structure and PROJECT_METADATA.md before any code is written."
+order: 3
 ---
 
 # Workflow: Scaffold Asset Taxonomy
@@ -48,7 +48,7 @@ order: 2
 
 4. **Single Source of Truth**: `PROJECT_METADATA.md` at the project **root** is the authoritative version file. Do NOT maintain a second copy in `assets/information/` — this caused version sync bugs. The `market-evaluator` and `commercial-license` agents will read from the root copy.
 
-5. **Session Context Init**: Trigger the `01-context-memory.md` rule — ensure `.agent/session-context.md` exists and has the correct `Project Directory:` field for this project.
+5. **Session Context Init**: Trigger the `06-context-memory.md` rule — ensure `.agent/session-context.md` exists and has the correct `Project Directory:` field for this project.
 
 6. **Path Resolution Broadcast**: Announce the resolved `ASSETS_ROOT` path so all subsequent code synthesis uses the correct relative paths.
 

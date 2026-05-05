@@ -1,6 +1,6 @@
 ---
-description: "Step 4A — Build a complete web application: Scaffold → Plan → Style → TDD → Bug Check → Version → Validate."
-order: 4
+description: "Step 5A — Build a complete web application: Scaffold → Plan → Style → TDD → Bug Check → Version → Validate."
+order: 5
 ---
 
 # Workflow: Build Website

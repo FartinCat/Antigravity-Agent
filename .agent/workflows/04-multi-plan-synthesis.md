@@ -1,6 +1,6 @@
 ---
-description: "Step 3 — Merge multiple AI plans from /Plan folder into one master implementation strategy."
-order: 3
+description: "Step 4 — Merge multiple AI plans from /Plan folder into one master implementation strategy."
+order: 4
 ---
 
 # Workflow: Multi-Plan Synthesis
@@ -23,7 +23,7 @@ order: 3
 
 5. **Output**: Create `MASTER_PLAN.md` at the project root with the full structured plan, conflict log, and phase breakdown.
 
-6. **Validation**: Run a final check to ensure the plan covers all user requirements and adheres to `07-core.md` instincts.
+6. **Validation**: Run a final check to ensure the plan covers all user requirements and adheres to `01-core.md` instincts.
 
 7. **Session Log**: Append a session entry to `.agent/session-context.md` confirming synthesis complete and recording which plans were merged.
 
@@ -32,4 +32,4 @@ order: 3
 
 ## Dependent Skills
 - `.agent/.agents/skills/01-deep-scan` (invoked via /scanner — must run before synthesis)
-- `.agent/skills/03-code-synthesis.md` (conflict resolution logic)
+- `.agent/skills/05-code-synthesis.md` (conflict resolution logic)

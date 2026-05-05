@@ -1,6 +1,6 @@
 ---
-description: "Step 8 — Self-audit: Verify every agent in the preceding workflow did its job completely, not just superficially."
-order: 9
+description: "Step 10 — Self-audit: Verify every agent in the preceding workflow did its job completely, not just superficially."
+order: 10
 ---
 
 # Workflow: Cross-Agent Validator
@@ -35,8 +35,24 @@ Confirm that all expected output files exist at project root (not inside `.agent
 - `scanner` / `build-website` / `build-app` → source files exist, tests exist, root `PROJECT_METADATA.md` version was bumped
 - `fix-bugs` → patches were applied, version was bumped in root `PROJECT_METADATA.md`
 - `multi-plan-synthesis` → `MASTER_PLAN.md` exists at project root
-- `release-project` → `LICENSE.md`, `README.md` exist at project root
+- `release-project` → `LICENSE.md`, `README.md` exist at project root; `zip/` contains versioned archive
 - `write-report` → final document exists with bibliography
+
+### Step 3.5 — Technical Verification (if applicable)
+If the workflow produced code, run a structured verification:
+
+```
+VERIFICATION: [PASS/FAIL]
+
+Build:    [OK/FAIL]        — Run the project's build command
+Types:    [OK/X errors]    — Run type checker (tsc, mypy, etc.)
+Lint:     [OK/X issues]    — Run linter (eslint, clippy, flake8)
+Tests:    [X/Y passed]     — Run full test suite
+Coverage: [XX%]            — Check coverage meets 80% threshold
+Git:      [clean/dirty]    — Show uncommitted changes
+
+Ready for commit: [YES/NO]
+```
 
 ### Step 4 — Final Health Score
 ```

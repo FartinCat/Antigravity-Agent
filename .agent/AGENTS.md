@@ -1,69 +1,52 @@
-# Antigravity Agent — v2.2.0
+# Antigravity Agent — v3.0.0
 
 A portable AI operating system. Copy the `.agent/` folder into any project directory and the entire skill + workflow ecosystem activates immediately.
 
 ---
 
-## ⚠️ Critical Deployment Rules
-
-1. **The `.agent/` folder is NOT project code.** It is agent infrastructure. All scans, diagnostics, and reports exclude it.
-2. **Always run `/scanner` first** at the start of every session. It reads `session-context.md`, detects the project directory, and maps the project before any work begins.
-3. **`session-context.md` is project-aware.** When you copy `.agent/` to a new project, the agent detects the directory mismatch and initializes fresh context for the new project automatically.
-
----
-
-## 🚀 Deployment (Copying to a New Project)
-
-Use `rsync` to copy the `.agent/` folder **contents** into your target project directory:
-
-```bash
-# Copy .agent/ contents into a new project (Linux/WSL)
-rsync -av --exclude='.git' "/path/to/Antigravity Agent/.agent/" "/path/to/your-project/.agent/"
-```
-
-See `DEPLOY.md` at the root of this repository for the full migration guide and common pitfalls.
-
----
-
 ## 🔧 Slash Commands (Single Agents)
 
-Type the command in the AI chat panel followed by your task description.
-
-| # | Command | Agent | Purpose |
-| :--- | :--- | :--- | :--- |
-| **01** | **`/scanner`** | 01-deep-scan | Project-aware repo mapping. Excludes `.agent/`. Always run first. |
-| **02** | **`/ask`** | 02-ask | Precision query agent for architectural and logic doubts. |
-| **03** | **`/planner`** | 03-planner | Strategic breakdown and phased roadmap generation. |
-| **04** | **`/synthesizer`** | 04-synthesizer | Merge multiple AI plans from `Plan/` into `MASTER_PLAN.md`. |
-| **05** | **`/tdd-guide`** | 05-tdd-guide | Strict Red-Green-Refactor test-driven development. |
-| **06** | **`/antibug`** | 06-antibug | Deep logic auditing, historical pattern analysis, exact patches. |
-| **07** | **`/web-aesthetics`** | 07-web-aesthetics | Premium UI enforcement — fonts, colors, micro-animations. |
-| **08** | **`/scientific-writing`** | 08-scientific-writing | Academic tone, LaTeX formatting, dissertation writing. |
-| **09** | **`/latex-bib-manager`** | 09-latex-bib-manager | Citation sequencing, `.bib` cleanup, float anchoring. |
-| **10** | **`/readme-architect`** | 10-readme-architect | Premium `README.md` generation. |
-| **11** | **`/market-evaluator`** | 11-market-evaluator | Codebase market value assessment and pricing strategy. |
-| **12** | **`/commercial-license`** | 12-commercial-license | Custom commercial license generation. |
-| **13** | **`/commit-author`** | 13-git-commit-author | Analyze diffs and generate atomic Conventional Commit commands. |
+| # | Command | Agent | Phase | Purpose |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | **`/scanner`** | 01-deep-scan | P1 | Project-aware repo mapping. |
+| **02** | **`/failure-predictor`** | 02-failure-predictor | P1 | Pre-execution risk analysis. |
+| **03** | **`/ask`** | 03-ask | P1 | Precision query agent. |
+| **04** | **`/planner`** | 04-planner | P2 | Strategic breakdown and roadmap. |
+| **05** | **`/synthesizer`** | 05-synthesizer | P2 | Merge multiple AI plans. |
+| **06** | **`/tdd-guide`** | 06-tdd-guide | P3 | Strict Red-Green-Refactor development. |
+| **07** | **`/python`** | 07-python-agent | P3 | Python specialist. |
+| **08** | **`/rust`** | 08-rust-agent | P3 | Rust specialist. |
+| **09** | **`/jsts`** | 09-jsts-agent | P3 | JS/TS specialist. |
+| **10** | **`/c-lang`** | 10-c-agent | P3 | C specialist. |
+| **11** | **`/go`** | 11-go-agent | P3 | Go specialist. |
+| **12** | **`/antibug`** | 12-antibug | P4 | Deep logic auditing. |
+| **13** | **`/web-aesthetics`** | 13-web-aesthetics | P4 | Premium UI enforcement. |
+| **14** | **`/scientific-writing`** | 14-scientific-writing | P4 | Academic tone and LaTeX. |
+| **15** | **`/latex-bib-manager`** | 15-latex-bib-manager | P4 | Citation sequencing. |
+| **16** | **`/readme-architect`** | 16-readme-architect | P5 | Premium README generation. |
+| **17** | **`/market-evaluator`** | 17-market-evaluator | P5 | Codebase market value assessment. |
+| **18** | **`/commercial-license`** | 18-commercial-license | P5 | Commercial license generation. |
+| **19** | **`/commit-author`** | 19-git-commit-author | P5 | Atomic Conventional Commits. |
 
 ---
 
 ## ⚡ Workflows (+ Button — In Sequence)
 
-Use these from the `+` button in the chat bar. **Run in order** — each workflow builds on the previous one.
-
 | # | Workflow | Purpose | Key Agents |
 | :-- | :--- | :--- | :--- |
-| **01** | `/scanner` | Map the project before anything else. Session memory check included. | `01-deep-scan` |
-| **02** | `/scaffold-assets` | Initialize `assets/` taxonomy and `PROJECT_METADATA.md`. | — |
-| **03** | `/multi-plan-synthesis` | Merge all plans in `Plan/` into `MASTER_PLAN.md`. | `04-synthesizer` → `01-deep-scan` |
-| **04a** | `/build-website` | End-to-end web app pipeline. | `03-planner` → `07-web-aesthetics` → `05-tdd-guide` → `06-antibug` |
-| **04b** | `/build-app` | End-to-end software app pipeline. | `03-planner` → `05-tdd-guide` → `06-antibug` → `04-refactor` |
-| **05** | `/tdd` | Focused TDD cycle for a single feature. | `05-tdd-guide` → `04-refactor` → `06-antibug` |
-| **06** | `/fix-bugs` | Full bug hunting and patching. | `01-scanner` → `06-antibug` → `05-tdd-guide` |
-| **07** | `/write-report` | Academic or technical report pipeline. | `03-planner` → `08-scientific-writing` → `09-latex-bib-manager` |
-| **08** | `/cross-agent-validator` | Self-audit: verify all agents did their job. | — |
-| **09** | `/release-project` | Final release: cleanup → market eval → license → README. | `11-market-evaluator` → `12-commercial-license` → `10-readme-architect` |
-| **10** | `/auto-commit` | Generate atomic git commit commands for all uncommitted changes. | `13-git-commit-author` |
+| **01** | `/scanner` | Map the project. Run first. | `01-deep-scan` |
+| **02** | `/onboard-project` | First-contact project analysis. | `01-deep-scan` → Specialists |
+| **03** | `/scaffold-assets` | Initialize assets and metadata. | — |
+| **04** | `/multi-plan-synthesis` | Merge plans into MASTER_PLAN.md. | `05-synthesizer` |
+| **05a** | `/build-website` | End-to-end web app pipeline. | `04-planner` → `13-web-aesthetics` |
+| **05b** | `/build-app` | End-to-end software app pipeline. | `04-planner` → `06-tdd-guide` |
+| **06** | `/tdd` | Focused TDD cycle. | `06-tdd-guide` → `12-antibug` |
+| **07** | `/fix-bugs` | Full bug hunting and patching. | `12-antibug` → `06-tdd-guide` |
+| **08** | `/performance` | Measure → optimize → verify. | Specialists → `06-tdd-guide` |
+| **09** | `/write-report` | Academic/technical report pipeline. | `14-scientific-writing` |
+| **10** | `/cross-agent-validator` | Self-audit: verify all agents. | — |
+| **11** | `/release-project` | Cleanup → license → README. | `17-market-evaluator` → `16-readme-architect` |
+| **12** | `/auto-commit` | Generate git commit commands. | `19-git-commit-author` |
 
 ---
 
@@ -71,51 +54,67 @@ Use these from the `+` button in the chat bar. **Run in order** — each workflo
 
 ```
 .agent/
-├── rules/              ← Always-active behavioral instincts (fire every session)
-│   ├── 00-workflow-orchestration.md  Prefix-based UI ordering
-│   ├── 01-context-memory.md          Project-directory-aware persistence
-│   ├── 02-metadata-awareness.md      Root PROJECT_METADATA.md focus
-│   ├── 03-asset-awareness.md         src/ vs root asset placement
-│   ├── 04-dump-awareness.md          Graveyard management (.agent/ protected)
-│   ├── 05-semantic-versioning.md     Single-source version bumping
-│   ├── 06-silent-ingest.md           Bulk text absorption mode
-│   ├── 07-core.md                    Execution logic & isolation
-│   ├── 08-self-improvement.md        Upgrade instincts
-│   └── 09-release-packaging.md       Automated ZIP generation
-│   └── 10-git-awareness.md           Conventional Commits enforcement
-├── skills/             ← Foundational (subconscious) logic — not in UI
-│   ├── 01-research-loop.md           DeepDive evidence scan
-│   ├── 02-architectural-design.md    Hexagonal architecture & SOLID
-│   ├── 03-code-synthesis.md          Weighted consensus merging
-│   ├── 04-refactor.md                Red-Green-Refactor Phase 3
-│   └── 05-commit-semantics.md        Atomic diff chunking logic
-├── .agents/skills/     ← UI Agent-Skills (slash commands + buttons)
+├── rules/ (Governance & Instincts)
+│   ├── 00-workflow-orchestration.md
+│   ├── 01-core.md
+│   ├── 02-integrity.md
+│   ├── 03-instincts.md
+│   ├── 04-verification-gates.md
+│   ├── 05-context-integrity.md
+│   ├── 06-context-memory.md
+│   ├── 07-metadata-awareness.md
+│   ├── 08-asset-awareness.md
+│   ├── 09-dump-awareness.md
+│   ├── 10-semantic-versioning.md
+│   ├── 11-git-awareness.md
+│   ├── 12-silent-ingest.md
+│   ├── 13-self-improvement.md
+│   └── 14-release-packaging.md
+├── skills/ (Foundational Logic)
+│   ├── 01-research-loop.md
+│   ├── 02-language-routing.md
+│   ├── 03-task-decomposition.md
+│   ├── 04-architectural-design.md
+│   ├── 05-code-synthesis.md
+│   ├── 06-refactor.md
+│   ├── 07-cognitive-load-inspector.md
+│   ├── 08-side-effect-tracker.md
+│   ├── 09-state-machine-inspector.md
+│   ├── 10-confidence-scoring.md
+│   ├── 11-memory-evolution.md
+│   └── 12-commit-semantics.md
+├── .agents/skills/ (UI Agents)
 │   ├── 01-deep-scan/
-│   ├── 02-ask/
-│   ├── 03-planner/
-│   ├── 04-synthesizer/
-│   ├── 05-tdd-guide/
-│   ├── 06-antibug/
-│   ├── 07-web-aesthetics/
-│   ├── 08-scientific-writing/
-│   ├── 09-latex-bib-manager/
-│   ├── 10-readme-architect/
-│   ├── 11-market-evaluator/
-│   ├── 12-commercial-license/
-│   └── 13-git-commit-author/
-├── workflows/          ← Multi-agent pipelines (+ button, ordered 01–10)
-│   ├── 01-scanner.md
-│   ├── 02-scaffold-assets.md
-│   ├── 03-multi-plan-synthesis.md
-│   ├── 04a-build-website.md
-│   ├── 04b-build-app.md
-│   ├── 05-tdd.md
-│   ├── 06-fix-bugs.md
-│   ├── 07-write-report.md
-│   ├── 08-cross-agent-validator.md
-│   ├── 09-release-project.md
-│   └── 10-auto-commit.md
-├── AGENTS.md           ← This file
-├── session-context.md  ← Project-specific memory
-└── antigravity-agent-install-state.json
+│   ├── 02-failure-predictor/
+│   ├── 03-ask/
+│   ├── 04-planner/
+│   ├── 05-synthesizer/
+│   ├── 06-tdd-guide/
+│   ├── 07-python-agent/
+│   ├── 08-rust-agent/
+│   ├── 09-jsts-agent/
+│   ├── 10-c-agent/
+│   ├── 11-go-agent/
+│   ├── 12-antibug/
+│   ├── 13-web-aesthetics/
+│   ├── 14-scientific-writing/
+│   ├── 15-latex-bib-manager/
+│   ├── 16-readme-architect/
+│   ├── 17-market-evaluator/
+│   ├── 18-commercial-license/
+│   └── 19-git-commit-author/
+└── workflows/ (Pipelines)
+    ├── 01-scanner.md
+    ├── 02-onboard-project.md
+    ├── 03-scaffold-assets.md
+    ├── 04-multi-plan-synthesis.md
+    ├── 05a-build-website.md
+    ├── 05b-build-app.md
+    ├── 06-tdd.md
+    ├── 07-fix-bugs.md
+    ├── 08-performance.md
+    ├── 09-write-report.md
+    ├── 10-cross-agent-validator.md
+    ├── 11-release-project.md
+    └── 12-auto-commit.md
 ```
