@@ -1,30 +1,56 @@
-# Instinct: Workflow Orchestration
+# Instinct: System-Wide Orchestration
 
-**Trigger**: Creation, modification, or presentation of system workflows in the `.agent/workflows/` directory.
+**Trigger**: Creation, modification, or presentation of ANY system component in the `.agent/` directory.
 
 ## Core Rules
 
-### Rule 1 — Filename Prefixing
-To ensure that the slash-command UI and file explorers display workflows in their correct execution order, all workflows must use a two-digit numeric prefix followed by a hyphen.
-- Format: `XX-name.md` (e.g., `01-scanner.md`, `02-scaffold-assets.md`).
-- Sub-steps within the same phase should use letters (e.g., `04a-build-website.md`, `04b-build-app.md`).
+### Rule 1 — Lifecycle Prefixing
+To ensure logical execution flow and UI clarity, all components must follow the 5-phase lifecycle numbering system.
 
-### Rule 2 — Metadata Alignment
-The internal metadata in the YAML frontmatter must exactly match the filename prefix.
-- `order: X`: Must match the numeric prefix.
-- `description: "Step X — ..."`: The description must explicitly state the step number as the first part of the string.
+| Phase | Range | Purpose |
+| :--- | :--- | :--- |
+| **P0: Governance** | 00 | Orchestration and system rules. |
+| **P1: Awareness** | 01–05 | Discovery, intelligence, and context. |
+| **P2: Strategy** | 06–10 | Planning, strategy, and design. |
+| **P3: Execution** | 11–20 | Implementation, language specialists, and work. |
+| **P4: Quality** | 21–30 | Bug hunting, verification, and audit. |
+| **P5: Finalization** | 31–40 | Release, licensing, and semantic git commits. |
 
-### Rule 3 — Logical Sequence
-The following sequence is the official Antigravity execution pipeline:
-1. **Awareness** (`01-scanner`)
-2. **Initialization** (`02-scaffold-assets`)
-3. **Planning** (`03-multi-plan-synthesis`)
-4. **Implementation** (`04a/b-build-*`)
-5. **Testing** (`05-tdd`)
-6. **Debugging** (`06-fix-bugs`)
-7. **Documentation** (`07-write-report`)
-8. **Audit** (`08-cross-agent-validator`)
-9. **Finalization** (`09-release-project`)
+### Rule 2 — Component-Specific Numbering
+- **Workflows**: Must be numbered 01–12 sequentially.
+- **Rules**: Must be numbered 00–14 sequentially.
+- **Skills**: Must be numbered 01–12 sequentially.
+- **Agents**: Must be numbered 01–19 sequentially.
 
-### Rule 4 — Enforcement
-When generating a new workflow, always check the existing directory to find the next available step number. Do not skip numbers unless reserved for future expansions.
+### Rule 3 — Golden Path Enforcement
+When suggesting actions, the agent must favor components in their logical order:
+1.  **Scanner** (`01`) → **Onboarding** (`02`)
+2.  **Planner** (`04`) → **Synthesis** (`05`)
+3.  **Specialist Agents** (`07–11`)
+4.  **Antibug** (`12`) → **Validator** (`10`)
+5.  **Release** (`11`) → **Commit** (`12`)
+
+### Rule 4 — Mandatory YAML Frontmatter (Visibility Gate)
+**ALL workflow files** in `.agent/workflows/` MUST begin with a YAML frontmatter block. Without this block, the workflow will be **invisible** in the IDE `+` menu and unusable.
+
+**Required format** (first lines of every workflow file):
+```yaml
+---
+description: "Step XX — [concise description of what the workflow does]."
+order: XX
+---
+```
+
+- `description`: Must start with `"Step XX —"` where XX matches the numeric file prefix.
+- `order`: Must be an integer matching the numeric file prefix.
+- **Violation**: If a workflow file is created without this frontmatter, it MUST be flagged immediately and corrected before any other work proceeds.
+
+### Rule 5 — Pre-Commit Frontmatter Audit
+Before running `/12-auto-commit`, the agent MUST verify that ALL workflow files contain valid frontmatter. Run this check:
+```
+For each .md in .agent/workflows/: first line must be "---"
+```
+If any file fails this check, halt and fix before generating commits.
+
+---
+> "Order is the first law of heaven."

@@ -8,6 +8,7 @@ The following folders must NEVER be moved into `dump/` under any circumstances:
 - `.git/` — Version control history.
 - `Plan/` — Active plan files being used for multi-plan synthesis.
 - `assets/` or `src/assets/` — Project asset taxonomy.
+- `zip/` — Formal release packages and versioned archives.
 
 ## Core Rules
 
