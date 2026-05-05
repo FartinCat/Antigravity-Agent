@@ -3,19 +3,24 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 # 🌌 Antigravity Agent Ecosystem
-**The Next-Gen Agentic Framework for Autonomous Coding**
+**The Ultimate AI Orchestration Framework for Professional Developers**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
-[![Language](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Language](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Language](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![License](https://img.shields.io/badge/License-Commercial-gold?style=for-the-badge)](LICENSE.md)
+[![Version](https://img.shields.io/badge/version-2.2.0-blueviolet?style=for-the-badge)](https://github.com/FartinCat/Antigravity-Agent)
+[![Buy License](https://img.shields.io/badge/GET_LICENSE-Click_Here-gold?style=for-the-badge&logo=gumroad)](https://antigravity.lemonsqueezy.com/checkout/buy/35a2a620-3f40-4aea-9e0d-1d58819ae5f1)
+[![Student Access](https://img.shields.io/badge/STUDENTS-Verify_&_Get_Free-blue?style=for-the-badge)](mailto:fartincat@proton.me)
 
 ---
 
 > "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration." — **Nikola Tesla**
 
 </div>
+
+### 💰 Commercial Licensing
+Antigravity is a **premium, paid ecosystem**. The core "Brain" (the `.agent` folder) is not included in this public repository. To unlock the full agentic power of the 12 autonomous skills and 10 workflows, you must purchase a license.
+
+**[Click here to purchase and download the Core (.agent folder)](https://antigravity.lemonsqueezy.com/checkout/buy/35a2a620-3f40-4aea-9e0d-1d58819ae5f1)**
+
+---
 
 ## 🧠 Introduction & Architecture
 Welcome! This repository doesn't just hold code; it holds **behaviors, rules, and AI personas**. Antigravity uses a **Dual-Skill Architecture**:
@@ -25,32 +30,40 @@ Welcome! This repository doesn't just hold code; it holds **behaviors, rules, an
 ---
 
 ## 📥 Installation & Deployment Guide
-You can seamlessly integrate the Antigravity Brain into **any** existing project directory on any OS.
+You can seamlessly integrate the Antigravity Brain into **any** existing project directory on any OS. **You only ever need to copy the `.agent/` folder.** Everything else in this repository belongs to the source project and should NOT be copied.
 
-### Step 1: Download the Core
-You need to copy the `.agent` folder into your target project. 
+### Step 1: Copying the Core (`.agent/`)
 
-**For PowerShell / CMD (Windows):**
-```powershell
-# Clone the repository to a temporary location
-git clone https://github.com/FartinCat/Antigravity-Agent.git temp_antigravity
-
-# Copy the .agent folder into your project directory
-Copy-Item -Path "temp_antigravity\.agent" -Destination ".\Your_Project_Directory\.agent" -Recurse
-
-# Clean up
-Remove-Item -Path temp_antigravity -Recurse -Force
-```
-
-**For Bash / Linux / Kali Linux:**
+**Method 1: rsync (Recommended for Linux/WSL/macOS)**
 ```bash
-git clone https://github.com/FartinCat/Antigravity-Agent.git /tmp/antigravity
-cp -r /tmp/antigravity/.agent ./Your_Project_Directory/
-rm -rf /tmp/antigravity
+# The trailing slash on the source path is intentional.
+# It copies the contents of .agent/ into the destination .agent/ folder.
+rsync -av --exclude='.git' \
+  "/path/to/Antigravity Agent/.agent/" \
+  "/path/to/YOUR_PROJECT_NAME/.agent/"
 ```
 
-### Step 2: Booting the AI
-Open your project in an AI IDE (like Cursor or Windsurf) or use a plain chat interface (ChatGPT, Claude). The AI will immediately detect the `.agent` folder and adopt the Antigravity ecosystem.
+**Method 2: PowerShell (Windows)**
+```powershell
+Copy-Item -Recurse -Force `
+  "D:\path\to\Antigravity Agent\.agent" `
+  "D:\path\to\YOUR_PROJECT_NAME\.agent"
+```
+
+**Method 3: Windows Explorer / File Manager**
+Copy the `.agent` folder from the Antigravity Agent repo and paste it into your target project directory.
+
+### Step 2: Booting the AI (First Steps in the New Project)
+1. **Open your AI IDE** (Cursor, Windsurf, VS Code) in the new project directory.
+2. **Run `/scanner`** — this is always the first step. It will detect that the `session-context.md` project name has changed, archive the old project's context, and initialize a fresh memory for your new project.
+3. **Run `/scaffold-assets`** — creates the `assets/` taxonomy and a fresh `PROJECT_METADATA.md` for the new project.
+4. **Proceed with your workflow.**
+
+### 🛑 Troubleshooting Migration
+*   **"All agent files appeared in my project root"**: You ran rsync with a trailing slash on the source but NO target `.agent/` sub-path. Delete the dumped files and re-run with `"my-project/.agent/"` as the destination.
+*   **"I see a nested .agent/.agent/ folder"**: You ran rsync WITHOUT a trailing slash on the source. Move the contents up one level.
+*   **"Terminal hangs after command"**: You used a backslash `\` at the end of a path inside quotes. Use forward slashes `/`.
+*   **"session-context.md still shows old project name"**: Run `/scanner`. The `01-context-memory` rule will fix it automatically.
 
 ---
 
@@ -150,7 +163,7 @@ These are your active tools. To use them in a plain chat, copy their `SKILL.md` 
 *   **Slash Command**: `/commercial-license`
 *   **Plain Chat Trigger**:
     ```text
-    Generate a commercial license prohibiting free commercial use.
+    Acting as the Commercial License Agent, generate a custom LICENSE.md.
     ```
 
 ### 🏗️ Architect
@@ -161,22 +174,37 @@ These are your active tools. To use them in a plain chat, copy their `SKILL.md` 
     Acting as Readme Architect, generate a premium README.
     ```
 
+### 📝 Commit Author
+*   **Purpose**: Generates atomic git commits.
+*   **Slash Command**: `/commit-author`
+*   **Plain Chat Trigger**:
+    ```text
+    Acting as the Git Commit Author, analyze my changes and generate commit commands.
+    ```
+
 ---
 
 ## 🧬 The Instincts: Rules & Foundations (Automatic)
 These run silently in the background. **Do not trigger them manually.**
 
-| Instinct | Type | Background Action |
-| :--- | :--- | :--- |
-| `metadata-awareness` | Rule | Automatically updates `PROJECT_METADATA.md` when features or versions change. |
-| `self-improvement` | Rule | **Self-Upgrading Instinct**: If an agent builds something advanced (like a premium README), it automatically updates its own `SKILL.md` to encode that standard permanently. |
-| `dump-awareness` | Rule | Moves old, iterative reference folders into a read-only `dump/` directory to keep the root clean. |
-| `context-memory` | Rule | Ensures the AI writes to `session-context.md` to maintain long-term memory. |
-| `semantic-versioning`| Rule | Manages version bumps (v1.0.0) based on code impact. |
-| `silent-ingest` | Rule | Suppresses unnecessary conversational chatter during data ingestion. |
-| `architectural-design`| Foundation | Enforces modular, scalable code structure across all agents. |
-| `research-loop` | Foundation | Forces agents to check for contradictions before outputting code. |
-| `refactor` | Foundation | Cleans and optimizes code automatically during generation. |
+| # | Instinct | Type | Background Action |
+| :--- | :--- | :--- | :--- |
+| 00 | `workflow-orchestration` | Rule | Enforces numeric prefix ordering on all workflows, agents, and skills. |
+| 01 | `context-memory` | Rule | Ensures the AI writes to `session-context.md` to maintain long-term memory. |
+| 02 | `metadata-awareness` | Rule | Automatically updates `PROJECT_METADATA.md` when features or versions change. |
+| 03 | `asset-awareness` | Rule | Detects `src/` vs root and places assets in the correct directory. |
+| 04 | `dump-awareness` | Rule | Moves old reference folders into a read-only `dump/` directory. `.agent/` is protected. |
+| 05 | `semantic-versioning`| Rule | Manages version bumps (vX.Y.Z) based on code impact. |
+| 06 | `silent-ingest` | Rule | Suppresses unnecessary conversational chatter during data ingestion. |
+| 07 | `core` | Rule | Master execution logic, `.agent/` isolation, and session memory. |
+| 08 | `self-improvement` | Rule | Self-Upgrading: agents encode new standards permanently after producing advanced work. |
+| 09 | `release-packaging` | Rule | Generates a distributable ZIP archive after every version bump. |
+| 10 | `git-awareness` | Rule | Enforces Conventional Commits and the Atomic Commit mandate. |
+| 01 | `research-loop` | Foundation | Forces agents to check for contradictions before outputting code. |
+| 02 | `architectural-design`| Foundation | Enforces Hexagonal Architecture (Ports & Adapters) and SOLID principles. |
+| 03 | `code-synthesis` | Foundation | Weighted Perspective Analysis for merging multi-AI plans. |
+| 04 | `refactor` | Foundation | Cleans and optimizes code automatically during generation. |
+| 05 | `commit-semantics` | Foundation | Diff chunking algorithm for splitting changes into atomic commits. |
 
 ---
 
@@ -218,6 +246,10 @@ Workflows are multi-step recipes that combine specific Agents and Instincts for 
 ### 📝 `write-report` (Academic Drafting)
 *   **Best Used For**: Generating high-quality, properly formatted academic or technical reports (like LaTeX dissertations).
 *   **Composition**: `/planner` + `/scientific-writing` + `/latex-bib-manager`.
+
+### 📝 `auto-commit` (Version Control Automation)
+*   **Best Used For**: Generating clean, atomic git commit commands after any work session with multiple file changes.
+*   **Composition**: `/commit-author` + `commit-semantics` (Foundation) + `git-awareness` (Rule).
 
 ---
 
