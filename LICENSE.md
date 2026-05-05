@@ -18,7 +18,11 @@ Corporate entities, freelancers, or organizations utilizing this framework to ge
 - Commercial Single-Developer: $50 / seat
 - Enterprise / Team: $500 / year
 
-*To purchase a commercial license, contact the author.*
+*To purchase a commercial license and download the core system, visit:*
+**[https://antigravity.lemonsqueezy.com/checkout/buy/35a2a620-3f40-4aea-9e0d-1d58819ae5f1]**
+
+*For student verification or support, contact:*
+**[fartincat@proton.me]**
 
 ## 4. Limitation of Liability
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
