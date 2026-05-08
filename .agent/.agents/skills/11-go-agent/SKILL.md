@@ -70,3 +70,5 @@ Appending to a slice that shares underlying array with another slice — may sil
 8. **Security**: no G101-G601 gosec violations, secrets from env, parameterized queries.
 9. **Design Patterns**: functional options, dependency injection, interface segregation.
 10. **Performance**: pprof profiling, `sync.Pool` for GC pressure, defer cost awareness.
+\n## Advanced Operations Matrix\n\n- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.\n- **Simulation & Modeling**: For scientific simulations, employ 
+umpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.\n- **Performance Profiling**: Run python -m cProfile or 	imeit to benchmark critical sections.\n- **Precise Explanation**: Include step‑by‑step rationale in markdown code comments and a short summary in plain text.\n- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re‑raise if unrecoverable.\n
