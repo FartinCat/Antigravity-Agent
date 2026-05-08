@@ -1,21 +1,29 @@
-﻿<div align="center">
+<div align="center">
+
 
 ![Antigravity Agent Banner](assets/banner.png)
 
+
 # 🌌 Antigravity Agent Ecosystem (v4.1.1)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
+
 
 [![Version](https://img.shields.io/badge/version-4.1.1-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
+
 ---
+
 
 > "The best way to predict the future is to invent it." — **Alan Kay**
 
+
 </div>
 
+
 ## 📖 Table of Contents
+
 - [Introduction & Philosophy](#-introduction--philosophy)
 - [Architecture: The 5-Phase Lifecycle](#-architecture-the-5-phase-lifecycle)
 - [Deployment Guide (Installation)](#-deployment-guide-installation)
@@ -24,19 +32,28 @@
 - [Foundational Skills](#-foundational-skills)
 - [Advanced Operations Matrix](#-advanced-operations-matrix)
 
+
 ---
 
+
 ## 🧠 Introduction & Philosophy
+
 Antigravity is not just a collection of prompts; it is a **portable, self-contained Agentic Operating System (AOS)**. It is designed to be injected into any codebase to provide immediate high-level oversight, architectural governance, and automated execution.
 
+
 ### The Dual-Skill Model
+
 - **Waiters (Agents)**: Explicitly triggered specialist personas (`.agent/.agents/skills/`) that handle user interaction and task execution.
 - **Recipe Book (Skills/Rules)**: Implicit foundational instructions (`.agent/skills/` and `.agent/rules/`) that ensure the AI maintains high standards of integrity, safety, and performance.
 
+
 ---
 
+
 ## 🏗️ Architecture: The 5-Phase Lifecycle
+
 Every project lifecycle in Antigravity follows a strict, non-linear progression managed by specialized workflows.
+
 
 ```mermaid
 graph TD
@@ -73,13 +90,19 @@ graph TD
     style F1 fill:#2196f3,color:#fff
 ```
 
+
 ---
 
+
 ## 📥 Deployment Guide (Installation)
+
 Antigravity is designed to be **injected** into any directory. To install, you only need to copy the `.agent/` and `.claude/` folders to your project root.
 
+
 ### 🐧 Linux / 🍎 macOS / 💻 WSL
+
 Use `rsync` to preserve file permissions and structure:
+
 ```bash
 # Navigate to your target project
 cd /path/to/your-project
@@ -89,8 +112,11 @@ rsync -av --exclude='.git' "/path/to/Antigravity-Agent/.agent/" "./.agent/"
 rsync -av --exclude='.git' "/path/to/Antigravity-Agent/.claude/" "./.claude/"
 ```
 
+
 ### 🪟 Windows (PowerShell)
+
 Use `Copy-Item` with recurse:
+
 ```powershell
 # Copy the .agent folder
 Copy-Item -Recurse -Force "C:\Antigravity-Agent\.agent" "C:\Your-Project\.agent"
@@ -99,14 +125,19 @@ Copy-Item -Recurse -Force "C:\Antigravity-Agent\.agent" "C:\Your-Project\.agent"
 Copy-Item -Recurse -Force "C:\Antigravity-Agent\.claude" "C:\Your-Project\.claude"
 ```
 
+
 ### 🚀 First-Boot Sequence
+
 Once installed, run these two commands in order via your AI IDE (Cursor/Windsurf/Claude Code):
 1. `/01-scanner` — Detects the environment and initializes project memory.
 2. `/02-onboard-project` — Performs initial analysis and sets the first milestones.
 
+
 ---
 
+
 ## 🤖 The Agent Arsenal (Specialists)
+
 Antigravity features **22 Specialist Agents**, each with a dedicated YAML persona.
 
 | ID | Agent Name | Command | Primary Function |
@@ -134,9 +165,12 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 | **21** | `security-audit` | `/security` | Zero-trust security scanning and vulnerability detection. |
 | **22** | `test-engineer` | `/test` | Automated test suite generation and coverage enforcement. |
 
+
 ---
 
+
 ## 🛤️ The Pipelines (Workflows)
+
 Workflows are multi-agent recipes for complex operations. Trigger them via `/workflow-name` or their trigger phrase.
 
 | ID | Workflow | Slash Command | Trigger Phrase | Objective |
@@ -163,9 +197,12 @@ Workflows are multi-agent recipes for complex operations. Trigger them via `/wor
 | **19** | `Review` | `/19-weekly-review` | "Weekly review" | Strategic audit of project progress/health. |
 | **20** | `Research` | `/20-parallel-research` | "Parallel research" | Simultaneous research on multiple technical paths. |
 
+
 ---
 
+
 ## 🛠️ Foundational Skills
+
 Implicit reasoning modules that govern every agent's internal logic.
 
 - **`03-task-decomposition`**: Breaks any request into atomic, non-overlapping tasks.
@@ -174,9 +211,12 @@ Implicit reasoning modules that govern every agent's internal logic.
 - **`14-context-engineering`**: Optimizes the agent's context window for maximum focus.
 - **`15-security-engineering`**: Enforces zero-trust principles during code generation.
 
+
 ---
 
+
 ## 🧮 Advanced Operations Matrix
+
 All agents are now augmented with the **Advanced Operations Matrix (v4.1.1)**, enabling:
 
 - **Mathematical Simulations**: Complex arithmetic, statistics, and linear algebra.
@@ -184,8 +224,12 @@ All agents are now augmented with the **Advanced Operations Matrix (v4.1.1)**, e
 - **Security Audits**: Automated vulnerability scanning and dependency verification.
 - **Performance Benchmarking**: Integrated profiling and optimization cycles.
 
+
 ---
 
+
 <div align="center">
+
 Built with ❤️ by **FartinCat** — <i>"Defying the gravity of standard development."</i>
+
 </div>
