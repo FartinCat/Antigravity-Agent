@@ -1,7 +1,7 @@
 # Project Metadata
 
 **Project Name**: Antigravity Agent Ecosystem
-**Version**: 4.1.0
+**Version**: 4.1.1
 **Author**: FartinCat
 **Contact**: fartincat@proton.me
 **Created**: 2026-05-03
@@ -42,4 +42,5 @@ A high-performance, modular AI agent framework designed for autonomous coding, a
 - v1.5.1 — Added metadata-awareness rule. Fixed scanner workflow visibility.
 - v1.5.0 — Integrated "Ask" agent and "Scanner" workflow. Merged documentation.
 - v0.1.0 — Project initialized. Antigravity Agent system bootstrapped.
+
 
