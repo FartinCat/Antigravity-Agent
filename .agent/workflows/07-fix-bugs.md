@@ -1,5 +1,6 @@
----
-description: "Step 7 — Find and patch all bugs: Scanner → Build Detection → Historical Analysis → Antibug → Patch → Test → Version → Validate."
+﻿---
+title: "FIX BUGS"
+description: "Workflow 7 - FIX BUGS"
 order: 7
 ---
 
@@ -11,7 +12,7 @@ order: 7
 
 1. **Context Read**: Read `.agent/session-context.md` for any notes from previous sessions about known issues.
 
-2. **Scan**: Invoke `/scanner` to map the current project structure. The scanner EXCLUDES `.agent/` — the diagnostic focuses only on project code.
+2. **Scan**: Invoke `/scanner` to map the current project structure. The scanner EXCLUDES `.agent/` â€” the diagnostic focuses only on project code.
 
 3. **Build System Detection**: Identify the project's build tool and run the build:
 
@@ -25,18 +26,18 @@ order: 7
    | `Makefile` + `*.c` | `make` |
 
 4. **Hunt**: Pass the scanner output to `/antibug`. The antibug agent MUST:
-   - Execute Phase 0 (Historical Pattern Analysis from `dump/` — NOT from `.agent/`).
-   - Run Phases 1–4 on project source files only.
+   - Execute Phase 0 (Historical Pattern Analysis from `dump/` â€” NOT from `.agent/`).
+   - Run Phases 1â€“4 on project source files only.
    - Never flag `.agent/` files as bugs in the project.
 
 5. **Fix Loop** (One Error at a Time):
-   - **Read the file** — See error context (10 lines around the error).
-   - **Diagnose** — Identify root cause (missing import, wrong type, syntax error).
-   - **Fix minimally** — Apply the smallest change that resolves the error.
-   - **Re-run build** — Verify the error is gone and no new errors introduced.
-   - **Move to next** — Continue with remaining errors.
+   - **Read the file** â€” See error context (10 lines around the error).
+   - **Diagnose** â€” Identify root cause (missing import, wrong type, syntax error).
+   - **Fix minimally** â€” Apply the smallest change that resolves the error.
+   - **Re-run build** â€” Verify the error is gone and no new errors introduced.
+   - **Move to next** â€” Continue with remaining errors.
 
-6. **Guardrails** — Stop and ask the user if:
+6. **Guardrails** â€” Stop and ask the user if:
    - A fix introduces **more errors than it resolves**.
    - The **same error persists after 3 attempts** (likely a deeper architectural issue).
    - The fix requires **architectural changes** (not just a bug fix).
@@ -53,6 +54,6 @@ order: 7
    | Build tool misconfiguration | Read config file; compare with working defaults |
 
 8. **Verify**: Run the full test suite via `/tdd-guide` to confirm no regressions.
-9. **Version Bump**: Apply `10-semantic-versioning.md` — bump the Patch version in root `PROJECT_METADATA.md` (v0.1.X).
+9. **Version Bump**: Apply `10-semantic-versioning.md` â€” bump the Patch version in root `PROJECT_METADATA.md` (v0.1.X).
 10. **Log**: Append a session entry to `.agent/session-context.md` detailing what was fixed.
 11. **Validate**: Run `cross-agent-validator` to confirm patches are real and version was bumped.

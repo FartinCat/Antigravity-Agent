@@ -1,5 +1,6 @@
----
-description: "Step 12 — Analyze all uncommitted changes and generate atomic, Conventional Commit commands."
+﻿---
+title: "AUTO COMMIT"
+description: "Workflow 12 - AUTO COMMIT"
 order: 12
 ---
 
@@ -18,18 +19,18 @@ order: 12
 
 ## Output Format
 ```bash
-# ═══════════════════════════════════════════════════
-# AUTO-COMMIT REPORT — [Project Name]
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+# AUTO-COMMIT REPORT â€” [Project Name]
 # Generated: [Date]
-# ═══════════════════════════════════════════════════
+# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-# 1/N — [Category]
+# 1/N â€” [Category]
 git add [files]
 git commit -m "[prefix]: [message]"
 
 # [Additional Commits...]
 
-# N/N — Version bump (always last)
+# N/N â€” Version bump (always last)
 git add PROJECT_METADATA.md .agent/antigravity-agent-install-state.json
 git commit -m "chore(version): bump to v[X.Y.Z]"
 ```

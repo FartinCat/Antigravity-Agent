@@ -1,5 +1,6 @@
----
-description: "Step 9 — Write a formal academic or technical report: Outline → Draft → LaTeX Format → Finalize."
+﻿---
+title: "WRITE REPORT"
+description: "Workflow 9 - WRITE REPORT"
 order: 9
 ---
 

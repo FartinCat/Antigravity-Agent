@@ -1,5 +1,6 @@
----
-description: "Step 6 — Write test-first code using the Red-Green-Refactor cycle with 80%+ coverage enforcement."
+﻿---
+title: "TDD"
+description: "Workflow 6 - TDD"
 order: 6
 ---
 
@@ -10,13 +11,13 @@ order: 6
 ## Pre-Conditions
 Before starting any TDD cycle, confirm:
 - `/scanner` has been run and the project structure is understood.
-- `MASTER_PLAN.md` or a planner roadmap exists — TDD without a plan produces test soup.
+- `MASTER_PLAN.md` or a planner roadmap exists â€” TDD without a plan produces test soup.
 - The tech stack and test framework are confirmed (check `PROJECT_METADATA.md`).
 
 ## The TDD Cycle
 
 ```
-RED → GREEN → REFACTOR → REPEAT
+RED â†’ GREEN â†’ REFACTOR â†’ REPEAT
 
 RED:      Write a failing test
 GREEN:    Write minimal code to pass
@@ -31,7 +32,7 @@ REPEAT:   Next feature/scenario
 3. **Scaffold Interface**: Define types/interfaces first. The function signature exists but throws `Not Implemented`.
 4. **RED**: Write a failing test using `/tdd-guide`. Name it: `test_[what]_[condition]_[expected]`.
    - Run the test and **verify it FAILS** for the right reason (not a syntax error).
-5. **GREEN**: Write the minimal code to pass the test. No extras. Run the full suite — all tests must be green.
+5. **GREEN**: Write the minimal code to pass the test. No extras. Run the full suite â€” all tests must be green.
 6. **REFACTOR**: Apply `06-refactor.md` principles. Run the full suite again after each change.
 7. **Repeat**: Return to step 2 for the next unit.
 8. **Coverage Check**: Verify coverage meets the thresholds below.
@@ -65,18 +66,18 @@ REPEAT:   Next feature/scenario
 ## Guardrails
 
 **DO:**
-- ✅ Write the test FIRST, before any implementation
-- ✅ Run tests and verify they FAIL before implementing
-- ✅ Write minimal code to make tests pass
-- ✅ Refactor only after tests are green
-- ✅ Aim for 80%+ coverage (100% for critical code)
+- âœ… Write the test FIRST, before any implementation
+- âœ… Run tests and verify they FAIL before implementing
+- âœ… Write minimal code to make tests pass
+- âœ… Refactor only after tests are green
+- âœ… Aim for 80%+ coverage (100% for critical code)
 
 **DON'T:**
-- ❌ Write implementation before tests
-- ❌ Skip running tests after each change
-- ❌ Write too much code at once
-- ❌ Ignore failing tests
-- ❌ Test implementation details (test behavior)
+- âŒ Write implementation before tests
+- âŒ Skip running tests after each change
+- âŒ Write too much code at once
+- âŒ Ignore failing tests
+- âŒ Test implementation details (test behavior)
 
 ## Tools Involved
 - `/tdd-guide` agent (Red-Green-Refactor protocol)

@@ -1,5 +1,6 @@
----
-description: "Step 4 — Merge multiple AI plans from /Plan folder into one master implementation strategy."
+﻿---
+title: "MULTI PLAN SYNTHESIS"
+description: "Workflow 4 - MULTI PLAN SYNTHESIS"
 order: 4
 ---
 
@@ -31,5 +32,5 @@ order: 4
 - `.agent/.agents/skills/04-synthesizer`
 
 ## Dependent Skills
-- `.agent/.agents/skills/01-deep-scan` (invoked via /scanner — must run before synthesis)
+- `.agent/.agents/skills/01-deep-scan` (invoked via /scanner â€” must run before synthesis)
 - `.agent/skills/05-code-synthesis.md` (conflict resolution logic)

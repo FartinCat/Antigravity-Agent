@@ -1,10 +1,9 @@
----
-# Workflow: Weekly Review
-
-title: "Weekly Review"
-description: "Step 19 — End-of-week reflection and next-week planning."
+﻿---
+title: "WEEKLY REVIEW"
+description: "Workflow 19 - WEEKLY REVIEW"
 order: 19
 ---
+
 # Workflow: Weekly Review
 
 Trigger: /weekly-review, or "do my weekly review"
@@ -18,4 +17,3 @@ Steps:
 6. Reset session-context.md with next week's focus areas
 
 Output: WEEKLY_REVIEW_{date}.md in project root
-

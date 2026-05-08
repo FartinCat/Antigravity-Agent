@@ -1,5 +1,6 @@
----
-description: "Step 5A — Build a complete web application: Scaffold → Plan → Style → TDD → Bug Check → Version → Validate."
+﻿---
+title: "05A BUILD WEBSITE"
+description: "Workflow 5 - 05A BUILD WEBSITE"
 order: 5
 ---
 
@@ -14,6 +15,6 @@ order: 5
 3. **Style**: Invoke `/web-aesthetics` to ensure the UI is premium, uses modern typography, and avoids generic placeholders.
 4. **Test-Drive**: Execute `/tdd-guide` to build all logic using the Red-Green-Refactor cycle. No production code without a passing test.
 5. **Bug Check**: Run `/antibug` including Phase 0 historical pattern analysis before finalizing.
-6. **Version Bump**: Apply `semantic-versioning` — bump the Minor version in root `PROJECT_METADATA.md` (v0.X.0).
+6. **Version Bump**: Apply `semantic-versioning` â€” bump the Minor version in root `PROJECT_METADATA.md` (v0.X.0).
 7. **Log**: Append a session entry to `.agent/session-context.md` with what was built and the new version.
 8. **Validate**: Run `cross-agent-validator` to confirm all agents completed their full responsibilities.

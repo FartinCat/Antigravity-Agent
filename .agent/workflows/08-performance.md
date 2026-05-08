@@ -1,5 +1,6 @@
----
-description: "Step 8 — Measure → optimize → verify performance: Baseline profiling, language-specific tuning, and 15% improvement threshold."
+﻿---
+title: "PERFORMANCE"
+description: "Workflow 8 - PERFORMANCE"
 order: 8
 ---
 
@@ -18,7 +19,7 @@ Systematic performance optimization that measures before and after, and rejects 
 - Record baseline measurements (minimum 3 runs, take median)
 
 ## Step 2: Identify Bottleneck
-- **Algorithmic**: Check time complexity. O(n²) in a hot path? Replace with O(n log n) or O(n).
+- **Algorithmic**: Check time complexity. O(nÂ²) in a hot path? Replace with O(n log n) or O(n).
 - **I/O Bound**: Unnecessary file reads, unoptimized queries, missing connection pooling
 - **Memory**: Excessive allocations, missing object pooling, unbounded caches
 - **Rendering**: Layout thrashing, unnecessary repaints, large DOM trees
@@ -52,9 +53,9 @@ Systematic performance optimization that measures before and after, and rejects 
 
 ## Step 4: Verify Improvement
 - Re-run baseline measurement
-- **Threshold**: Change must show ≥15% improvement on the target metric
+- **Threshold**: Change must show â‰¥15% improvement on the target metric
 - If improvement < 15%: **discard the change** (complexity cost exceeds benefit)
-- If improvement ≥ 15%: commit with performance data in commit message
+- If improvement â‰¥ 15%: commit with performance data in commit message
 
 ## Step 5: Regression Guard
 - Add a benchmark test that codifies the new performance expectation

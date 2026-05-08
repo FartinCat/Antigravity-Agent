@@ -1,5 +1,6 @@
----
-description: "Step 2 — Automated first-contact analysis for new repositories: Language detection, architecture mapping, and health scoring."
+﻿---
+title: "ONBOARD PROJECT"
+description: "Workflow 2 - ONBOARD PROJECT"
 order: 2
 ---
 

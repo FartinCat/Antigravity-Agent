@@ -1,7 +1,9 @@
----
-description: "Step 13 — spec discovery."
+﻿---
+title: "SPEC DISCOVERY"
+description: "Workflow 13 - SPEC DISCOVERY"
 order: 13
 ---
+
 Invoke the agent-skills:spec-driven-development skill.
 
 Begin by understanding what the user wants to build. Ask clarifying questions about:
@@ -13,4 +15,3 @@ Begin by understanding what the user wants to build. Ask clarifying questions ab
 Then generate a structured spec covering all six core areas: objective, commands, project structure, code style, testing strategy, and boundaries.
 
 Save the spec as SPEC.md in the project root and confirm with the user before proceeding.
-

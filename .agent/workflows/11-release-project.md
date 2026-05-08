@@ -1,5 +1,6 @@
----
-description: "Step 11 — Finalize the project: Clean dump → Market Evaluation → License → README → Packaging → Release."
+﻿---
+title: "RELEASE PROJECT"
+description: "Workflow 11 - RELEASE PROJECT"
 order: 11
 ---
 
