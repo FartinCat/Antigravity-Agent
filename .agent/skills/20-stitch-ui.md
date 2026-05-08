@@ -82,3 +82,11 @@ After any tool call, always surface the `outputComponents` (Text Description and
 - **Iterative Polish**: Prefere `edit_screens` for targeted adjustments over full re-generation.
 - **Semantic First**: Name colors by their role (e.g., "Primary Action") as well as their appearance.
 - **Atmosphere Matters**: Explicitly set the "vibe" (Minimalist, Vibrant, Brutalist) to guide the generator.
+
+## Advanced Operations Matrix
+
+- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
+- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
+- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
+- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
+- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.
