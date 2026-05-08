@@ -1,7 +1,14 @@
 interface:
-  display_name: "Antibug Diagnostics"
-  short_description: "Advanced logic flaw and memory leak detection"
+  display_name: "Antibug"
+  short_description: "Pre-execution failure prediction and mitigation"
   brand_color: "#EF4444"
-  default_prompt: "Scan the directory for hidden bugs and logic flaws."
+  default_prompt: "Predict potential failures before code execution."
 policy:
   allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]

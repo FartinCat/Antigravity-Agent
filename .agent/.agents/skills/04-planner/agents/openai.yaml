@@ -5,3 +5,10 @@ interface:
   default_prompt: "Create a phased implementation plan for this feature."
 policy:
   allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]
