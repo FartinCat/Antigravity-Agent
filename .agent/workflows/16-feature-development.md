@@ -1,7 +1,12 @@
 ---
+# Workflow: Feature Development
+
+title: "Feature Development"
 description: "Step 16 — feature development."
 order: 16
 ---
+# Workflow: Feature Development
+
 Invoke the agent-skills:incremental-implementation skill alongside agent-skills:test-driven-development.
 
 Pick the next pending task from the plan. For each task:
@@ -16,4 +21,5 @@ Pick the next pending task from the plan. For each task:
 8. Mark the task complete and move to the next one
 
 If any step fails, follow the agent-skills:debugging-and-error-recovery skill.
+
 

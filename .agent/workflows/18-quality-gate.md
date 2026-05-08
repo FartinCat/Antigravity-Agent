@@ -1,7 +1,12 @@
 ---
+# Workflow: Quality Gate
+
+title: "Quality Gate"
 description: "Step 18 � quality gate."
 order: 18
 ---
+# Workflow: Quality Gate
+
 Compare the current implementation with the design in `docs/ai/design/` and requirements in `docs/ai/requirements/`.
 
 1. If not already provided, ask for: feature/branch description, list of modified files, relevant design doc(s), and any known constraints or assumptions.
@@ -11,4 +16,5 @@ Compare the current implementation with the design in `docs/ai/design/` and requ
 5. **Store Reusable Knowledge** — Save recurring alignment lessons/patterns with `npx ai-devkit@latest memory store ...`.
 6. Summarize findings with recommended next steps.
 7. **Next Command Guidance** — If major design issues are found, go back to `/review-design` or `/execute-plan`; if aligned, continue to `/writing-test`.
+
 

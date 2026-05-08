@@ -1,7 +1,12 @@
 ---
+# Workflow: New Requirement
+
+title: "New Requirement"
 description: "Step 14 � new requirement."
 order: 14
 ---
+# Workflow: New Requirement
+
 Guide me through adding a new feature, from requirements documentation to implementation readiness.
 
 1. **Capture Requirement** — If not already provided, ask for: feature name (kebab-case, e.g., `user-authentication`), what problem it solves and who will use it, and key user stories.
@@ -17,4 +22,5 @@ Guide me through adding a new feature, from requirements documentation to implem
 6. **Planning Phase** — Fill out `docs/ai/planning/feature-{name}.md`: task breakdown with subtasks, dependencies, effort estimates, implementation order, risks.
 7. **Store Reusable Knowledge** — When important conventions or decisions are finalized, store them via `npx ai-devkit@latest memory store --title "<title>" --content "<knowledge>" --tags "<tags>"`.
 8. **Next Command Guidance** — Run `/review-requirements` first, then `/review-design`. If both pass, continue with `/execute-plan`.
+
 

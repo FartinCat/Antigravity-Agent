@@ -1,7 +1,12 @@
 ---
+# Workflow: Debug Session
+
+title: "Debug Session"
 description: "Step 17 � debug session."
 order: 17
 ---
+# Workflow: Debug Session
+
 Help me debug an issue. Clarify expectations, identify gaps, and agree on a fix plan before changing code.
 
 1. **Gather Context** — If not already provided, ask for: issue description (what is happening vs what should happen), error messages/logs/screenshots, recent related changes or deployments, and scope of impact.
@@ -12,4 +17,5 @@ Help me debug an issue. Clarify expectations, identify gaps, and agree on a fix 
 6. **Resolve** — Present resolution options (quick fix, refactor, rollback, etc.) with pros/cons and risks. Ask which option to pursue. Summarize chosen approach, pre-work, success criteria, and validation steps.
 7. **Store Reusable Knowledge** — Save root-cause and fix patterns via `npx ai-devkit@latest memory store ...`.
 8. **Next Command Guidance** — After selecting a fix path, continue with `/execute-plan`; when implemented, use `/check-implementation` and `/writing-test`.
+
 

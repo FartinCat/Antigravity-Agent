@@ -1,5 +1,5 @@
 ---
-description: "Step 13 — spec discovery."
+description: "Step 13 â€” spec discovery."
 order: 13
 ---
 Invoke the agent-skills:spec-driven-development skill.

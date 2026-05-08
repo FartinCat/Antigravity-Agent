@@ -1,7 +1,12 @@
 ---
+# Workflow: Parallel Research
+
+title: "Parallel Research"
 description: "Step 20 — Multi-angle research on any topic with synthesis."
 order: 20
 ---
+# Workflow: Parallel Research
+
 Trigger: /research [topic], or "research X for me"
 
 Steps:
@@ -13,3 +18,4 @@ Steps:
 6. Store findings in memory if they'll be reused
 
 Output: RESEARCH_{topic}_{date}.md with citations
+
