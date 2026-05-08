@@ -1,0 +1,14 @@
+﻿interface:
+  display_name: "Failure Predictor"
+  short_description: "Predicts potential failures in the current context"
+  brand_color: "#10B981"
+  default_prompt: "Predict potential failures."
+policy:
+  allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]
