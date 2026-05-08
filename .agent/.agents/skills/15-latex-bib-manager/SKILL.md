@@ -34,3 +34,5 @@ Maintain strict, error-free formatting for academic LaTeX documents, ensuring th
 - Do not use alphabetical citation sorting (`plain.bst`) if sequential is requested.
 - Do not use `\begin{center}` inside a `figure` environment; use `\centering`.
 - Do not let floats cross chapter boundaries.
+\n## Advanced Operations Matrix\n\n- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.\n- **Simulation & Modeling**: For scientific simulations, employ 
+umpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.\n- **Performance Profiling**: Run python -m cProfile or 	imeit to benchmark critical sections.\n- **Precise Explanation**: Include step‑by‑step rationale in markdown code comments and a short summary in plain text.\n- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re‑raise if unrecoverable.\n
