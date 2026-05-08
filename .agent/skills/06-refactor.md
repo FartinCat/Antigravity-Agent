@@ -39,3 +39,11 @@ Refactoring is **not rewriting**. It is the disciplined improvement of existing,
 - Renaming things "to be cleaner" while tests are failing. Refactor only on green.
 - Adding new functionality during a refactor step. That is a new Red phase.
 - Removing tests because the code "obviously works." Tests are documentation — never delete them.
+
+## Advanced Operations Matrix
+
+- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
+- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
+- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
+- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
+- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.
