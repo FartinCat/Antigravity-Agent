@@ -1,0 +1,14 @@
+﻿interface:
+  display_name: "Security Auditor"
+  short_description: "Audits code for OWASP Top 10 vulnerabilities"
+  brand_color: "#10B981"
+  default_prompt: "Audit code for security vulnerabilities."
+policy:
+  allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]
