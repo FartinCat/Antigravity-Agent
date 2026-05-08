@@ -5,3 +5,10 @@ interface:
   default_prompt: "Evaluate this project's market value and suggest licensing fees."
 policy:
   allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]
