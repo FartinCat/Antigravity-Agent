@@ -1,0 +1,14 @@
+﻿interface:
+  display_name: "Test Engineer"
+  short_description: "Generates boundary tests and ensures coverage"
+  brand_color: "#10B981"
+  default_prompt: "Write tests and verify coverage."
+policy:
+  allow_implicit_invocation: true
+
+
+operations:
+  arithmetic: ["add", "subtract", "multiply", "divide"]
+  statistics: ["mean", "median", "stddev", "min", "max"]
+  data_processing: ["filter", "map", "reduce", "sort", "find"]
+  calculations: ["power", "sqrt", "log", "exp"]
