@@ -6,18 +6,20 @@ This guide solves the migration problem: copying only the `.agent/` system (not 
 
 ## What to Copy
 
-You only ever need to copy the **`.agent/` folder** into your new project. Everything else in the Antigravity Agent repo (README.md, LICENSE.md, PROJECT_METADATA.md, HOW-TO-USE.md, dump/, Plan/) belongs to this source project and should NOT be copied to other projects.
+You need to copy the **`.agent/`**, **`.claude/`** folders, and **`.mcp.json`** file into your new project. Everything else in the Antigravity Agent repo (README.md, LICENSE.md, PROJECT_METADATA.md, HOW-TO-USE.md) belongs to this source project and should NOT be copied to other projects.
 
 ```
 Antigravity Agent/           ← Source repository (do not copy all of this)
 ├── .agent/                  ← ✅ Copy ONLY this folder
+│   ├── instincts/
+│   ├── mcps/
 │   ├── rules/
 │   ├── skills/
-│   ├── workflows/
-│   ├── .agents/
-│   ├── AGENTS.md
-│   ├── session-context.md
-│   └── antigravity-agent-install-state.json
+│   └── workflows/
+├── .claude/                 ← ✅ Copy ONLY this folder
+│   ├── agents/
+│   └── commands/
+├── .mcp.json                ← ✅ Copy this file
 ├── README.md                ← ❌ Do not copy (belongs to this repo)
 ├── LICENSE.md               ← ❌ Do not copy (belongs to this repo)
 ├── HOW-TO-USE.md            ← ❌ Do not copy (belongs to this repo)
@@ -31,8 +33,10 @@ Antigravity Agent/           ← Source repository (do not copy all of this)
 ### The Correct Command
 ```bash
 rsync -av --exclude='.git' \
-  "/mnt/d/Git_Work/Antigravity Agent/.agent/" \
-  "/mnt/d/Git_Work/Project/YOUR_PROJECT_NAME/.agent/"
+  "/mnt/d/Git_Work/Antigravity Agent/.agent/" "/mnt/d/Git_Work/Project/YOUR_PROJECT_NAME/.agent/" && \
+rsync -av \
+  "/mnt/d/Git_Work/Antigravity Agent/.claude/" "/mnt/d/Git_Work/Project/YOUR_PROJECT_NAME/.claude/" && \
+cp "/mnt/d/Git_Work/Antigravity Agent/.mcp.json" "/mnt/d/Git_Work/Project/YOUR_PROJECT_NAME/"
 ```
 
 **The trailing slash on the source path is intentional.** It means "copy the contents of `.agent/` into the destination `.agent/` folder" — not the folder itself.
@@ -72,9 +76,9 @@ This copies the entire `.agent/` folder as a sub-directory. It is safe and produ
 ## Method 3 — PowerShell (Windows, no WSL)
 ```powershell
 # From PowerShell in any directory:
-Copy-Item -Recurse -Force `
-  "D:\Git_Work\Antigravity Agent\.agent" `
-  "D:\Git_Work\Project\YOUR_PROJECT_NAME\.agent"
+Copy-Item -Recurse -Force "D:\Git_Work\Antigravity Agent\.agent" "D:\Git_Work\Project\YOUR_PROJECT_NAME\"
+Copy-Item -Recurse -Force "D:\Git_Work\Antigravity Agent\.claude" "D:\Git_Work\Project\YOUR_PROJECT_NAME\"
+Copy-Item -Force "D:\Git_Work\Antigravity Agent\.mcp.json" "D:\Git_Work\Project\YOUR_PROJECT_NAME\"
 ```
 
 ---

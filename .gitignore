@@ -1,5 +1,34 @@
-dump/
-MARKET_EVALUATION.md
-PROJECT_METADATA.md
+# Antigravity Agent v4.0.0 — .gitignore
+
+# Session memory (contains local state)
 .agent/session-context.md
 
+# Memory persistence (contains cross-session KV store)
+.agent/memory.json
+
+# Reference repositories (cloned for synthesis, not distributed)
+references/
+
+# Historical dump folder
+dump/
+
+# Generated metadata (project-specific)
+PROJECT_METADATA.md
+MARKET_EVALUATION.md
+
+# Node modules (MCP servers)
+node_modules/
+
+# Environment files
+.env
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~

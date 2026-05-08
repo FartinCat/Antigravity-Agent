@@ -1,0 +1,810 @@
+=== REPO: agent-skills-addyosmani ===
+# Agent Skills
+
+**Production-grade engineering skills for AI coding agents.**
+
+Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
+
+```
+  DEFINE          PLAN           BUILD          VERIFY         REVIEW          SHIP
+ ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
+ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │  QA  │ ───▶ │  Go  │
+ │Refine│      │  PRD │      │ Impl │      │Debug │      │ Gate │      │ Live │
+ └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
+  /spec          /plan          /build        /test         /review       /ship
+```
+
+---
+
+## Commands
+
+7 slash commands that map to the development lifecycle. Each one activates the right skills automatically.
+
+| What you're doing | Command | Key principle |
+|-------------------|---------|---------------|
+| Define what to build | `/spec` | Spec before code |
+| Plan how to build it | `/plan` | Small, atomic tasks |
+| Build incrementally | `/build` | One slice at a time |
+| Prove it works | `/test` | Tests are proof |
+| Review before merge | `/review` | Improve code health |
+| Simplify the code | `/code-simplify` | Clarity over cleverness |
+| Ship to production | `/ship` | Faster is safer |
+
+Skills also activate automatically based on what you're doing — designing an API triggers `api-and-interface-design`, building UI triggers `frontend-ui-engineering`, and so on.
+
+---
+
+## Quick Start
+
+<details>
+<summary><b>Claude Code (recommended)</b></summary>
+
+**Marketplace install:**
+
+```
+/plugin marketplace add addyosmani/agent-skills
+/plugin install agent-skills@addy-agent-skills
+```
+
+> **SSH errors?** The marketplace clones repos via SSH. If you don't have SSH keys set up on GitHub, either [add your SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) or use the full HTTPS URL to force the HTTPS cloning:
+> ```bash
+> /plugin marketplace add https://github.com/addyosmani/agent-skills.git
+
+
+
+=== REPO: agent-skills-techleads ===
+<p align="center">
+  <img src=".github/assets/logo.png" alt="Tech Leads Club" width="400" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/npm/v/@tech-leads-club/agent-skills?style=flat-square&color=blue" alt="npm version" />
+  <img src="https://img.shields.io/npm/dt/@tech-leads-club/agent-skills?style=flat-square&color=blue" alt="total downloads" />
+  <img src="https://img.shields.io/npm/dm/@tech-leads-club/agent-skills?style=flat-square&color=blue" alt="monthly downloads" />
+  <img src="https://img.shields.io/github/license/tech-leads-club/agent-skills?style=flat-square" alt="license" />
+  <img src="https://img.shields.io/github/actions/workflow/status/tech-leads-club/agent-skills/release.yml?style=flat-square" alt="build status" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/node-%3E%3D22-brightgreen?style=flat-square&logo=node.js" alt="node version" />
+  <img src="https://img.shields.io/badge/TypeScript-100%25-blue?style=flat-square&logo=typescript" alt="typescript" />
+  <img src="https://img.shields.io/badge/Nx%20Cloud-Enabled-blue?style=flat-square&logo=nx" alt="nx cloud" />
+  <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square" alt="semantic-release" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/tech-leads-club/agent-skills?style=flat-square&color=yellow" alt="github stars" />
+  <img src="https://img.shields.io/github/contributors/tech-leads-club/agent-skills?style=flat-square&color=orange" alt="contributors" />
+  <img src="https://img.shields.io/github/last-commit/tech-leads-club/agent-skills?style=flat-square" alt="last commit" />
+  <img src="https://img.shields.io/badge/AI-Powered%20Skills-purple?style=flat-square&logo=openai" alt="ai powered" />
+</p>
+
+<h1 align="center">🧠 Agent Skills</h1>
+
+<p align="center">
+  <strong>The secure, validated skill registry for professional AI coding agents</strong>
+</p>
+
+<p align="center">
+  In an ecosystem where <a href="https://github.com/snyk/agent-scan/blob/main/.github/reports/skills-report.pdf">over 13% of marketplace skills contain critical vulnerabilities</a>,
+  <b>Agent Skills</b> stands apart as a hardened library of <b>verified</b>, <b>tested</b>, and <b>safe</b> capabilities.
+  Extend <b>Antigravity</b>, <b>Claude Code</b>, <b>Cursor</b>, and more with absolute confidence.
+</p>
+
+<p align="center">
+  <a href="https://tech-leads-club.github.io/agent-skills/" target="_blank">https://tech-leads-club.github.io/agent-skills/</a>
+</p>
+
+## 📖 Table of Contents
+
+- [✨ What are Skills?](#-what-are-skills)
+- [🛡️ Security & Trust](#️-security--trust)
+- [🤖 Supported Agents](#-supported-agents)
+- [🌟 Featured Skills](#-featured-skills)
+- [🚀 Quick Start](#-quick-start)
+- [⚡ How It Works](#-how-it-works)
+
+
+
+=== REPO: ai-devkit ===
+# AI DevKit
+
+**The toolkit for AI-assisted software development.**
+
+AI DevKit helps AI coding agents work more effectively with your codebase. It provides structured workflows, persistent memory, and reusable skills — so agents follow the same engineering standards as senior developers.
+
+[![npm version](https://img.shields.io/npm/v/ai-devkit.svg)](https://www.npmjs.com/package/ai-devkit)
+[![npm downloads](https://img.shields.io/npm/dt/ai-devkit.svg)](https://www.npmjs.com/package/ai-devkit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Quick Start
+
+```bash
+npx ai-devkit@latest init
+```
+
+This launches an interactive setup wizard that configures your project for AI-assisted development in under a minute.
+
+## Supported Agents
+
+| Agent | Agent Setup Support | Agent Control Support |
+|-------|---------------------|-----------------------|
+| [Claude Code](https://www.anthropic.com/claude-code) | ✅ Supported | ✅ Ready |
+| [GitHub Copilot](https://code.visualstudio.com/) | ✅ Supported | ❌ Not Ready |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | ✅ Supported | ✅ Ready |
+| [Cursor](https://cursor.sh/) | ✅ Supported | ❌ Not Ready |
+| [opencode](https://opencode.ai/) | ✅ Supported | ❌ Not Ready |
+| [Antigravity](https://antigravity.google/) | ✅ Supported | ❌ Not Ready |
+| [Codex CLI](https://github.com/openai/codex) | ✅ Supported | ✅ Ready |
+| [Windsurf](https://windsurf.com/) | 🚧 Testing | ❌ Not Ready |
+| [Kilo Code](https://github.com/Kilo-Org/kilocode) | 🚧 Testing | ❌ Not Ready |
+| [Roo Code](https://roocode.com/) | 🚧 Testing | ❌ Not Ready |
+| [Amp](https://ampcode.com/) | ✅ Supported | ❌ Not Ready |
+
+## Documentation
+
+📖 **Visit [ai-devkit.com](https://ai-devkit.com/docs/) for the full documentation**, including:
+
+- Getting started guide
+- Phase-based development workflow
+- Memory system setup
+- Skill management
+- Agent configuration
+
+## Contributing
+
+We welcome contributions! See the [Contributing Guide](./CONTRIBUTING.md) for details.
+
+```bash
+git clone https://github.com/Codeaholicguy/ai-devkit.git
+
+
+
+=== REPO: antigravity-awesome-skills ===
+<!-- registry-sync: version=11.0.0; skills=1450; stars=36771; updated_at=2026-05-08T07:33:35+00:00 -->
+# 🌌 Antigravity Awesome Skills: 1,450+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+
+> **Installable GitHub library of 1,450+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants.**
+
+Antigravity Awesome Skills is an installable GitHub library and npm installer for reusable `SKILL.md` playbooks. It is designed for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, GitHub Copilot, and other AI coding assistants that benefit from structured operating instructions. Instead of collecting one-off prompt snippets, this repository gives you a searchable, installable catalog of skills, bundles, workflows, plugin-safe distributions, and practical docs that help agents perform recurring tasks with better context, stronger constraints, and clearer outputs.
+
+You can use this repo to install a broad multi-tool skill library, start from role-based bundles, or jump into workflow-driven execution for planning, coding, debugging, testing, security review, infrastructure, product work, and growth tasks. The root README is intentionally a high-signal landing page: understand what the project is, install it quickly, choose the right tool path, and then follow deeper docs only when you need them.
+
+**Start here:** [Star the repo](https://github.com/sickn33/antigravity-awesome-skills/stargazers) · [Install in 1 minute](#installation) · [Choose your tool](#choose-your-tool) · [Best skills by tool](#best-skills-by-tool) · [📚 Browse 1,450+ Skills](#browse-1450-skills) · [Bundles](docs/users/bundles.md) · [Workflows](docs/users/workflows.md) · [Plugins for Claude Code and Codex](docs/users/plugins.md)
+
+[![GitHub stars](https://img.shields.io/badge/⭐%2037%2C000%2B%20Stars-gold?style=for-the-badge)](https://github.com/sickn33/antigravity-awesome-skills/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
+[![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-orange)](https://cursor.sh)
+[![Codex CLI](https://img.shields.io/badge/Codex%20CLI-OpenAI-green)](https://github.com/openai/codex)
+[![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Google-blue)](https://github.com/google-gemini/gemini-cli)
+[![Latest Release](https://img.shields.io/github/v/release/sickn33/antigravity-awesome-skills?display_name=tag&style=for-the-badge)](https://github.com/sickn33/antigravity-awesome-skills/releases/latest)
+[![Install with NPX](https://img.shields.io/badge/Install-npx%20antigravity--awesome--skills-black?style=for-the-badge&logo=npm)](#installation)
+[![Kiro](https://img.shields.io/badge/Kiro-AWS-orange?style=for-the-badge)](https://kiro.dev)
+[![Copilot](https://img.shields.io/badge/Copilot-GitHub-lightblue?style=for-the-badge)](https://github.com/features/copilot)
+[![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray?style=for-the-badge)](https://github.com/opencode-ai/opencode)
+[![Antigravity](https://img.shields.io/badge/Antigravity-AI%20IDE-red?style=for-the-badge)](https://github.com/sickn33/antigravity-awesome-skills)
+
+**Current release: V11.0.0.** Trusted by 37k+ GitHub stargazers, this repository combines official and community skill collections with bundles, workflows, installation paths, and docs that help you go from first install to daily use quickly.
+
+## Why This Repo
+
+- **Installable, not just inspirational**: use `npx antigravity-awesome-skills` to put skills where your tool expects them.
+- **Built for major agent workflows**: Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, Copilot, and more.
+- **Broad coverage with real utility**: 1,450+ skills across development, testing, security, infrastructure, product, and marketing.
+- **Faster onboarding**: bundles and workflows reduce the time from "I found this repo" to "I used my first skill".
+- **Useful whether you want breadth or curation**: browse the full catalog, start with top bundles, or compare alternatives before installing.
+
+## Table of Contents
+
+- [Why This Repo](#why-this-repo)
+- [Installation](#installation)
+- [Choose Your Tool](#choose-your-tool)
+- [Quick FAQ](#quick-faq)
+- [Best Skills By Tool](#best-skills-by-tool)
+- [Bundles & Workflows](#bundles--workflows)
+- [Browse 1,450+ Skills](#browse-1450-skills)
+- [Troubleshooting](#troubleshooting)
+- [Support the Project](#support-the-project)
+- [Contributing](#contributing)
+- [Community](#community)
+- [Credits & Sources](#credits--sources)
+- [Repo Contributors](#repo-contributors)
+- [Star History](#star-history)
+
+
+
+=== REPO: antigravity-skills ===
+# Antigravity Skill Vault
+
+A curated collection of **Agent Skills** for **Google Antigravity**, ported from the [Claude Code Agents](https://github.com/wshobson/agents) repository.
+
+This vault transforms the extensive Claude Code ecosystem into **Antigravity Skills**, providing your agent with repeatable workflows, domain expertise, and specialized tools.
+
+---
+
+## 🚀 Overview
+
+This repository contains **300+ specialized skills** across software development, operations, security, and business domains. Each skill is a directory-based package that teaches Antigravity's agent how to perform specific tasks.
+
+### What's Included?
+
+The skills are derived from three types of Claude Code components, all unified into the Antigravity Skill format:
+
+1.  **Domain Skills** (e.g., `k8s-manifest-generator`, `async-python-patterns`): Specialized knowledge packages.
+2.  **Specialist Agents** (e.g., `backend-architect`, `security-auditor`): Persona-based instruction sets for complex reasoning.
+3.  **Commands & Workflows** (e.g., `full-stack-orchestration-full-stack-feature`, `conductor-implement`): Structured, multi-step procedures.
+
+---
+
+## 📂 Categories
+
+Skills are flattened in the `skills/` directory, but cover these broad categories:
+
+### 💻 Development & Languages
+- **Python**: `python-pro`, `fastapi-pro`, `async-python-patterns`, `uv-package-manager`
+- **JavaScript/TypeScript**: `typescript-pro`, `react-modernization`, `nextjs-app-router-patterns`
+- **Systems**: `rust-pro`, `golang-pro`, `memory-safety-patterns`
+- **Mobile**: `frontend-mobile-development-component-scaffold`, `react-native-architecture`
+
+### ☁️ Infrastructure & Operations
+- **Kubernetes**: `kubernetes-architect`, `helm-chart-scaffolding`, `gitops-workflow`
+- **Cloud**: `cloud-architect`, `terraform-module-library`, `cost-optimization`
+- **CI/CD**: `cicd-automation-workflow-automate`, `github-actions-templates`, `gitlab-ci-patterns`
+
+### 🔒 Security & Quality
+- **Security**: `security-auditor`, `sast-configuration`, `security-scanning-security-hardening`
+- **Code Quality**: `code-review-ai-ai-review`, `code-refactoring-refactor-clean`, `codebase-cleanup-tech-debt`
+- **Testing**: `unit-testing-test-generate`, `tdd-workflows-tdd-cycle`, `e2e-testing-patterns`
+
+### 🔄 Workflows & Architecture
+- **Conductor**: `conductor-implement`, `context-driven-development` (Context-Driven Development)
+- **Architecture**: `c4-architecture-c4-architecture`, `microservices-patterns`, `api-design-principles`
+- **Orchestration**: `full-stack-orchestration-full-stack-feature`, `incident-response-incident-response`
+
+### 📊 Data & AI
+- **Data Engineering**: `data-engineer`, `spark-optimization`, `dbt-transformation-patterns`
+- **AI/ML**: `ml-pipeline-workflow`, `prompt-engineering-patterns`, `rag-implementation`
+
+
+
+=== REPO: antigravity-workspace-template ===
+<div align="center">
+
+<img src="docs/assets/logo.png" alt="Antigravity Workspace" width="200"/>
+
+# Antigravity — Workspace Template for Claude Code, Codex CLI & Cursor
+
+### Multi-agent knowledge engine + optional MCP server that turns any repo into a queryable AI assistant. Works with Claude Code, Codex CLI, Cursor, Windsurf, and Gemini CLI.
+
+`ag-refresh` builds a knowledge base. `ag-ask` answers questions. Any LLM, any IDE.
+
+Language: **English** | [中文](README_CN.md) | [Español](README_ES.md)
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![CI](https://img.shields.io/github/actions/workflow/status/study8677/antigravity-workspace-template/test.yml?style=for-the-badge&label=CI)](https://github.com/study8677/antigravity-workspace-template/actions)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Docs-blue?style=for-the-badge&logo=gitbook&logoColor=white)](https://deepwiki.com/study8677/antigravity-workspace-template)
+[![NLPM](https://img.shields.io/badge/NLPM-audited-7C3AED?style=for-the-badge)](https://github.com/xiaolai/nlpm-for-claude)
+
+<br/>
+
+<img src="https://img.shields.io/badge/Cursor-✓-000000?style=flat-square" alt="Cursor"/>
+<img src="https://img.shields.io/badge/Claude_Code-✓-D97757?style=flat-square" alt="Claude Code"/>
+<img src="https://img.shields.io/badge/Windsurf-✓-06B6D4?style=flat-square" alt="Windsurf"/>
+<img src="https://img.shields.io/badge/Gemini_CLI-✓-4285F4?style=flat-square" alt="Gemini CLI"/>
+<img src="https://img.shields.io/badge/VS_Code_+_Copilot-✓-007ACC?style=flat-square" alt="VS Code"/>
+<img src="https://img.shields.io/badge/Codex-✓-412991?style=flat-square" alt="Codex"/>
+<img src="https://img.shields.io/badge/Cline-✓-FF6B6B?style=flat-square" alt="Cline"/>
+<img src="https://img.shields.io/badge/Aider-✓-8B5CF6?style=flat-square" alt="Aider"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+<img src="docs/assets/before_after.png" alt="Before vs After Antigravity" width="800"/>
+</div>
+
+<br/>
+
+## Why Antigravity?
+
+> An AI Agent's capability ceiling = **the quality of context it can read.**
+
+The engine is the core: `ag-refresh` deploys a multi-agent cluster that autonomously reads your code — each module gets its own Agent that generates a knowledge doc. `ag-ask` routes questions to the right Agent, grounded in real code with file paths and line numbers.
+
+**Instead of handing Claude Code / Codex a repo-wide `grep` and making it hunt on its own, give it a ChatGPT for your repository.**
+
+**Tested on [OpenClaw](https://github.com/openclaw/openclaw) (12K files, 348K stars) with MiniMax2.7 — module Q&A scored 10/10, 111 modules self-learned in 43 minutes.** [See full eval below.](#real-world-eval-minimax27-on-openclaw-12k-files-348k-stars)
+
+```
+
+
+
+=== REPO: autogen ===
+<a name="readme-top"></a>
+
+<div align="center">
+<img src="https://microsoft.github.io/autogen/0.2/img/ag.svg" alt="AutoGen Logo" width="100">
+
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40pyautogen)](https://twitter.com/pyautogen)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Company?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/105812540)
+[![Discord](https://img.shields.io/badge/discord-chat-green?logo=discord)](https://aka.ms/autogen-discord)
+[![Documentation](https://img.shields.io/badge/Documentation-AutoGen-blue?logo=read-the-docs)](https://microsoft.github.io/autogen/)
+[![Blog](https://img.shields.io/badge/Blog-AutoGen-blue?logo=blogger)](https://devblogs.microsoft.com/autogen/)
+
+</div>
+
+# AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)
+
+**AutoGen** is a framework for creating multi-agent AI applications that can act autonomously or work alongside humans.
+
+> [!CAUTION]
+> **⚠️ Maintenance Mode**
+>
+> AutoGen is now in maintenance mode. It will not receive new features or enhancements and is community managed going forward.
+>
+> New users should start with [Microsoft Agent Framework](https://github.com/microsoft/agent-framework). Existing users are encouraged to migrate using the [AutoGen → Microsoft Agent Framework migration guide](https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/).
+>
+> Microsoft Agent Framework (MAF) is the enterprise‑ready successor to AutoGen. Microsoft Agent FrameworkAF in now available as a production-ready release: stable APIs, and a commitment to long-term support. Whether you're building a single assistant or orchestrating a fleet of specialized agents, Microsoft Agent Framework 1.0 gives you enterprise-grade multi-agent orchestration, multi-provider model support, and cross-runtime interoperability via A2A and MCP.
+
+## Installation
+
+AutoGen requires **Python 3.10 or later**.
+
+```bash
+# Install AgentChat and OpenAI client from Extensions
+pip install -U "autogen-agentchat" "autogen-ext[openai]"
+```
+
+The current stable version can be found in the [releases](https://github.com/microsoft/autogen/releases). If you are upgrading from AutoGen v0.2, please refer to the [Migration Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/migration-guide.html) for detailed instructions on how to update your code and configurations.
+
+```bash
+# Install AutoGen Studio for no-code GUI
+pip install -U "autogenstudio"
+```
+
+## Quickstart
+
+The following samples call OpenAI API, so you first need to create an account and export your key as `export OPENAI_API_KEY="sk-..."`.
+
+### Hello World
+
+Create an assistant agent using OpenAI's GPT-4o model. See [other supported models](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/models.html).
+
+
+
+
+=== REPO: awesome-ai-apps ===
+![Banner](/assets/banner_new.png)
+
+<div align="center">
+
+# Awesome AI Apps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+<a href="https://trendshift.io/repositories/14662" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14662" alt="Arindam200%2Fawesome-ai-apps | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
+</div>
+
+This repository is a comprehensive collection of **80+ practical examples, tutorials, and recipes** for building powerful LLM-powered applications — including text agents, voice assistants, RAG apps, and MCP-backed tools. These projects serve as a guide for developers working with various AI frameworks and stacks.
+
+## 📋 Table of Contents
+
+- [🎓 Courses](#-courses)
+- [🚀 Featured AI Apps](#-featured-ai-apps)
+  - [🧩 Starter Agents](#-starter-agents)
+  - [🪶 Simple Agents](#-simple-agents)
+  - [🎙️ Voice Agents](#-voice-agents)
+  - [🗂️ MCP Agents](#️-mcp-agents)
+  - [🧠 Memory Agents](#-memory-agents)
+  - [📚 RAG Applications](#-rag-applications)
+  - [🔬 Advanced Agents](#-advanced-agents)
+- [📺 Tutorials & Videos](#-tutorials--videos)
+- [🚀 Getting Started](#getting-started)
+- [🤝 Contributing](#-contributing)
+
+---
+
+<div align="center">
+
+## 💎 Sponsors
+
+<p align="center">
+  A huge thank you to our sponsors for their generous support!
+</p>
+
+<table align="center" cellpadding="10" style="width:100%; border-collapse:collapse;">
+  <tr align="center">
+    <td width="300" valign="middle" align="center">
+      <a href="https://dub.sh/brightdata" target="_blank" title="Visit Bright Data">
+        <img src="https://mintlify.s3.us-west-1.amazonaws.com/brightdata/logo/light.svg" height="35" style="max-width:180px;" alt="Bright Data - Web Data Platform">
+      </a>
+      <br>
+      <sub>
+        <span style="white-space:nowrap;">Web Data Platform</span>
+        <br>
+        <a href="https://dub.sh/brightdata" target="_blank">
+          <img src="https://img.shields.io/badge/Visit%20Site-blue?style=flat-square" alt="Visit Bright Data website">
+        </a>
+
+
+
+=== REPO: cc-sdd ===
+# cc-sdd: Long-running spec-driven implementation for AI coding agents
+
+<!-- npm badges -->
+[![npm version](https://img.shields.io/npm/v/cc-sdd?logo=npm)](https://www.npmjs.com/package/cc-sdd?activeTab=readme)
+[![install size](https://packagephobia.com/badge?p=cc-sdd)](https://packagephobia.com/result?p=cc-sdd)
+[![license: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
+
+<div align="center" style="font-size: 1.1rem; margin-bottom: 1rem;"><sub>
+Package README: <a href="./tools/cc-sdd/README.md">English</a> | <a href="./tools/cc-sdd/README_ja.md">日本語</a> | <a href="./tools/cc-sdd/README_zh-TW.md">繁體中文</a>
+</sub></div>
+
+## Turn approved specs into long-running autonomous implementation
+
+One command installs an agentic SDLC workflow as Agent Skills: discovery, requirements, design, tasks, and autonomous implementation with per-task independent review. Works across 8 AI coding agents, with the same 17-skill set on each.
+
+👻 **Kiro-inspired.** Similar spec-driven, agentic SDLC style as Kiro IDE. Existing Kiro specs remain compatible and portable.
+
+## What's new in v3.0
+
+cc-sdd v3.0 is a rework around Agent Skills and long-running autonomous implementation.
+
+- **`/kiro-discovery` as the new entry point.** Discovery routes new work into one of: extend an existing spec, implement directly with no spec, create one new spec, decompose into multiple specs, or mixed decomposition. It writes `brief.md` and, when needed, `roadmap.md`, so you can resume a workstream without re-explaining scope.
+- **`/kiro-impl` for long-running autonomous implementation.** Each task gets a fresh implementer running TDD (RED → GREEN) behind a feature flag, an independent reviewer, and an auto-debug pass that investigates root causes in a clean context when the implementer is blocked or the reviewer rejects twice. Learnings from earlier tasks propagate forward via `## Implementation Notes` in `tasks.md`. 1 task per iteration, safe to re-run after interruption.
+- **Boundary-first spec discipline.** `design.md` now includes a File Structure Plan that drives task boundaries. Tasks carry `_Boundary:_` and `_Depends:_` annotations. Review and validation look for boundary violations, not just style issues.
+- **`/kiro-spec-batch` for multi-spec initiatives.** Turn a roadmap into multiple specs in parallel, with cross-spec review to catch contradictions, duplicated responsibilities, and interface mismatches.
+- **Agent Skills across 8 coding agents.** 17 skills per install, loaded on demand (progressive disclosure). Claude Code and Codex are stable; Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity are in beta. No external dependencies; subagents are spawned through each platform's native primitive.
+
+Full skills-mode workflow and `/kiro-impl` internals: [Skill Reference](docs/guides/skill-reference.md).
+
+Upgrading from v1.x or v2.x? See the [Migration Guide](docs/guides/migration-guide.md#5-v2x-to-v30).
+
+## Why cc-sdd?
+
+cc-sdd treats the spec as a contract between parts of the system, not a master command document handed to the agent. Code remains the source of truth. Specs make the boundaries between parts of the code explicit so humans and agents can work in parallel without constant synchronization.
+
+The bet: explicit contracts at the right granularity let AI-driven development at team scale move faster, not slower. Agents write the spec, humans approve the contract at phase gates, code is what ships.
+
+Boundaries are not overhead. They are what lets you move freely inside while protecting the outside.
+
+Full rationale, trade-offs, and when-to-use / when-not-to-use: [Why cc-sdd? A philosophy note](docs/guides/why-cc-sdd.md).
+
+## Quick Start
+
+```bash
+cd your-project
+npx cc-sdd@latest
+```
+
+The default installs **Claude Code Skills** with English docs. To pick another agent or language:
+
+
+
+
+=== REPO: cc-skills-golang ===
+# Agent Skills for production-ready Golang projects
+
+AI agent skills are reusable instruction sets that extend your coding assistant with domain-specific expertise, loaded on demand so they don't bloat your context. This repository covers **Go-specific** skills only (language, testing, security, observability, etc.); for dev workflow skills (git conventions, CI/CD, PR reviews) you'll want to add a separate skills plugin.
+
+For generic skills, please visit [cc-skills](https://github.com/samber/cc-skills).
+
+> [!IMPORTANT] Bootstrapped with Claude Code by distilling my Go project commits. **Edited, tested, reviewed and reworked by a human**.
+>
+> **No AI slop here.** AI-made skills are useless.
+
+<img width="1414" height="491" alt="image" src="https://github.com/user-attachments/assets/620b5835-c1ba-4ea9-bf47-2293b58b879e" />
+
+## 🚀 How to use
+
+**Install with [skills](https://skills.sh/) CLI** (universal, works with any [Agent Skills](https://agentskills.io)-compatible tool):
+
+```bash
+npx skills add https://github.com/samber/cc-skills-golang --all
+# or a single skill:
+npx skills add https://github.com/samber/cc-skills-golang --skill golang-performance
+```
+
+<!-- prettier-ignore-start -->
+
+<details>
+<summary>Claude Code</summary>
+
+```bash
+/plugin marketplace add samber/cc
+/plugin install cc-skills-golang@samber
+```
+
+</details>
+
+<details>
+<summary>Openclaw</summary>
+
+Copy skills into the cross-client discovery directory:
+
+```bash
+git clone https://github.com/samber/cc-skills-golang.git ~/.openclaw/skills/cc-skills-golang
+# or in workspace:
+git clone https://github.com/samber/cc-skills-golang.git ~/.openclaw/workspace/skills/cc-skills-golang
+```
+
+</details>
+
+<details>
+<summary>Gemini CLI</summary>
+
+
+
+
+=== REPO: context-mode ===
+# Context Mode
+
+**The other half of the context problem.**
+
+[![users](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmksglu%2Fcontext-mode%40main%2Fstats.json&query=%24.message&label=users&color=brightgreen)](https://www.npmjs.com/package/context-mode) [![npm](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmksglu%2Fcontext-mode%40main%2Fstats.json&query=%24.npm&label=npm&color=blue)](https://www.npmjs.com/package/context-mode) [![marketplace](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmksglu%2Fcontext-mode%40main%2Fstats.json&query=%24.marketplace&label=marketplace&color=blue)](https://github.com/mksglu/context-mode) [![GitHub stars](https://img.shields.io/github/stars/mksglu/context-mode?style=flat&color=yellow)](https://github.com/mksglu/context-mode/stargazers) [![GitHub forks](https://img.shields.io/github/forks/mksglu/context-mode?style=flat&color=blue)](https://github.com/mksglu/context-mode/network/members) [![Last commit](https://img.shields.io/github/last-commit/mksglu/context-mode?color=green)](https://github.com/mksglu/context-mode/commits) [![License: ELv2](https://img.shields.io/badge/License-ELv2-blue.svg)](LICENSE)
+[![Discord](https://img.shields.io/discord/1478479412700909750?label=Discord&logo=discord&color=5865f2)](https://discord.gg/DCN9jUgN5v)
+[![Hacker News #1](https://img.shields.io/badge/Hacker%20News-%231%20%E2%80%A2%20570%2B%20points-ff6600?logo=ycombinator&logoColor=white)](https://news.ycombinator.com/item?id=47193064)
+
+<p align="center">
+<sub>Used across teams at</sub>
+<br><br>
+<a href="#"><img src="https://img.shields.io/badge/Microsoft-141414?style=flat" alt="Microsoft" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Google-141414?style=flat&logo=google&logoColor=white" alt="Google" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Meta-141414?style=flat&logo=meta&logoColor=white" alt="Meta" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Amazon-141414?style=flat" alt="Amazon" /></a>
+<a href="#"><img src="https://img.shields.io/badge/IBM-141414?style=flat" alt="IBM" /></a>
+<a href="#"><img src="https://img.shields.io/badge/NVIDIA-141414?style=flat&logo=nvidia&logoColor=white" alt="NVIDIA" /></a>
+<a href="#"><img src="https://img.shields.io/badge/ByteDance-141414?style=flat&logo=bytedance&logoColor=white" alt="ByteDance" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Stripe-141414?style=flat&logo=stripe&logoColor=white" alt="Stripe" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Datadog-141414?style=flat&logo=datadog&logoColor=white" alt="Datadog" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Salesforce-141414?style=flat" alt="Salesforce" /></a>
+<a href="#"><img src="https://img.shields.io/badge/GitHub-141414?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Red%20Hat-141414?style=flat&logo=redhat&logoColor=white" alt="Red Hat" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Supabase-141414?style=flat&logo=supabase&logoColor=white" alt="Supabase" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Canva-141414?style=flat" alt="Canva" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Notion-141414?style=flat&logo=notion&logoColor=white" alt="Notion" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Hasura-141414?style=flat&logo=hasura&logoColor=white" alt="Hasura" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Framer-141414?style=flat&logo=framer&logoColor=white" alt="Framer" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Cursor-141414?style=flat&logo=cursor&logoColor=white" alt="Cursor" /></a>
+</p>
+
+## The Problem
+
+Every MCP tool call dumps raw data into your context window. A Playwright snapshot costs 56 KB. Twenty GitHub issues cost 59 KB. One access log — 45 KB. After 30 minutes, 40% of your context is gone. And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for. On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides.
+
+### How Context Mode Solves It
+
+Context Mode is an MCP server that solves all four sides of this problem:
+
+1. **Context Saving** — Sandbox tools keep raw data out of the context window. 315 KB becomes 5.4 KB. 98% reduction.
+2. **Session Continuity** — Every file edit, git operation, task, error, and user decision is tracked in SQLite. When the conversation compacts, context-mode doesn't dump this data back into context — it indexes events into FTS5 and retrieves only what's relevant via BM25 search. The model picks up exactly where you left off. If you don't `--continue`, previous session data is deleted immediately — a fresh session means a clean slate.
+3. **Think in Code** — The LLM should program the analysis, not compute it. Instead of reading 50 files into context to count functions, the agent writes a script that does the counting and `console.log()`s only the result. One script replaces ten tool calls and saves 100x context. This is a mandatory paradigm across all 14 platforms: stop treating the LLM as a data processor, treat it as a code generator.
+
+   ```js
+   // Before: 47 × Read() = 700 KB.  After: 1 × ctx_execute() = 3.6 KB.
+   ctx_execute("javascript", `
+     const files = fs.readdirSync('src').filter(f => f.endsWith('.ts'));
+     files.forEach(f => console.log(f + ': ' + fs.readFileSync('src/'+f,'utf8').split('\\n').length + ' lines'));
+   `);
+   ```
+
+
+
+=== REPO: langgraph ===
+<div align="center">
+  <a href="https://www.langchain.com/langgraph">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/images/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset=".github/images/logo-light.svg">
+      <img alt="LangGraph Logo" src=".github/images/logo-dark.svg" width="50%">
+    </picture>
+  </a>
+</div>
+
+<div align="center">
+  <h3>Low-level orchestration framework for building stateful agents.</h3>
+</div>
+
+<div align="center">
+  <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/pypi/l/langgraph" alt="PyPI - License"></a>
+  <a href="https://pypistats.org/packages/langgraph" target="_blank"><img src="https://img.shields.io/pepy/dt/langgraph" alt="PyPI - Downloads"></a>
+  <a href="https://pypi.org/project/langgraph/" target="_blank"><img src="https://img.shields.io/pypi/v/langgraph.svg?label=%20" alt="Version"></a>
+  <a href="https://x.com/langchain_oss" target="_blank"><img src="https://img.shields.io/twitter/url/https/twitter.com/langchain_oss.svg?style=social&label=Follow%20%40LangChain" alt="Twitter / X"></a>
+</div>
+
+<br>
+
+Trusted by companies shaping the future of agents – including Klarna, Replit, Elastic, and more – LangGraph is a low-level orchestration framework for building, managing, and deploying long-running, stateful agents.
+
+```bash
+pip install -U langgraph
+```
+
+> [!TIP]
+> If you're looking to quickly build agents, check out **[Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview)** — a higher-level package built on LangGraph for agents that can plan, use subagents, and leverage file systems for complex tasks.
+
+For an equivalent JS/TS library, check out [LangGraph.js](https://github.com/langchain-ai/langgraphjs) and the [JS docs](https://docs.langchain.com/oss/javascript/langgraph/overview).
+
+## Why use LangGraph?
+
+LangGraph provides low-level supporting infrastructure for *any* long-running, stateful workflow or agent:
+
+- **[Durable execution](https://docs.langchain.com/oss/python/langgraph/durable-execution)** — Build agents that persist through failures and can run for extended periods, automatically resuming from exactly where they left off.
+- **[Human-in-the-loop](https://docs.langchain.com/oss/python/langgraph/interrupts)** — Seamlessly incorporate human oversight by inspecting and modifying agent state at any point during execution.
+- **[Comprehensive memory](https://docs.langchain.com/oss/python/langgraph/memory)** — Create truly stateful agents with both short-term working memory for ongoing reasoning and long-term persistent memory across sessions.
+- **[Debugging with LangSmith](https://www.langchain.com/langsmith)** — Gain deep visibility into complex agent behavior with visualization tools that trace execution paths, capture state transitions, and provide detailed runtime metrics.
+- **[Production-ready deployment](https://docs.langchain.com/langsmith/deployments)** — Deploy sophisticated agent systems confidently with scalable infrastructure designed to handle the unique challenges of stateful, long-running workflows.
+
+> [!TIP]
+> For developing, debugging, and deploying AI agents and LLM applications, see [LangSmith](https://docs.langchain.com/langsmith/home).
+
+## LangGraph ecosystem
+
+While LangGraph can be used standalone, it also integrates seamlessly with any LangChain product, giving developers a full suite of tools for building agents.
+
+
+
+=== REPO: peon-ping ===
+# peon-ping
+<div align="center">
+
+**English** | [한국어](README_ko.md) | [中文](README_zh.md) | [日本語](README_ja.md)
+
+![macOS](https://img.shields.io/badge/macOS-blue) ![WSL2](https://img.shields.io/badge/WSL2-blue) ![Linux](https://img.shields.io/badge/Linux-blue) ![Windows](https://img.shields.io/badge/Windows-blue) ![MSYS2](https://img.shields.io/badge/MSYS2-blue) ![SSH](https://img.shields.io/badge/SSH-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-hook-ffab01) ![Amp](https://img.shields.io/badge/Amp-adapter-ffab01) ![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-adapter-ffab01) ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-adapter-ffab01) ![Codex](https://img.shields.io/badge/Codex-adapter-ffab01) ![Cursor](https://img.shields.io/badge/Cursor-adapter-ffab01) ![OpenCode](https://img.shields.io/badge/OpenCode-adapter-ffab01) ![Kilo CLI](https://img.shields.io/badge/Kilo_CLI-adapter-ffab01) ![Kiro](https://img.shields.io/badge/Kiro-adapter-ffab01) ![Kimi Code](https://img.shields.io/badge/Kimi_Code-adapter-ffab01) ![Windsurf](https://img.shields.io/badge/Windsurf-adapter-ffab01) ![Antigravity](https://img.shields.io/badge/Antigravity-adapter-ffab01) ![OpenClaw](https://img.shields.io/badge/OpenClaw-adapter-ffab01) ![Rovo Dev CLI](https://img.shields.io/badge/Rovo_Dev_CLI-adapter-ffab01) ![DeepAgents](https://img.shields.io/badge/DeepAgents-adapter-ffab01)
+
+**Game character voice lines + visual overlay notifications when your AI coding agent needs attention — or let the agent pick its own sound via MCP.**
+
+AI coding agents don't notify you when they finish or need permission. You tab away, lose focus, and waste 15 minutes getting back into flow. peon-ping fixes this with voice lines and bold on-screen banners from Warcraft, StarCraft, Portal, Zelda, and more — works with **Claude Code**, **Amp**, **GitHub Copilot**, **Codex**, **Cursor**, **OpenCode**, **Kilo CLI**, **Kiro**, **Kimi Code**, **Windsurf**, **Google Antigravity**, **Rovo Dev CLI**, **DeepAgents**, and any MCP client.
+
+**See it in action** &rarr; [peonping.com](https://peonping.com/)
+
+<video src="https://github.com/user-attachments/assets/149b6d15-65c2-41f2-9b56-13575ff8364b" autoplay loop muted playsinline width="400"></video>
+
+</div>
+
+---
+
+- [Install](#install)
+- [What you'll hear](#what-youll-hear)
+- [Quick controls](#quick-controls)
+- [Configuration](#configuration)
+- [Peon Trainer](#peon-trainer)
+- [MCP server](#mcp-server)
+- [Multi-IDE support](#multi-ide-support)
+- [Remote development](#remote-development-ssh--devcontainers--codespaces)
+- [Mobile notifications](#mobile-notifications)
+- [Sound packs](#sound-packs)
+- [Debugging](#debugging)
+- [Uninstall](#uninstall)
+- [Requirements](#requirements)
+- [How it works](#how-it-works)
+- [Links](#links)
+
+---
+
+## Install
+
+### Option 1: Homebrew (recommended)
+
+```bash
+brew install PeonPing/tap/peon-ping
+```
+
+Then run `peon-ping-setup` to register hooks and download sound packs. macOS and Linux.
+
+
+
+
+=== REPO: stitch-skills ===
+# Stitch Agent Skills
+
+A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.
+
+## Installation & Discovery
+
+Install any skill from this repository using the `skills` CLI. This command will automatically detect your active coding agents and place the skill in the appropriate directory.
+
+```bash
+# List all available skills in this repository
+npx skills add google-labs-code/stitch-skills --list
+
+# Install a specific skill
+npx skills add google-labs-code/stitch-skills --skill react:components --global
+```
+
+## Available Skills
+
+### stitch-design
+Unified entry point for Stitch design work. Handles prompt enhancement (UI/UX keywords, atmosphere), design system synthesis (.stitch/DESIGN.md), and high-fidelity screen generation/editing via Stitch MCP.
+
+```bash
+npx skills add google-labs-code/stitch-skills --skill stitch-design --global
+```
+
+### stitch-loop
+Generates a complete multi-page website from a single prompt using Stitch, with automated file organization and validation.
+
+```bash
+npx skills add google-labs-code/stitch-skills --skill stitch-loop --global
+```
+
+### design-md
+Analyzes Stitch projects and generates comprehensive DESIGN.md files documenting design systems in natural, semantic language optimized for Stitch screen generation.
+
+```bash
+npx skills add google-labs-code/stitch-skills --skill design-md --global
+```
+
+### enhance-prompt
+Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.
+
+```bash
+npx skills add google-labs-code/stitch-skills --skill enhance-prompt --global
+```
+
+### react-components
+Converts Stitch screens to React component systems with automated validation and design token consistency.
+
+```bash
+
+
+
+=== REPO: system-prompts-and-models-of-ai-tools ===
+<p align="center">
+  <sub>Thanks to</sub>  
+</p>
+
+<p align="center">
+  <a href="https://latitude.so/?utm_source=github&utm_medium=readme&utm_campaign=sponsorship">
+    <img src="assets/latitude-dark.png" alt="Latitude Logo" width="700"/>
+  </a>
+</p>
+
+<div align="center" markdown="1">
+
+### [Issue Tracking for AI Agents](https://latitude.so/?utm_source=github&utm_medium=readme&utm_campaign=sponsorship)  
+[Open Source Monitoring platform](https://latitude.so/?utm_source=github&utm_medium=readme&utm_campaign=sponsorship)
+
+</div>
+
+---
+<p align="center">
+  Support my work here: 
+  <a href="https://bags.fm/DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS">Bags.fm</a> •
+  <a href="https://jup.ag/tokens/DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS">Jupiter</a> •
+  <a href="https://photon-sol.tinyastro.io/en/lp/Qa5ZCCwrWoPYckNXXMCAhCsw8gafgYFAu1Qes3Grgv5?handle=">Photon</a> •
+  <a href="https://dexscreener.com/solana/qa5zccwrwopycknxxmcahcsw8gafgyfau1qes3grgv5">DEXScreener</a>
+</p>
+
+<p align="center">Official CA: DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS (on Solana)</p>
+
+---
+
+<a href="https://discord.gg/NwzrWErdMU" target="_blank">
+  <img src="https://img.shields.io/discord/1402660735833604126?label=LeaksLab%20Discord&logo=discord&style=for-the-badge" alt="LeaksLab Discord" />
+</a>
+
+
+<a href="https://trendshift.io/repositories/14084" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14084" alt="x1xhlol%2Fsystem-prompts-and-models-of-ai-tools | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
+
+[![Build Status](https://app.cloudback.it/badge/x1xhlol/system-prompts-and-models-of-ai-tools)](https://cloudback.it)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+
+---
+
+## Support the Project
+
+If you find this collection valuable and appreciate the effort involved in obtaining and sharing these insights, please consider supporting the project.
+
+You can show your support via:
+
+- **Cryptocurrency:**  
+
+
+

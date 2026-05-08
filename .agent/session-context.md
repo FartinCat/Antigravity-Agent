@@ -36,4 +36,9 @@ When this .agent/ folder is copied to a new project, a fresh context will be ini
 **Agent**: system
 **Action**: Executed `/11-release-project` workflow. Repository cleaned of stray artifacts. Market evaluation completed (Complexity Score: 96/100). Strict commercial license generated. Premium README with SVG banner and Mermaid lifecycle architecture finalized.
 **State Change**: Version v3.0.0 Released. Project is now public-ready with monetization strategy and 5-phase lifecycle governance.
-**Next Step**: Perform a final cross-agent validation scan.
+
+## 2026-05-06 — System Integrity Audit & Repair — v3.0.0
+**Agent**: scanner → cross-agent-validator
+**Action**: Diagnosed 4 critical issues. Fixed invisible workflows (`02-onboard-project.md` and `08-performance.md`) caused by missing YAML frontmatter. Corrected stale `order:` and `description:` values across 8 workflows. Enriched `06-tdd.md` (29→80 lines), `07-fix-bugs.md` (added build detection, guardrails, recovery strategies), and `10-cross-agent-validator.md` (added Technical Verification step) using patterns from `dump/.agent-reference/`. Added `zip/` to protected folders in `09-dump-awareness.md`. Added Rule 4 (Mandatory Frontmatter Visibility Gate) and Rule 5 (Pre-Commit Frontmatter Audit) to `00-workflow-orchestration.md` to prevent future invisible workflow creation. Restored `zip/` folder from dump, added Step 7 (Packaging) to `11-release-project.md`, regenerated `antigravity-agent-v3.0.0.zip` (95KB). Updated README with deep explanations of all agents, skills, and workflows.
+**State Change**: All 12 workflows now have valid frontmatter and appear in the IDE `+` menu. Workflow content enriched from reference material. Prevention rules added.
+**Next Step**: Run `/12-auto-commit` to finalize all changes.

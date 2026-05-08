@@ -56,3 +56,17 @@ Appending to a slice that shares underlying array with another slice — may sil
 3. `go test -race ./...` — unit tests with race detector
 4. `golangci-lint run` — comprehensive linting
 5. `go build ./...` — compile check
+
+---
+
+## Go Mastery Patterns
+1. **Error Handling**: `errors.Is/As`, custom error types, sentinel errors, never panic in libs.
+2. **Concurrency**: goroutine lifecycle management, context propagation, select patterns, avoiding goroutine leaks.
+3. **Project Layout**: `cmd/` (binaries), `internal/` (private), `pkg/` (public), standard `go.mod` location.
+4. **Testing**: table-driven tests, testify patterns, httptest for APIs, race detector (`-race` flag).
+5. **Naming**: MixedCaps only, unexported functions lowercase, interfaces describe behavior not structure.
+6. **Observability**: structured logging (`slog`), trace propagation, metric naming conventions.
+7. **Context**: always accept `context.Context` as first arg, never store in structs, cancel/deadline patterns.
+8. **Security**: no G101-G601 gosec violations, secrets from env, parameterized queries.
+9. **Design Patterns**: functional options, dependency injection, interface segregation.
+10. **Performance**: pprof profiling, `sync.Pool` for GC pressure, defer cost awareness.
