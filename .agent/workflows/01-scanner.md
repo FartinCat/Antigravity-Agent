@@ -100,13 +100,11 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 
 6. **Anomaly Detection**: Flag anything that violates project structure rules — missing `PROJECT_METADATA.md`, stray archived folders at root, missing `assets/` taxonomy.
 
-
-
-
-
-
-
-
+### Step 6a — Workflow Sequence Verification
+Run a check of the `.agent/workflows/` directory to ensure workflows are sequentially numbered (e.g., `01`, `02`, ... `N`).
+Report:
+  WORKFLOW SEQUENCE: NOMINAL / ANOMALY DETECTED
+  If anomaly: "Gaps or misordering detected in workflows. Suggest renaming files to restore sequential order."
 
 ### Step 6b — Registry Drift Detection
 Run a script (not raw file reads) that checks:
