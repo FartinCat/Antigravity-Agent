@@ -1,4 +1,4 @@
-# Antigravity Agent v4.6.0 — Portable AI Operating System
+# Antigravity Agent v4.7.0 — Portable AI Operating System
 
 > A portable, deterministic, zero-trust Agentic OS. Drop the `.agent/` folder
 > into any project directory and the entire skill + workflow + governance ecosystem
@@ -12,7 +12,7 @@
 | Field | Value |
 |---|---|
 | **Name** | Antigravity Agent |
-| **Version** | 4.6.0 |
+| **Version** | 4.7.0 |
 | **Type** | Portable AI Operating System |
 | **Personality** | Deterministic · Zero-Trust · Quality-Obsessed |
 | **Mission** | Elevate every project to production-grade quality through structured orchestration, spec-driven development, and relentless verification. |
@@ -33,10 +33,24 @@ BOOT ORDER:
  2. .agent/rules/03-instincts.md         ← Probabilistic warnings
  3. .agent/rules/00-workflow-orchestration.md  ← Numbering & lifecycle
  4. .agent/session-context.md            ← Session memory (verify Project Directory matches)
- 5. All remaining .agent/rules/ files    ← Rules 02, 04–19
+ 5. All remaining .agent/rules/ files    ← Rules 02, 04–22
  6. All .agent/instincts/ files          ← Behavioral patterns (flags, not halts)
- 7. All .agent/skills/ files             ← Skills 01–20
- 8. .agent/AGENTS.md                     ← Full agent + command registry
+ 7. Core skills (always loaded):         ← Lightweight analysis & planning
+    • 01-research-loop.md  (4.8KB)
+    • 02-language-routing.md (1.8KB)
+    • 03-task-decomposition.md (1.9KB)
+    • 06-refactor.md (2.4KB)
+    • 10-confidence-scoring.md (1.6KB)
+    • 12-commit-semantics.md (2.0KB)
+    • 13-knowledge-capture.md (2.5KB)
+    • 22-registry-synchronizer.md (3.8KB)
+ 8. Heavy skills (on-demand — loaded when workflow activates):
+    • 14-context-engineering (11KB) ← loaded by /spec, /plan
+    • 15-security-engineering (11KB) ← loaded by /ship, /review
+    • 16-api-design (10KB) ← loaded by /impl
+    • 17-spec-compliance (11KB) ← loaded by /spec
+    • 19-performance-profiling (11KB) ← loaded by /performance
+ 9. .agent/AGENTS.md                     ← Full agent + command registry
 ───────────────────────────────────────────────────
 ```
 
@@ -124,7 +138,9 @@ files, rule files, workflow files, `session-context.md`.
 |---|---|
 | `/scanner` | Map the project — run first, always |
 | `/onboard` | First-contact project analysis |
+| `/mcp-audit` | Audit MCP server health and capability mapping |
 | `/scaffold-assets` | Initialize assets and metadata |
+| `/knowledge-capture` | Distill project insights into persistent knowledge items |
 | `/multi-plan-synthesis` | Merge plans into MASTER_PLAN.md |
 | `/build-website` | End-to-end web app pipeline |
 | `/build-app` | End-to-end software app pipeline |
@@ -134,6 +150,8 @@ files, rule files, workflow files, `session-context.md`.
 | `/write-report` | Academic/technical report pipeline |
 | `/cross-agent-validator` | Self-audit: verify all agents |
 | `/release-project` | Cleanup → license → README → packaging |
+| `/readme-architect` | Auto-generate README tables and flowcharts |
+| `/sync-registry` | Synchronize all registry files with disk state |
 | `/auto-commit` | Generate atomic Conventional Commits |
 
 ### Knowledge Engine Commands
@@ -252,14 +270,15 @@ Antigravity Agent/
 ├── install-mcps.sh                    ← One-command MCP setup
 ├── CHANGELOG.md
 ├── README.md
-├── DEPLOY.md
 ├── LICENSE.md
+├── PROJECT_METADATA.md
+├── .gemini/                           ← IDE scratch space (not part of OS)
 ├── .claude/
-│   ├── commands/                      ← 14+ real slash commands
+│   ├── commands/                      ← 15 real slash commands
 │   │   ├── spec.md, plan.md, impl.md, review.md, ship.md
 │   │   ├── scanner.md, planner.md, antibug.md, tdd-guide.md
 │   │   ├── auto-commit.md, onboard.md, web-aesthetics.md
-│   │   └── ag-refresh.md, ag-ask.md
+│   │   └── ag-refresh.md, ag-ask.md, sync-registry.md
 │   └── agents/                        ← 3 specialist personas
 │       ├── code-reviewer.md
 │       ├── security-auditor.md
@@ -267,13 +286,16 @@ Antigravity Agent/
 └── .agent/
     ├── AGENTS.md                      ← Full registry
     ├── session-context.md             ← Session memory
-    ├── rules/                         ← 20 governance rules (00–19)
+    ├── scripts/                       ← 2 Python engines
+    │   ├── sync_registry.py           ← Self-maintenance engine
+    │   └── readme_architect.py        ← README table/chart generator
+    ├── rules/                         ← 23 governance rules (00–22)
     ├── instincts/                     ← 5 behavioral patterns
-    ├── skills/                        ← 20 foundational skills (01–20)
-    ├── workflows/                     ← 20 pipeline workflows (01–20)
-    ├── .agents/skills/                ← 19 agent persona directories
+    ├── skills/                        ← 22 foundational skills (01–22)
+    ├── workflows/                     ← 24 pipeline workflows (01–24)
+    ├── .agents/skills/                ← 23 agent persona directories
     ├── mcps/                          ← MCP server documentation
-    └── archive/                       ← Session archives
+    └── archived/                      ← Session archives
 ```
 
 ---
