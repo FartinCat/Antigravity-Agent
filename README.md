@@ -4,11 +4,11 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 
-# 🌌 Antigravity Agent Ecosystem (v4.1.1)
+# 🌌 Antigravity Agent Ecosystem (v4.0.0)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.1.1-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
+[![Version](https://img.shields.io/badge/version-4.0.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
@@ -62,20 +62,20 @@ graph TD
     end
     
     subgraph P2: Strategy
-    S1[/13-spec-discovery/] --> S2[/04-multi-plan-synthesis/]
+    S1[/05-spec-discovery/] --> S2[/07-multi-plan-synthesis/]
     end
     
     subgraph P3: Execution
-    E1[/16-feature-development/] --> E2[/06-tdd/]
-    E2 --> E3[/07-fix-bugs/]
+    E1[/10-feature-development/] --> E2[/13-tdd/]
+    E2 --> E3[/15-fix-bugs/]
     end
     
     subgraph P4: Quality
-    Q1[/18-quality-gate/] --> Q2[/10-cross-agent-validator/]
+    Q1[/17-quality-gate/] --> Q2[/18-cross-agent-validator/]
     end
     
     subgraph P5: Finalization
-    F1[/12-auto-commit/] --> F2[/11-release-project/]
+    F1[/22-auto-commit/] --> F2[/21-release-project/]
     end
 
     A2 --> S1
@@ -161,7 +161,7 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 | **17** | `market-eval` | `/market` | Analyzes codebase complexity for commercial valuation. |
 | **18** | `license-gen` | `/license` | Generates appropriate licensing documentation. |
 | **19** | `git-author` | `/commit` | Drafts atomic, conventional commit messages from diffs. |
-| **20** | `code-reviewer` | `/review` | Elite-level PR analysis and maintenance auditing. |
+| **20** | `mcp-auditor` | `/mcp-audit` | Audits & maps integrated MCP tool capabilities. |
 | **21** | `security-audit` | `/security` | Zero-trust security scanning and vulnerability detection. |
 | **22** | `test-engineer` | `/test` | Automated test suite generation and coverage enforcement. |
 
@@ -172,30 +172,32 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 ## 🛤️ The Pipelines (Workflows)
 
 Workflows are multi-agent recipes for complex operations. Trigger them via `/workflow-name` or their trigger phrase.
+They are listed in logical ascending order of the 5-Phase software lifecycle.
 
 | ID | Workflow | Slash Command | Trigger Phrase | Objective |
 |:---|:---|:---|:---|:---|
 | **01** | `Scanner` | `/01-scanner` | "Scan the project" | Build situational awareness and map directories. |
 | **02** | `Onboard` | `/02-onboard-project` | "Onboard project" | Analyze legacy code and suggest initial strategy. |
-| **03** | `Scaffold` | `/03-scaffold-assets` | "Scaffold assets" | Initialize project structure and taxonomy. |
-| **04** | `Synthesis` | `/04-multi-plan-synthesis` | "Synthesize plans" | Merge competing AI strategies into one plan. |
-| **05a**| `Web Build`| `/05a-build-website` | "Build website" | End-to-end website generation pipeline. |
-| **05b**| `App Build`| `/05b-build-app` | "Build application" | Production-ready application build cycle. |
-| **06** | `TDD Cycle` | `/06-tdd` | "Start TDD" | Disciplined Red-Green-Refactor orchestration. |
-| **07** | `Fix Bugs` | `/07-fix-bugs` | "Fix all bugs" | Build-detected bug hunting and resolution. |
-| **08** | `Performance` | `/08-performance` | "Optimize perf" | Profiling and bottleneck elimination. |
-| **09** | `Report` | `/09-write-report` | "Write report" | Generate status reports and technical summaries. |
-| **10** | `Validator` | `/10-cross-agent-validator` | "Validate work" | Audit previous steps for hallucinations/errors. |
-| **11** | `Release` | `/11-release-project` | "Finalize release" | God Mode: License, README, Packaging. |
-| **12** | `Commit` | `/12-auto-commit` | "Auto commit" | Atomic, semantic commit generation loop. |
-| **13** | `Spec` | `/13-spec-discovery` | "Discover spec" | Functional and technical spec extraction. |
-| **14** | `New Req` | `/14-new-requirement` | "Add requirement" | Integrate new features into an existing plan. |
-| **15** | `Knowledge` | `/15-knowledge-capture` | "Capture knowledge" | Distill project insights into persistent KIs. |
-| **16** | `Feature` | `/16-feature-development` | "Develop feature" | Incremental feature build cycle. |
-| **17** | `Debug` | `/17-debug-session` | "Debug session" | Intensive diagnostic and repair protocol. |
-| **18** | `Quality` | `/18-quality-gate` | "Check quality" | Compliance check against design/requirements. |
-| **19** | `Review` | `/19-weekly-review` | "Weekly review" | Strategic audit of project progress/health. |
-| **20** | `Research` | `/20-parallel-research` | "Parallel research" | Simultaneous research on multiple technical paths. |
+| **03** | `MCP Audit` | `/03-mcp-audit` | "Scan my tools" | Audit & map integrated MCP tool capabilities. |
+| **04** | `Scaffold` | `/04-scaffold-assets` | "Scaffold assets" | Initialize project structure and taxonomy. |
+| **05** | `Spec` | `/05-spec-discovery` | "Discover spec" | Functional and technical spec extraction. |
+| **06** | `Research` | `/06-parallel-research` | "Parallel research" | Simultaneous research on multiple technical paths. |
+| **07** | `Synthesis` | `/07-multi-plan-synthesis` | "Synthesize plans" | Merge competing AI strategies into one plan. |
+| **08** | `Knowledge` | `/08-knowledge-capture` | "Capture knowledge" | Distill project insights into persistent KIs. |
+| **09** | `New Req` | `/09-new-requirement` | "Add requirement" | Integrate new features into an existing plan. |
+| **10** | `Feature` | `/10-feature-development` | "Develop feature" | Incremental feature build cycle. |
+| **11** | `Web Build`| `/11-build-website` | "Build website" | End-to-end website generation pipeline. |
+| **12** | `App Build`| `/12-build-app` | "Build application" | Production-ready application build cycle. |
+| **13** | `TDD Cycle` | `/13-tdd` | "Start TDD" | Disciplined Red-Green-Refactor orchestration. |
+| **14** | `Debug` | `/14-debug-session` | "Debug session" | Intensive diagnostic and repair protocol. |
+| **15** | `Fix Bugs` | `/15-fix-bugs` | "Fix all bugs" | Build-detected bug hunting and resolution. |
+| **16** | `Performance` | `/16-performance` | "Optimize perf" | Profiling and bottleneck elimination. |
+| **17** | `Quality` | `/17-quality-gate` | "Check quality" | Compliance check against design/requirements. |
+| **18** | `Validator` | `/18-cross-agent-validator` | "Validate work" | Audit previous steps for hallucinations/errors. |
+| **19** | `Report` | `/19-write-report` | "Write report" | Generate status reports and technical summaries. |
+| **20** | `Review` | `/20-weekly-review` | "Weekly review" | Strategic audit of project progress/health. |
+| **21** | `Release` | `/21-release-project` | "Finalize release" | God Mode: License, README, Packaging. |
+| **22** | `Commit` | `/22-auto-commit` | "Auto commit" | Atomic, semantic commit generation loop. |
 
 
 ---
@@ -217,7 +219,7 @@ Implicit reasoning modules that govern every agent's internal logic.
 
 ## 🧮 Advanced Operations Matrix
 
-All agents are now augmented with the **Advanced Operations Matrix (v4.1.1)**, enabling:
+All agents are now augmented with the **Advanced Operations Matrix (v4.0.0)**, enabling:
 
 - **Mathematical Simulations**: Complex arithmetic, statistics, and linear algebra.
 - **Data Engineering**: Large-scale data processing using pandas, numpy, and JSON-querying.

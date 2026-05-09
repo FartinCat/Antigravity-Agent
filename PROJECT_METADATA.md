@@ -1,11 +1,11 @@
-﻿# Project Metadata
+# Project Metadata
 
 **Project Name**: Antigravity Agent Ecosystem
 **Version**: 4.1.1
 **Author**: FartinCat
 **Contact**: fartincat@proton.me
 **Created**: 2026-05-03
-**Status**: Active / Open Source (MIT)
+**Status**: Active / Strict Commercial / Academic Free
 
 ## Description
 A high-performance, modular AI agent framework designed for autonomous coding, architectural planning, and creative documentation. Features a dual-skill architecture (Waiters vs Recipe Book) and session-persistent memory.
@@ -35,13 +35,8 @@ A high-performance, modular AI agent framework designed for autonomous coding, a
 - [x] Performance Optimization Workflow
 
 ## Changelog
-- v3.0.0 â€” Exponential Capability Expansion. Multi-Plan Synthesis of 5 AI strategies. Global re-sequencing of all 58 files into a logical 5-phase lifecycle (Awareness, Strategy, Execution, Quality, Finalization).
-- v2.2.0 â€” Git Commit Author system: new agent, workflow, rule, and foundational skill for automated Conventional Commits.
-- v2.1.0 â€” Global Structural Overhaul. Numeric sequencing applied to all Rules, Agents, Skills, and Workflows. Foundational skills upgraded.
-- v2.0.0 â€” Massive System Overhaul. Release-Project workflow executed. Commercial licensing applied. Self-upgrading instincts permanently enabled.
-- v1.5.1 â€” Added metadata-awareness rule. Fixed scanner workflow visibility.
-- v1.5.0 â€” Integrated "Ask" agent and "Scanner" workflow. Merged documentation.
-- v0.1.0 â€” Project initialized. Antigravity Agent system bootstrapped.
-
-
+- v4.1.1 — Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
+- v4.1.0 — **Self-Maintenance Framework**: Introduced `23-sync-registry.md` workflow and `/sync-registry` command to automatically synchronize the `.agent/` filesystem state with `install-state.json`, `AGENTS.md`, and `CLAUDE.md`.
+- v4.0.0 — **MCP Integration Pipeline**: Integrated 21st-dev-magic, StitchMCP, figma-remote, mongodb, playwright, and supabase into the ecosystem.
+- v3.0.0 — Stabilized automated project lifecycle and fixed workflow visibility.
 
