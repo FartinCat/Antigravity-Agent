@@ -2,19 +2,17 @@
 
 # Session memory (contains local state)
 .agent/session-context.md
-
-# Memory persistence (contains cross-session KV store)
-.agent/memory.json
+.gemini/
 
 # Reference repositories (cloned for synthesis, not distributed)
 references/
 
-# Historical dump folder
-dump/
+# Historical archives
+archived/
 
-# Generated metadata (project-specific)
-PROJECT_METADATA.md
+# Business Evaluations (Sensitive)
 MARKET_EVALUATION.md
+docs/market-evaluations/
 
 # Node modules (MCP servers)
 node_modules/
