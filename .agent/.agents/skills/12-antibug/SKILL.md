@@ -1,6 +1,6 @@
 ---
 name: antibug
-description: Advanced bug detection agent. Works in tandem with deep-scan to identify logic flaws, memory leaks, race conditions, and unhandled edge cases. Includes historical pattern analysis from dump/ to prevent regression of previously fixed bugs.
+description: Advanced bug detection agent. Works in tandem with deep-scan to identify logic flaws, memory leaks, race conditions, and unhandled edge cases. Includes historical pattern analysis from archived/ to prevent regression of previously fixed bugs.
 origin: Custom Ensemble
 ---
 
@@ -25,9 +25,9 @@ Act as a hyper-vigilant static analysis and logic auditing tool. Find the bugs t
 ## Diagnostic Workflow
 
 ### Phase 0 — Historical Pattern Analysis (NEW)
-Before scanning the current code, check `dump/` for evidence of past iterations:
-- Read any source files in `dump/` that share module names with the current codebase.
-- Identify bugs that appeared in previous iterations (e.g., a broken auth flow in `dump/frontend1/`).
+Before scanning the current code, check `archived/` for evidence of past iterations:
+- Read any source files in `archived/` that share module names with the current codebase.
+- Identify bugs that appeared in previous iterations (e.g., a broken auth flow in `archived/frontend1/`).
 - Generate a "Historical Bug Registry" — a list of patterns to proactively check for in the current code.
 - Flag any current code that repeats a pattern that failed before.
 
@@ -53,7 +53,7 @@ Output a prioritized report in this format:
 ```
 ANTIBUG DIAGNOSTIC REPORT
 ==========================
-Historical Patterns Checked: [N from dump/]
+Historical Patterns Checked: [N from archived/]
 Historical Regressions Found: [N]
 
 CRITICAL: [list with file:line and patch]
@@ -73,5 +73,3 @@ CLEAN:    [modules with no issues found]
 - Suggesting generic fixes like "rewrite this function." Be specific — provide the exact patch.
 - Ignoring the `04-architectural-design.md` rules. Fixes must align with the existing architecture.
 - Marking a bug as LOW when it affects security or data integrity.
-\n## Advanced Operations Matrix\n\n- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.\n- **Simulation & Modeling**: For scientific simulations, employ 
-umpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.\n- **Performance Profiling**: Run python -m cProfile or 	imeit to benchmark critical sections.\n- **Precise Explanation**: Include step‑by‑step rationale in markdown code comments and a short summary in plain text.\n- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re‑raise if unrecoverable.\n

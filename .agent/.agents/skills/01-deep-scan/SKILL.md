@@ -29,7 +29,7 @@ The `.agent/` folder contains agent infrastructure — rules, skills, workflows,
 2. **Resource Identification**: Scan for non-code assets — images, data files, `.bib` files, configurations, and documentation that agents may need to reference.
 3. **Dependency Mapping**: Read package files (`package.json`, `requirements.txt`, `Cargo.toml`, `.bib`) to understand the full technical stack and version landscape.
 4. **Context Linking**: Identify relationships between modules — how does the UI talk to the API? How does the data layer connect to the service layer?
-5. **Anomaly Detection**: Flag any structural non-compliance — missing `assets/` taxonomy, absent `PROJECT_METADATA.md`, stray reference folders outside `dump/`. **Do NOT flag the `.agent/` folder as an anomaly — it is expected and correct.**
+5. **Anomaly Detection**: Flag any structural non-compliance — missing `assets/` taxonomy, absent `PROJECT_METADATA.md`, stray reference folders outside `archived/`. **Do NOT flag the `.agent/` folder as an anomaly — it is expected and correct.**
 6. **Memory Update**: Output a concise structured summary (the "mental map") that all subsequent agents in the session can reference.
 
 ## Standard Output Format

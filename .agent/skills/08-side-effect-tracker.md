@@ -1,3 +1,8 @@
+---
+name: side-effect-tracker
+description: Skill for side-effect-tracker
+---
+
 # Side-Effect Tracker
 
 **Purpose**: Detects global state mutation inside functions whose names imply purity.
@@ -27,11 +32,3 @@ A flagged function performs any of these inside its body:
 ## Exemptions
 - Functions in test files (`test_*.py`, `*.test.ts`)
 - Functions explicitly decorated/annotated as having side effects (`@with_side_effects`, `// side-effect: ...`)
-
-## Advanced Operations Matrix
-
-- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
-- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
-- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
-- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
-- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.

@@ -1,3 +1,8 @@
+---
+name: cognitive-load-inspector
+description: Skill for cognitive-load-inspector
+---
+
 # Cognitive Load Inspector
 
 **Purpose**: Measures the cognitive complexity of functions and blocks code that exceeds safe thresholds for LLM reasoning.
@@ -46,11 +51,3 @@ Cognitive_Complexity = Σ(nesting_depth) + Σ(mutation) + Σ(distance) + Σ(flow
 3. **Table-Driven Logic**: Replace cascading if/else with a lookup table
 4. **State Machine**: Replace complex conditional chains with explicit state transitions
 5. **Pipeline**: Replace nested transformations with chained operations (map/filter/reduce)
-
-## Advanced Operations Matrix
-
-- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
-- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
-- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
-- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
-- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.

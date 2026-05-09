@@ -1,3 +1,8 @@
+---
+name: code-synthesis
+description: Skill for code-synthesis
+---
+
 # Code Synthesis Logic (Advanced)
 
 This skill provides the algorithmic logic for the `04-synthesizer` agent to merge disparate AI perspectives (e.g., plans from Claude, DeepSeek, GPT-4o) into a single authoritative `MASTER_PLAN.md`.
@@ -35,11 +40,3 @@ The final `MASTER_PLAN.md` must be more than a list; it must be a **DAG (Directe
 - **Prerequisites**: Clear list of what must be installed before Step 1.
 - **Critical Path**: Identification of the "Bottleneck" features that must be built first.
 - **Verification Plan**: A specific test case for every phase to ensure the synthesis holds together during execution.
-
-## Advanced Operations Matrix
-
-- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
-- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
-- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
-- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
-- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.

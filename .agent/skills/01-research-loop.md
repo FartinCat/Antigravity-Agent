@@ -1,3 +1,8 @@
+---
+name: research-loop
+description: Skill for research-loop
+---
+
 # Research Loop Protocol
 
 This is the core investigative protocol used by all UI agents before generating any output. It produces the "DeepDive" effect — agents that investigate before they respond, not agents that guess immediately.
@@ -12,7 +17,7 @@ The `.agent/` folder is agent infrastructure. Reading it as "project evidence" i
 
 **The only project evidence sources are:**
 - `Plan/` folder — external AI plans and prior decisions
-- `dump/` folder — discarded previous iterations
+- `archived/` folder — discarded previous iterations
 - `PROJECT_METADATA.md` at root or `assets/information/PROJECT_METADATA.md`
 - `MASTER_PLAN.md` at root
 - Actual project source files (`.py`, `.js`, `.ts`, `.html`, `.css`, `.tex`, `.rs`, etc.)
@@ -26,7 +31,7 @@ The `.agent/` folder is agent infrastructure. Reading it as "project evidence" i
 ### Step 1 — Evidence Scan
 Read every relevant **project** file that exists before forming any opinion:
 - `Plan/` folder: What has been decided before? What AI perspectives already exist?
-- `dump/` folder: What was tried and discarded? Why did previous iterations fail?
+- `archived/` folder: What was tried and discarded? Why did previous iterations fail?
 - Root `PROJECT_METADATA.md` and/or `assets/information/PROJECT_METADATA.md`: What version are we at? What features are complete vs pending?
 - `MASTER_PLAN.md` (if it exists): Is there an active synthesis in progress?
 - `.agent/session-context.md`: What happened in previous sessions? (Read silently — this is the only `.agent/` file to reference.)
@@ -61,7 +66,7 @@ Only after completing Steps 1–4 may the agent generate its primary output. The
 RESEARCH LOOP COMPLETE
 ======================
 Project Directory: [current project folder name]
-Evidence Scanned: [project files read — e.g., "Plan/planbyclaude.txt, dump/frontend1/index.html"]
+Evidence Scanned: [project files read — e.g., "Plan/planbyclaude.txt, archived/frontend1/index.html"]
 .agent/ Contents: [EXCLUDED — agent infrastructure, not project evidence]
 Contradictions Found: [N — list them, or "None"]
 Gaps Identified: [list, or "None"]
@@ -78,11 +83,3 @@ All UI agents reference this file. It is especially critical for:
 - `antibug` — before issuing any diagnostic
 - `market-evaluator` — before issuing any valuation
 - `readme-architect` — before generating documentation
-
-## Advanced Operations Matrix
-
-- **Database Interaction**: Use appropriate client libraries (e.g., sqlite3 for SQLite, psycopg2 for PostgreSQL, mysql-connector-python for MySQL) with parameterized queries to prevent injection.
-- **Simulation & Modeling**: For scientific simulations, employ numpy, scipy, or pandas for data handling, and matplotlib or plotly for visualizations.
-- **Performance Profiling**: Run python -m cProfile or timeit to benchmark critical sections.
-- **Precise Explanation**: Include step-by-step rationale in markdown code comments and a short summary in plain text.
-- **Error Handling**: Wrap external calls in try/except blocks, log errors with context, and re-raise if unrecoverable.
