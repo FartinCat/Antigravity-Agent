@@ -60,13 +60,13 @@ Action Required: [re-run agent / complete missing step manually]
 
 ### Step 3 — Artifact Verification
 
-Confirm that all expected output files exist at project root (not inside `.agent/`):
+Confirm that all expected output files exist in their designated locations (per Rule 20 — output routing):
 
 - `scanner` / `build-website` / `build-app` → source files exist, tests exist, root `PROJECT_METADATA.md` version was bumped
 
 - `fix-bugs` → patches were applied, version was bumped in root `PROJECT_METADATA.md`
 
-- `multi-plan-synthesis` → `MASTER_PLAN.md` exists at project root
+- `multi-plan-synthesis` → `MASTER_PLAN.md` exists in `docs/master-plans/`
 
 - `release-project` → `LICENSE.md`, `README.md` exist at project root; `zip/` contains versioned archive
 
@@ -144,3 +144,30 @@ RED    = Critical agent failure, missing core artifact, or .agent/ was scanned a
 
 **Note**: Perform registry drift check (`/sync-registry`) during artifact verification. If drift > 5 components, flag as YELLOW health.
 
+### Step 5 — Autonomous Self-Diagnosis
+
+These checks prevent the validator itself from becoming a source of drift.
+
+#### 5a — Rule 20 Compliance Audit
+Scan this workflow's own Step 3 artifact paths. If any step directs output to
+"project root" for files that should go to `docs/` per Rule 20, flag as:
+```
+SELF-CHECK FAIL: Step 3 artifact path contradicts Rule 20 (output routing)
+```
+
+#### 5b — Version Consistency
+Read `CLAUDE.md` version and compare to `PROJECT_METADATA.md`. If they differ:
+```
+SELF-CHECK FAIL: CLAUDE.md version drift detected — run /sync-registry
+```
+
+#### 5c — Hardcoded Version Detection
+Scan all `.agent/workflows/*.md` files for literal version strings like `v3.0.0`,
+`v4.0.0`, etc. that should be dynamically read from `PROJECT_METADATA.md`. Flag each:
+```
+HARDCODED VERSION: [workflow-file] references [version] — should use dynamic lookup
+```
+
+#### 5d — Numbering Collision Check
+Run `python .agent/scripts/sync_registry.py` and check Step 2 output. If collisions
+or gaps are reported, flag as YELLOW health.

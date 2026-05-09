@@ -129,6 +129,37 @@ Report:
   ROOT POLLUTION: CLEAN / [N] files found
   If found: list them and ask "Run /migrate-docs to move to docs/?"
 
+### Step 6d — Numbering Collision Detection
+Scan `.agent/skills/` and `.agent/.agents/skills/` for duplicate numeric prefixes.
+For each directory, extract the leading number from each file/folder name and check for duplicates.
+Also check for gaps in the numbering sequence.
+Report:
+  NUMBERING: CLEAN / COLLISION DETECTED
+  If collision: "[directory]: prefix [NN] shared by [file1], [file2]"
+  If gap: "[directory]: position [NN] is missing"
+
+### Step 6e — Encoding Integrity Check
+Scan all `.md` files in the project root and `.agent/` for bell characters (`\x07`) — remnants of BOM encoding bugs.
+Also scan `.agent/antigravity-agent-install-state.json` string values.
+Report:
+  ENCODING: CLEAN / [N] files contain BOM corruption
+  If found: "Run `python .agent/scripts/sync_registry.py` to auto-sanitize"
+
+### Step 6f — CLAUDE.md Version Consistency
+Read `CLAUDE.md` header line and identity table version.
+Compare against `PROJECT_METADATA.md` version field.
+Report:
+  CLAUDE.md VERSION: IN SYNC / DRIFT DETECTED
+  If drift: "CLAUDE.md says vX.Y.Z but PROJECT_METADATA.md says vA.B.C — run /sync-registry"
+
+### Step 6g — Cross-Reference Validation
+Scan all workflow files for hardcoded version numbers (e.g., `v3.0.0`, `v4.0.0`).
+Flag any workflow that references a specific version number instead of reading from PROJECT_METADATA.md.
+Also check that Rule 20 (output routing) is not contradicted by any workflow step that says "at project root".
+Report:
+  CROSS-REFERENCES: CLEAN / [N] issues found
+  If found: list each file and the hardcoded reference
+
 7. **Output Report**: Produce a clean, structured report using the Deep Scan output format.
 
 

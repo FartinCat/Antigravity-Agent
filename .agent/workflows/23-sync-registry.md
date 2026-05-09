@@ -5,8 +5,9 @@ order: 23
 ---
 # Workflow: Sync Registry
 
-**Objective:** Keep AGENTS.md, install-state.json, and CLAUDE.md perfectly
-synchronized with the actual .agent/ filesystem.
+**Objective:** Keep AGENTS.md, install-state.json, CLAUDE.md, README.md, LICENSE.md,
+CHANGELOG.md, and PROJECT_METADATA.md perfectly synchronized with the actual `.agent/`
+filesystem. Enforced by the executable engine at `.agent/scripts/sync_registry.py`.
 
 ## Trigger Conditions
 - Automatically as LAST STEP of any workflow that creates new .agent/ files
@@ -16,46 +17,52 @@ synchronized with the actual .agent/ filesystem.
 
 ## Execution Sequence
 
-### Step 1 — Drift Detection (script-based)
-Run script comparing filesystem vs install-state.json:
-Output: [component]: [disk count] actual / [registry count] registered -> [IN SYNC / DRIFT]
-Print full drift report before any changes.
+### Step 1 — Run the Sync Engine
+Execute the Python script:
+```bash
+python .agent/scripts/sync_registry.py
+```
+The script performs ALL of the following steps autonomously:
 
-### Step 1.5 — Version & Changelog Verification
-Read `PROJECT_METADATA.md` to extract the latest `**Version**` and the newest `## Changelog` entry.
-Compare with `install-state.json` and `.agent/session-context.md`.
-Flag drift if versions do not match.
+### Step 2 — Drift Detection
+Compares filesystem vs install-state.json for:
+- Rules, Skills, Workflows, Agents, Instincts, Commands (file counts + names)
+- Version field (PROJECT_METADATA.md vs install-state.json vs CLAUDE.md)
+- CHANGELOG.md (missing version entries)
+- PROJECT_METADATA.md (changelog section sync)
 
-### Step 2 — AGENTS.md Regeneration (only if drift detected)
-For each drifted component:
-1. Read actual files in the directory
-2. Extract name and description from each file's first 3 lines
-3. Regenerate the affected AGENTS.md section
-4. Preserve all other sections — surgical update only
-5. Update version number at top to match PROJECT_METADATA.md
+### Step 3 — Collision & Integrity Detection
+- Scans `.agent/skills/` and `.agent/.agents/skills/` for duplicate numeric prefixes
+- Detects gaps in numbering sequences
+- Strips BOM corruption (`\x07` bell characters) from all registry files
 
-### Step 3 — install-state.json Update
-Update drifted lists with actual filenames.
-Update component_counts with accurate numbers.
-Update the `version` field to match PROJECT_METADATA.md.
-Append the latest changelog string to the `changelog` dictionary.
-Update last_updated timestamp.
+### Step 4 — Synchronization (only if drift detected)
+1. **install-state.json**: Updates component lists, counts, version, changelog, timestamp
+2. **AGENTS.md**: Full regeneration from filesystem (agents, workflows, architecture tree)
+3. **CLAUDE.md**: Updates version in header + identity table + slash command registry
+4. **CHANGELOG.md**: Inserts new version entry with smart action description
+5. **PROJECT_METADATA.md**: Syncs changelog section from CHANGELOG.md top 5 entries
+6. **README.md**: Updates version badges
+7. **LICENSE.md**: Updates applies-to-version field
 
-### Step 4 — CLAUDE.md Command Registry Sync (only if commands or personas changed)
-Read all command files, extract description from YAML frontmatter.
-Regenerate Section 4 (Slash Command Registry) of CLAUDE.md.
-Preserve all other sections.
-
-### Step 5 — Verification
-Re-run drift detection script.
-Expected: ALL components show IN SYNC.
-If any still show drift: repeat Steps 2-4.
-
-### Step 6 — Sync Report
-Output:
-"REGISTRY SYNC COMPLETE — [date]
+### Step 5 — Verification & Report
+Re-validates all components. Outputs:
+```
+REGISTRY SYNC COMPLETE — [date]
 Components synced: [list]
 AGENTS.md: UPDATED / UNCHANGED
 install-state.json: UPDATED / UNCHANGED
 CLAUDE.md: UPDATED / UNCHANGED
-Drift resolved: [N] components"
+CHANGELOG.md: UPDATED / UNCHANGED
+PROJECT_METADATA.md: UPDATED / UNCHANGED
+README.md: UPDATED / UNCHANGED
+LICENSE.md: UPDATED / UNCHANGED
+
+HEALTH: GREEN / YELLOW (collisions or gaps found)
+```
+
+## Primary Script
+- `.agent/scripts/sync_registry.py`
+
+## Related Skill
+- `.agent/skills/22-registry-synchronizer.md`

@@ -22,7 +22,7 @@ order: 21
 
 
 
-1. **Auto-Cleanup**: Trigger the `09-dump-awareness.md` instinct. The AI actively scans the project root for stray reference folders (`frontend1`, `app2`, etc.) and moves them into the `archived/` directory. **The `.agent/`, `.git/`, and `zip/` folders are NEVER moved.**
+1. **Auto-Cleanup**: Trigger the `09-archive-management.md` rule. The AI actively scans the project root for stray reference folders (`frontend1`, `app2`, etc.) and moves them into the `archived/` directory. **The `.agent/`, `.git/`, and `zip/` folders are NEVER moved.**
 
 
 
@@ -42,7 +42,7 @@ order: 21
 
 
 
-6. **Version Bump**: Invoke `10-semantic-versioning.md` to finalize the release version (v3.0.0) in root `PROJECT_METADATA.md`.
+6. **Version Bump**: Invoke `10-semantic-versioning.md` to finalize the release version (read current version from `PROJECT_METADATA.md` and bump accordingly) in root `PROJECT_METADATA.md`.
 
 
 
