@@ -4,11 +4,11 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 
-# 🌌 Antigravity Agent Ecosystem (v4.0.0)
+# 🌌 Antigravity Agent Ecosystem (v4.2.0)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.0.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
+[![Version](https://img.shields.io/badge/version-4.2.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
@@ -142,29 +142,29 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 
 | ID | Agent Name | Command | Primary Function |
 |:---|:---|:---|:---|
-| **01** | `deep-scan` | `/scanner` | Comprehensive directory mapping and resource identification. |
-| **02** | `failure-predictor` | `/predict` | Pre-execution analysis to identify logic flaws and edge cases. |
-| **03** | `research-loop` | `/research` | Recursive information gathering and documentation audit. |
-| **04** | `planner` | `/plan` | Strategic roadmap generation and multi-step orchestration. |
-| **05** | `synthesizer` | `/synthesize` | Merges multiple AI strategies into a single coherent plan. |
-| **06** | `tdd-guide` | `/tdd-guide` | Orchestrates the Red-Green-Refactor cycle. |
-| **07** | `refactor` | `/refactor` | Codebase cleanup and optimization based on Phase 3 rules. |
-| **08** | `cognitive-load` | `/inspect-load` | Monitors code complexity and suggests simplifications. |
-| **09** | `side-effect` | `/track-impact` | Maps downstream impacts of every local code change. |
-| **10** | `state-machine` | `/inspect-state` | Audits state transitions and identifies illegal states. |
-| **11** | `confidence` | `/score` | Assigns confidence ratings to proposed solutions. |
-| **12** | `antibug` | `/antibug` | High-fidelity bug hunting and regression analysis. |
-| **13** | `web-aesthetics` | `/ui` | UI/UX design auditor and CSS layout specialist. |
-| **14** | `memory-evolve` | `/evolve` | Updates project memory and session context. |
-| **15** | `context-eng` | `/context` | Optimizes the agent's context window for maximum focus. |
-| **16** | `readme-arch` | `/readme` | Generates premium-grade documentation and visual guides. |
-| **17** | `market-eval` | `/market` | Analyzes codebase complexity for commercial valuation. |
-| **18** | `license-gen` | `/license` | Generates appropriate licensing documentation. |
-| **19** | `git-author` | `/commit` | Drafts atomic, conventional commit messages from diffs. |
-| **20** | `mcp-auditor` | `/mcp-audit` | Audits & maps integrated MCP tool capabilities. |
-| **21** | `security-audit` | `/security` | Zero-trust security scanning and vulnerability detection. |
-| **22** | `test-engineer` | `/test` | Automated test suite generation and coverage enforcement. |
-
+| **01** | `deep-scan` | `/deep-scan` | Specialist Agent. |
+| **02** | `failure-predictor` | `/failure-predictor` | Specialist Agent. |
+| **03** | `ask` | `/ask` | Specialist Agent. |
+| **04** | `planner` | `/planner` | Create a strategic implementation plan — single-agent version of /plan |
+| **05** | `synthesizer` | `/synthesizer` | Specialist Agent. |
+| **06** | `tdd-guide` | `/tdd-guide` | Enforce strict TDD Red-Green-Refactor cycle |
+| **07** | `python-agent` | `/python-agent` | Specialist Agent. |
+| **08** | `rust-agent` | `/rust-agent` | Specialist Agent. |
+| **09** | `jsts-agent` | `/jsts-agent` | Specialist Agent. |
+| **10** | `c-agent` | `/c-agent` | Specialist Agent. |
+| **11** | `go-agent` | `/go-agent` | Specialist Agent. |
+| **12** | `antibug` | `/antibug` | Deep logical audit and root-cause bug fixing |
+| **13** | `web-aesthetics` | `/web-aesthetics` | Audit and upgrade UI/UX to premium standards |
+| **14** | `scientific-writing` | `/scientific-writing` | Specialist Agent. |
+| **15** | `latex-bib-manager` | `/latex-bib-manager` | Specialist Agent. |
+| **16** | `readme-architect` | `/readme-architect` | Specialist Agent. |
+| **17** | `market-evaluator` | `/market-evaluator` | Specialist Agent. |
+| **18** | `commercial-license` | `/commercial-license` | Specialist Agent. |
+| **19** | `git-commit-author` | `/git-commit-author` | Specialist Agent. |
+| **20** | `code-reviewer` | `/code-reviewer` | Specialist Agent. |
+| **20** | `mcp-auditor` | `/mcp-auditor` | Specialist Agent. |
+| **21** | `security-auditor` | `/security-auditor` | Specialist Agent. |
+| **22** | `test-engineer` | `/test-engineer` | Specialist Agent. |
 
 ---
 
@@ -176,29 +176,30 @@ They are listed in logical ascending order of the 5-Phase software lifecycle.
 
 | ID | Workflow | Slash Command | Trigger Phrase | Objective |
 |:---|:---|:---|:---|:---|
-| **01** | `Scanner` | `/01-scanner` | "Scan the project" | Build situational awareness and map directories. |
-| **02** | `Onboard` | `/02-onboard-project` | "Onboard project" | Analyze legacy code and suggest initial strategy. |
-| **03** | `MCP Audit` | `/03-mcp-audit` | "Scan my tools" | Audit & map integrated MCP tool capabilities. |
-| **04** | `Scaffold` | `/04-scaffold-assets` | "Scaffold assets" | Initialize project structure and taxonomy. |
-| **05** | `Spec` | `/05-spec-discovery` | "Discover spec" | Functional and technical spec extraction. |
-| **06** | `Research` | `/06-parallel-research` | "Parallel research" | Simultaneous research on multiple technical paths. |
-| **07** | `Synthesis` | `/07-multi-plan-synthesis` | "Synthesize plans" | Merge competing AI strategies into one plan. |
-| **08** | `Knowledge` | `/08-knowledge-capture` | "Capture knowledge" | Distill project insights into persistent KIs. |
-| **09** | `New Req` | `/09-new-requirement` | "Add requirement" | Integrate new features into an existing plan. |
-| **10** | `Feature` | `/10-feature-development` | "Develop feature" | Incremental feature build cycle. |
-| **11** | `Web Build`| `/11-build-website` | "Build website" | End-to-end website generation pipeline. |
-| **12** | `App Build`| `/12-build-app` | "Build application" | Production-ready application build cycle. |
-| **13** | `TDD Cycle` | `/13-tdd` | "Start TDD" | Disciplined Red-Green-Refactor orchestration. |
-| **14** | `Debug` | `/14-debug-session` | "Debug session" | Intensive diagnostic and repair protocol. |
-| **15** | `Fix Bugs` | `/15-fix-bugs` | "Fix all bugs" | Build-detected bug hunting and resolution. |
-| **16** | `Performance` | `/16-performance` | "Optimize perf" | Profiling and bottleneck elimination. |
-| **17** | `Quality` | `/17-quality-gate` | "Check quality" | Compliance check against design/requirements. |
-| **18** | `Validator` | `/18-cross-agent-validator` | "Validate work" | Audit previous steps for hallucinations/errors. |
-| **19** | `Report` | `/19-write-report` | "Write report" | Generate status reports and technical summaries. |
-| **20** | `Review` | `/20-weekly-review` | "Weekly review" | Strategic audit of project progress/health. |
-| **21** | `Release` | `/21-release-project` | "Finalize release" | God Mode: License, README, Packaging. |
-| **22** | `Commit` | `/22-auto-commit` | "Auto commit" | Atomic, semantic commit generation loop. |
-
+| **01** | `SCANNER` | `/01-scanner` | "scanner" | Build situational awareness and map directories. |
+| **02** | `ONBOARD PROJECT` | `/02-onboard-project` | "onboard project" | Analyze legacy code and suggest initial strategy. |
+| **03** | `MCP AUDIT` | `/03-mcp-audit` | "mcp audit" | Audit & map integrated MCP tool capabilities. |
+| **04** | `SCAFFOLD ASSETS` | `/04-scaffold-assets` | "scaffold assets" | Initialize project structure and taxonomy. |
+| **05** | `SPEC DISCOVERY` | `/05-spec-discovery` | "spec discovery" | Functional and technical spec extraction. |
+| **06** | `PARALLEL RESEARCH` | `/06-parallel-research` | "parallel research" | Simultaneous research on multiple technical paths. |
+| **07** | `MULTI PLAN SYNTHESIS` | `/07-multi-plan-synthesis` | "multi plan synthesis" | Merge competing AI strategies into one plan. |
+| **08** | `KNOWLEDGE CAPTURE` | `/08-knowledge-capture` | "knowledge capture" | Distill project insights into persistent KIs. |
+| **09** | `NEW REQUIREMENT` | `/09-new-requirement` | "new requirement" | Integrate new features into an existing plan. |
+| **10** | `FEATURE DEVELOPMENT` | `/10-feature-development` | "feature development" | Incremental feature build cycle. |
+| **11** | `05A BUILD WEBSITE` | `/11-build-website` | "05a build website" | End-to-end website generation pipeline. |
+| **12** | `05B BUILD APP` | `/12-build-app` | "05b build app" | Production-ready application build cycle. |
+| **13** | `TDD` | `/13-tdd` | "tdd" | Disciplined Red-Green-Refactor orchestration. |
+| **14** | `DEBUG SESSION` | `/14-debug-session` | "debug session" | Intensive diagnostic and repair protocol. |
+| **15** | `FIX BUGS` | `/15-fix-bugs` | "fix bugs" | Build-detected bug hunting and resolution. |
+| **16** | `PERFORMANCE` | `/16-performance` | "performance" | Profiling and bottleneck elimination. |
+| **17** | `QUALITY GATE` | `/17-quality-gate` | "quality gate" | Compliance check against design/requirements. |
+| **18** | `CROSS AGENT VALIDATOR` | `/18-cross-agent-validator` | "cross agent validator" | Audit previous steps for hallucinations/errors. |
+| **19** | `WRITE REPORT` | `/19-write-report` | "write report" | Generate status reports and technical summaries. |
+| **20** | `WEEKLY REVIEW` | `/20-weekly-review` | "weekly review" | Strategic audit of project progress/health. |
+| **21** | `RELEASE PROJECT` | `/21-release-project` | "release project" | God Mode: License, README, Packaging. |
+| **22** | `README ARCHITECT` | `/22-readme-architect` | "readme architect" | Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills. |
+| **23** | `SYNC REGISTRY` | `/23-sync-registry` | "sync registry" | Synchronize all registry files with the actual .agent/ filesystem state. |
+| **24** | `AUTO COMMIT` | `/24-auto-commit` | "auto commit" | Atomic, semantic commit generation loop. |
 
 ---
 
@@ -207,12 +208,28 @@ They are listed in logical ascending order of the 5-Phase software lifecycle.
 
 Implicit reasoning modules that govern every agent's internal logic.
 
-- **`03-task-decomposition`**: Breaks any request into atomic, non-overlapping tasks.
-- **`07-cognitive-load-inspector`**: Monitors code complexity and suggests simplifications.
-- **`08-side-effect-tracker`**: Maps the downstream impacts of every local change.
-- **`14-context-engineering`**: Optimizes the agent's context window for maximum focus.
-- **`15-security-engineering`**: Enforces zero-trust principles during code generation.
-
+- **`01-research-loop`**: This is the core investigative protocol used by all UI agents before generating any output. It produces the "DeepDive" effect — agents that investigate before they respond, not agents that guess immediately.
+- **`02-language-routing`**: This skill detects the programming language(s) of the current task and routes to the correct language-specific agent for specialized handling.
+- **`03-task-decomposition`**: This skill ensures that every task given to an LLM is small enough to be solved correctly, even by weaker models.
+- **`04-architectural-design`**: This foundational skill dictates how the `03-planner` and `04-synthesizer` agents structure complex systems. It enforces professional engineering standards to prevent technical debt.
+- **`05-code-synthesis`**: This skill provides the algorithmic logic for the `04-synthesizer` agent to merge disparate AI perspectives (e.g., plans from Claude, DeepSeek, GPT-4o) into a single authoritative `MASTER_PLAN.md`.
+- **`06-refactor`**: This file contains the foundational principles used by the `tdd-guide` agent during Phase 3 (Refactor) and by the `antibug` agent when proposing structural improvements.
+- **`07-cognitive-load-inspector`**: Purpose: Measures the cognitive complexity of functions and blocks code that exceeds safe thresholds for LLM reasoning.
+- **`08-side-effect-tracker`**: Purpose: Detects global state mutation inside functions whose names imply purity.
+- **`09-state-machine-inspector`**: Purpose: Detects classes/modules that manage state through multiple boolean flags instead of a unified state type (enum/union).
+- **`10-confidence-scoring`**: Every LLM output is assigned a confidence score before acceptance. This score determines which verification gates must be passed.
+- **`11-memory-evolution`**: This skill defines the three-tier memory system and the evolution logic that promotes patterns from session memory → project memory → global memory.
+- **`12-commit-semantics`**: This foundational skill dictates how the `13-git-commit-author` reads `git diff` outputs and structures version control history.
+- **`13-knowledge-capture`**: Build structured understanding of code entry points with an analysis-first workflow.
+- **`14-context-engineering`**: ## Overview
+- **`15-security-engineering`**: ## Overview
+- **`16-api-design`**: ## Overview
+- **`17-spec-compliance`**: Use this skill when you need to:
+- **`18-memory-management`**: Use `npx ai-devkit@latest memory ...` as the durable knowledge layer.
+- **`19-performance-profiling`**: ## Overview
+- **`20-stitch-ui`**: You are an expert Design Systems Lead and Prompt Engineer specializing in the Stitch MCP server. Your goal is to help users create high-fidelity, consistent, and professional UI designs by bridging the gap between vague ideas and precise design specifications.
+- **`22-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
+- **`22-registry-synchronizer`**: ## Purpose
 
 ---
 

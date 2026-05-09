@@ -1,4 +1,4 @@
-# Antigravity Agent Ecosystem (v4.1.1)
+# Antigravity Agent Ecosystem (v4.2.0)
 
 A portable AI operating system. Copy the `.agent/` folder into any project directory and the entire skill + workflow ecosystem activates immediately.
 
@@ -59,8 +59,9 @@ Workflows are listed below in **logical ascending order** corresponding to a sta
 - **`19-write-report.md`**: Generate status reports and technical summaries.
 - **`20-weekly-review.md`**: Strategic audit of project progress/health.
 - **`21-release-project.md`**: God Mode: License, README, Packaging.
-- **`22-auto-commit.md`**: Atomic, semantic commit generation loop.
+- **`22-readme-architect.md`**: Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills.
 - **`23-sync-registry.md`**: Synchronize all registry files with the actual .agent/ filesystem state.
+- **`24-auto-commit.md`**: Atomic, semantic commit generation loop.
 
 ---
 
@@ -79,7 +80,7 @@ Workflows are listed below in **logical ascending order** corresponding to a sta
 │   ├── 00-workflow-orchestration.md
 │   ├── 01-core.md
 │   ├── 02-integrity.md
-│   ├── ... (22 rules total)
+│   ├── ... (23 rules total)
 ├── skills/ (Foundational Logic)
 │   ├── 01-research-loop.md
 │   ├── 02-language-routing.md
@@ -107,6 +108,7 @@ Workflows are listed below in **logical ascending order** corresponding to a sta
     ├── 19-write-report.md
     ├── 20-weekly-review.md
     ├── 21-release-project.md
-    ├── 22-auto-commit.md
+    ├── 22-readme-architect.md
     ├── 23-sync-registry.md
+    ├── 24-auto-commit.md
 ```

@@ -1,7 +1,7 @@
 # Project Metadata
 
 **Project Name**: Antigravity Agent Ecosystem
-**Version**: 4.1.1
+**Version**: 4.2.0
 **Author**: FartinCat
 **Contact**: fartincat@proton.me
 **Created**: 2026-05-03
@@ -35,6 +35,7 @@ A high-performance, modular AI agent framework designed for autonomous coding, a
 - [x] Performance Optimization Workflow
 
 ## Changelog
+- v4.2.0 — Version bumped.
 - v4.1.1 — Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
 - v4.1.0 — **Self-Maintenance Framework**: Introduced `23-sync-registry.md` workflow and `/sync-registry` command to automatically synchronize the `.agent/` filesystem state with `install-state.json`, `AGENTS.md`, and `CLAUDE.md`.
 - v4.0.0 — **MCP Integration Pipeline**: Integrated 21st-dev-magic, StitchMCP, figma-remote, mongodb, playwright, and supabase into the ecosystem.

@@ -1,5 +1,5 @@
 {
-  "version": "4.1.1",
+  "version": "4.2.0",
   "release_date": "2026-05-09",
   "installed_rules": [
     "00-workflow-orchestration.md",
@@ -23,7 +23,8 @@
     "18-knowledge-persistence.md",
     "19-test-before-done.md",
     "20-output-organization.md",
-    "21-destructive-operation-safety.md"
+    "21-destructive-operation-safety.md",
+    "22-continuous-versioning.md"
   ],
   "installed_foundational_skills": [
     "01-research-loop.md",
@@ -71,8 +72,9 @@
     "19-write-report.md",
     "20-weekly-review.md",
     "21-release-project.md",
-    "22-auto-commit.md",
-    "23-sync-registry.md"
+    "22-readme-architect.md",
+    "23-sync-registry.md",
+    "24-auto-commit.md"
   ],
   "installed_skills": [
     "01-deep-scan",
@@ -138,20 +140,21 @@
     "supabase"
   ],
   "component_counts": {
-    "rules": 22,
+    "rules": 23,
     "foundational_skills": 22,
-    "workflows": 23,
+    "workflows": 24,
     "agent_personas": 23,
     "instincts": 6,
     "commands": 15,
     "specialist_personas": 3
   },
-  "last_updated": "2026-05-09T05:41:40Z",
+  "last_updated": "2026-05-09T06:30:12Z",
   "changelog": {
     "4.1.0": "MAJOR: Complete v4.1 upgrade. CLAUDE.md, 3 specialist personas, 5 instincts, 9 new workflows, 9 new skills, 5 new rules, 14 commands, MCP config, sync-registry self-maintenance, output-organization rule, destructive-safety rule, archived/ system.",
     "4.0.0": "MAJOR: Upgraded OS to v4.0.0. Added MCP stack integration, probabilistic instincts, and comprehensive security/testing personas.",
     "2.2.0": "Added git-commit-author agent, auto-commit workflow.",
     "2.1.0": "Synchronized versions, applied numeric sequencing.",
-    "4.1.1": "Executed /21-release-project God Mode pipeline. Migrated all previous zip files to \u0007rchived/old-versions/. Packaged core system to \u0007rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation."
+    "4.1.1": "Executed /21-release-project God Mode pipeline. Migrated all previous zip files to \u0007rchived/old-versions/. Packaged core system to \u0007rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.",
+    "4.2.0": "Version bumped."
   }
 }

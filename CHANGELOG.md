@@ -1,5 +1,8 @@
 # Antigravity Agent Changelog
 
+## [4.2.0] - 2026-05-09
+- Version bumped.
+
 ## [4.1.1] - 2026-05-09
 - Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
 
