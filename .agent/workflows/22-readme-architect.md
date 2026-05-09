@@ -10,13 +10,16 @@ order: 22
 
 ## Execution Sequence
 
-1. **Architecture Scan**: Parse the `.agent/` and `.claude/` directories to identify all active rules, skills, workflows, and commands.
-2. **Table Generation**: Generate updated Markdown tables for:
-   - Specialist Agents & Commands
-   - Workflows & Slash Commands
-   - Foundational Skills
-3. **Trigger Synchronization**: Ensure the "Trigger Phrase" or "Slash Command" for each entity is explicitly listed in the tables.
-4. **README Injection**: Inject these updated tables into `README.md`, completely replacing the old tables, while preserving the preamble, branding, and core manifesto.
+**This workflow is fully autonomous.** The agent must simply execute the python engine:
+
+1. **Run Engine**: Execute `python .agent/scripts/readme_architect.py`
+2. **Verification**: Run `git diff README.md` to verify the tables and flowchart updated successfully.
+
+The Python engine handles:
+- **Architecture Scan**: Parses `.agent/` and `.claude/` directories to identify all active rules, skills, workflows, and commands.
+- **Deep Extraction**: Extracts actual YAML `description` and `trigger` attributes from `SKILL.md` and frontmatter.
+- **Flowchart Generation**: Rebuilds the Mermaid flowchart dynamically based on workflow numbers.
+- **README Injection**: Injects updated tables and graphs into `README.md`.
 
 ## Execution Trigger
 - Triggered automatically during `/20-release-project` OR manually via `/22-readme-architect`.

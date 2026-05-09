@@ -4,11 +4,11 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 
-# 🌌 Antigravity Agent Ecosystem (v4.2.0)
+# 🌌 Antigravity Agent Ecosystem (v4.2.3)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.2.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
+[![Version](https://img.shields.io/badge/version-4.2.3-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
@@ -58,36 +58,92 @@ Every project lifecycle in Antigravity follows a strict, non-linear progression 
 ```mermaid
 graph TD
     subgraph P1: Awareness
-    A1[/01-scanner/] --> A2[/02-onboard-project/]
-    end
-    
-    subgraph P2: Strategy
-    S1[/05-spec-discovery/] --> S2[/07-multi-plan-synthesis/]
-    end
-    
-    subgraph P3: Execution
-    E1[/10-feature-development/] --> E2[/13-tdd/]
-    E2 --> E3[/15-fix-bugs/]
-    end
-    
-    subgraph P4: Quality
-    Q1[/17-quality-gate/] --> Q2[/18-cross-agent-validator/]
-    end
-    
-    subgraph P5: Finalization
-    F1[/22-auto-commit/] --> F2[/21-release-project/]
+    SCANNER[/01-scanner/]
+    ONBOARDPROJECT[/02-onboard-project/]
+    SCANNER --> ONBOARDPROJECT
+    MCPAUDIT[/03-mcp-audit/]
+    ONBOARDPROJECT --> MCPAUDIT
+    SCAFFOLDASSETS[/04-scaffold-assets/]
+    MCPAUDIT --> SCAFFOLDASSETS
     end
 
-    A2 --> S1
-    S2 --> E1
-    E3 --> Q1
-    Q2 --> F1
-    
-    style A1 fill:#0d47a1,color:#fff
-    style S1 fill:#1565c0,color:#fff
-    style E1 fill:#1976d2,color:#fff
-    style Q1 fill:#1e88e5,color:#fff
-    style F1 fill:#2196f3,color:#fff
+    subgraph P2: Strategy
+    SPECDISCOVERY[/05-spec-discovery/]
+    PARALLELRESEARCH[/06-parallel-research/]
+    SPECDISCOVERY --> PARALLELRESEARCH
+    MULTIPLANSYNTHESIS[/07-multi-plan-synthesis/]
+    PARALLELRESEARCH --> MULTIPLANSYNTHESIS
+    KNOWLEDGECAPTURE[/08-knowledge-capture/]
+    MULTIPLANSYNTHESIS --> KNOWLEDGECAPTURE
+    NEWREQUIREMENT[/09-new-requirement/]
+    KNOWLEDGECAPTURE --> NEWREQUIREMENT
+    end
+
+    subgraph P3: Execution
+    FEATUREDEVELOPMENT[/10-feature-development/]
+    05ABUILDWEBSITE[/11-build-website/]
+    FEATUREDEVELOPMENT --> 05ABUILDWEBSITE
+    05BBUILDAPP[/12-build-app/]
+    05ABUILDWEBSITE --> 05BBUILDAPP
+    TDD[/13-tdd/]
+    05BBUILDAPP --> TDD
+    DEBUGSESSION[/14-debug-session/]
+    TDD --> DEBUGSESSION
+    FIXBUGS[/15-fix-bugs/]
+    DEBUGSESSION --> FIXBUGS
+    PERFORMANCE[/16-performance/]
+    FIXBUGS --> PERFORMANCE
+    end
+
+    subgraph P4: Quality
+    QUALITYGATE[/17-quality-gate/]
+    CROSSAGENTVALIDATOR[/18-cross-agent-validator/]
+    QUALITYGATE --> CROSSAGENTVALIDATOR
+    WRITEREPORT[/19-write-report/]
+    CROSSAGENTVALIDATOR --> WRITEREPORT
+    WEEKLYREVIEW[/20-weekly-review/]
+    WRITEREPORT --> WEEKLYREVIEW
+    end
+
+    subgraph P5: Finalization
+    RELEASEPROJECT[/21-release-project/]
+    READMEARCHITECT[/22-readme-architect/]
+    RELEASEPROJECT --> READMEARCHITECT
+    SYNCREGISTRY[/23-sync-registry/]
+    READMEARCHITECT --> SYNCREGISTRY
+    AUTOCOMMIT[/24-auto-commit/]
+    SYNCREGISTRY --> AUTOCOMMIT
+    end
+
+    SCAFFOLDASSETS --> SPECDISCOVERY
+    NEWREQUIREMENT --> FEATUREDEVELOPMENT
+    PERFORMANCE --> QUALITYGATE
+    WEEKLYREVIEW --> RELEASEPROJECT
+
+    style SCANNER fill:#0d47a1,color:#fff
+    style ONBOARDPROJECT fill:#0d47a1,color:#fff
+    style MCPAUDIT fill:#0d47a1,color:#fff
+    style SCAFFOLDASSETS fill:#0d47a1,color:#fff
+    style SPECDISCOVERY fill:#1565c0,color:#fff
+    style PARALLELRESEARCH fill:#1565c0,color:#fff
+    style MULTIPLANSYNTHESIS fill:#1565c0,color:#fff
+    style KNOWLEDGECAPTURE fill:#1565c0,color:#fff
+    style NEWREQUIREMENT fill:#1565c0,color:#fff
+    style FEATUREDEVELOPMENT fill:#1976d2,color:#fff
+    style 05ABUILDWEBSITE fill:#1976d2,color:#fff
+    style 05BBUILDAPP fill:#1976d2,color:#fff
+    style TDD fill:#1976d2,color:#fff
+    style DEBUGSESSION fill:#1976d2,color:#fff
+    style FIXBUGS fill:#1976d2,color:#fff
+    style PERFORMANCE fill:#1976d2,color:#fff
+    style QUALITYGATE fill:#1e88e5,color:#fff
+    style CROSSAGENTVALIDATOR fill:#1e88e5,color:#fff
+    style WRITEREPORT fill:#1e88e5,color:#fff
+    style WEEKLYREVIEW fill:#1e88e5,color:#fff
+    style RELEASEPROJECT fill:#2196f3,color:#fff
+    style READMEARCHITECT fill:#2196f3,color:#fff
+    style SYNCREGISTRY fill:#2196f3,color:#fff
+    style AUTOCOMMIT fill:#2196f3,color:#fff
 ```
 
 
@@ -142,29 +198,29 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 
 | ID | Agent Name | Command | Primary Function |
 |:---|:---|:---|:---|
-| **01** | `deep-scan` | `/deep-scan` | Specialist Agent. |
-| **02** | `failure-predictor` | `/failure-predictor` | Specialist Agent. |
-| **03** | `ask` | `/ask` | Specialist Agent. |
-| **04** | `planner` | `/planner` | Create a strategic implementation plan — single-agent version of /plan |
-| **05** | `synthesizer` | `/synthesizer` | Specialist Agent. |
-| **06** | `tdd-guide` | `/tdd-guide` | Enforce strict TDD Red-Green-Refactor cycle |
-| **07** | `python-agent` | `/python-agent` | Specialist Agent. |
-| **08** | `rust-agent` | `/rust-agent` | Specialist Agent. |
-| **09** | `jsts-agent` | `/jsts-agent` | Specialist Agent. |
-| **10** | `c-agent` | `/c-agent` | Specialist Agent. |
-| **11** | `go-agent` | `/go-agent` | Specialist Agent. |
-| **12** | `antibug` | `/antibug` | Deep logical audit and root-cause bug fixing |
-| **13** | `web-aesthetics` | `/web-aesthetics` | Audit and upgrade UI/UX to premium standards |
-| **14** | `scientific-writing` | `/scientific-writing` | Specialist Agent. |
-| **15** | `latex-bib-manager` | `/latex-bib-manager` | Specialist Agent. |
-| **16** | `readme-architect` | `/readme-architect` | Specialist Agent. |
-| **17** | `market-evaluator` | `/market-evaluator` | Specialist Agent. |
-| **18** | `commercial-license` | `/commercial-license` | Specialist Agent. |
-| **19** | `git-commit-author` | `/git-commit-author` | Specialist Agent. |
-| **20** | `code-reviewer` | `/code-reviewer` | Specialist Agent. |
+| **01** | `deep-scan` | `/deep-scan` | Comprehensive situational awareness agent. Maps the project repository structure, dependencies, assets, and inter-module relationships. Never scans .agent/ infrastructure folders. |
+| **02** | `failure-predictor` | `/failure-predictor` | Pre-execution failure prediction agent. Runs before any code execution to predict likely bugs, rule violations, and fragile areas. Operates as the system's immune system. |
+| **03** | `ask` | `/ask` | Quick, precise answers to doubts with medium context. Works in tandem with deep-scan. |
+| **04** | `planner` | `/planner` | Strategic breakdown of complex requirements into phased, dependency-aware implementation roadmaps. Reads Plan/ folder and archived/ history before writing a single step. |
+| **05** | `synthesizer` | `/synthesizer` | Ensemble Plan Evaluation and Master Synthesis agent. Reads multiple AI plans from the Plan/ folder, reconciles them against the actual codebase, and generates a single bugless master implementation strategy. |
+| **06** | `tdd-guide` | `/tdd-guide` | Strict Test-Driven Development agent. Enforces the Red-Green-Refactor cycle for every piece of logic. Writes the test first, then the minimum code to pass it, then cleans up. Never writes untested production code. |
+| **07** | `python-agent` | `/python-agent` | Python-specific language agent. Encodes Python rules, instincts, and verification workflows for type-safe, idiomatic Python development. |
+| **08** | `rust-agent` | `/rust-agent` | Rust-specific language agent. Encodes Rust rules, instincts, ownership preflight protocol, and verification workflows for safe, idiomatic Rust development. |
+| **09** | `jsts-agent` | `/jsts-agent` | JavaScript/TypeScript-specific language agent. Encodes JS/TS rules, instincts, and verification workflows for modern, type-safe web development. |
+| **10** | `c-agent` | `/c-agent` | C-specific language agent. Encodes C rules, instincts, and verification workflows for safe, defensive C programming. |
+| **11** | `go-agent` | `/go-agent` | Go-specific language agent. Encodes Go rules, instincts, and verification workflows for idiomatic, concurrent Go development. |
+| **12** | `antibug` | `/antibug` | Advanced bug detection agent. Works in tandem with deep-scan to identify logic flaws, memory leaks, race conditions, and unhandled edge cases. Includes historical pattern analysis from archived/ to prevent regression of previously fixed bugs. |
+| **13** | `web-aesthetics` | `/web-aesthetics` | Ensures any generated vanilla CSS/JS web app features a premium, modern design. Enforces vibrant colors, glassmorphism, micro-animations, and high-quality typography over MVP placeholders. |
+| **14** | `scientific-writing` | `/scientific-writing` | Specialized rules for writing physics dissertations, academic reports, and LaTeX formatting. Ensures a rigorous, objective, and consistent scientific tone. |
+| **15** | `latex-bib-manager` | `/latex-bib-manager` | Automatically manages LaTeX bibliographies, enforces strictly sequential citation numbering ([1], [2]...), cleans .bib entries, and stabilizes figure floats. |
+| **16** | `readme-architect` | `/readme-architect` | Generates a highly structured, comprehensive, and engaging README.md for the project from a layman's perspective. |
+| **17** | `market-evaluator` | `/market-evaluator` | Evaluates the codebase and features against user requirements to estimate future market value and suggest commercial pricing tiers. |
+| **18** | `commercial-license` | `/commercial-license` | Generates a custom LICENSE.md enforcing commercial fees and validation-based contributor access. |
+| **19** | `git-commit-author` | `/git-commit-author` | Analyzes git diff output and generates atomic, Conventional Commit commands for copy-paste execution. |
+| **20** | `code-reviewer` | `/code-reviewer` | Senior code reviewer that evaluates changes across five dimensions — correctness, readability, architecture, security, and performance. Use for thorough code review before merge. |
 | **20** | `mcp-auditor` | `/mcp-auditor` | Specialist Agent. |
-| **21** | `security-auditor` | `/security-auditor` | Specialist Agent. |
-| **22** | `test-engineer` | `/test-engineer` | Specialist Agent. |
+| **21** | `security-auditor` | `/security-auditor` | Security engineer focused on vulnerability detection, threat modeling, and secure coding practices. Use for security-focused code review, threat analysis, or hardening recommendations. |
+| **22** | `test-engineer` | `/test-engineer` | QA engineer specialized in test strategy, test writing, and coverage analysis. Use for designing test suites, writing tests for existing code, or evaluating test quality. |
 
 ---
 
@@ -208,28 +264,28 @@ They are listed in logical ascending order of the 5-Phase software lifecycle.
 
 Implicit reasoning modules that govern every agent's internal logic.
 
-- **`01-research-loop`**: This is the core investigative protocol used by all UI agents before generating any output. It produces the "DeepDive" effect — agents that investigate before they respond, not agents that guess immediately.
-- **`02-language-routing`**: This skill detects the programming language(s) of the current task and routes to the correct language-specific agent for specialized handling.
-- **`03-task-decomposition`**: This skill ensures that every task given to an LLM is small enough to be solved correctly, even by weaker models.
-- **`04-architectural-design`**: This foundational skill dictates how the `03-planner` and `04-synthesizer` agents structure complex systems. It enforces professional engineering standards to prevent technical debt.
-- **`05-code-synthesis`**: This skill provides the algorithmic logic for the `04-synthesizer` agent to merge disparate AI perspectives (e.g., plans from Claude, DeepSeek, GPT-4o) into a single authoritative `MASTER_PLAN.md`.
-- **`06-refactor`**: This file contains the foundational principles used by the `tdd-guide` agent during Phase 3 (Refactor) and by the `antibug` agent when proposing structural improvements.
-- **`07-cognitive-load-inspector`**: Purpose: Measures the cognitive complexity of functions and blocks code that exceeds safe thresholds for LLM reasoning.
-- **`08-side-effect-tracker`**: Purpose: Detects global state mutation inside functions whose names imply purity.
-- **`09-state-machine-inspector`**: Purpose: Detects classes/modules that manage state through multiple boolean flags instead of a unified state type (enum/union).
-- **`10-confidence-scoring`**: Every LLM output is assigned a confidence score before acceptance. This score determines which verification gates must be passed.
-- **`11-memory-evolution`**: This skill defines the three-tier memory system and the evolution logic that promotes patterns from session memory → project memory → global memory.
-- **`12-commit-semantics`**: This foundational skill dictates how the `13-git-commit-author` reads `git diff` outputs and structures version control history.
-- **`13-knowledge-capture`**: Build structured understanding of code entry points with an analysis-first workflow.
-- **`14-context-engineering`**: ## Overview
-- **`15-security-engineering`**: ## Overview
-- **`16-api-design`**: ## Overview
-- **`17-spec-compliance`**: Use this skill when you need to:
-- **`18-memory-management`**: Use `npx ai-devkit@latest memory ...` as the durable knowledge layer.
-- **`19-performance-profiling`**: ## Overview
-- **`20-stitch-ui`**: You are an expert Design Systems Lead and Prompt Engineer specializing in the Stitch MCP server. Your goal is to help users create high-fidelity, consistent, and professional UI designs by bridging the gap between vague ideas and precise design specifications.
+- **`01-research-loop`**: Skill for research-loop
+- **`02-language-routing`**: Skill for language-routing
+- **`03-task-decomposition`**: Skill for task-decomposition
+- **`04-architectural-design`**: Skill for architectural-design
+- **`05-code-synthesis`**: Skill for code-synthesis
+- **`06-refactor`**: Skill for refactor
+- **`07-cognitive-load-inspector`**: Skill for cognitive-load-inspector
+- **`08-side-effect-tracker`**: Skill for side-effect-tracker
+- **`09-state-machine-inspector`**: Skill for state-machine-inspector
+- **`10-confidence-scoring`**: Skill for confidence-scoring
+- **`11-memory-evolution`**: Skill for memory-evolution
+- **`12-commit-semantics`**: Skill for commit-semantics
+- **`13-knowledge-capture`**: Capture structured knowledge about a code entry point and save it to the knowledge docs. Use when users ask to document, understand, or map code for a module, file, folder, function, or API.
+- **`14-context-engineering`**: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.
+- **`15-security-engineering`**: Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services.
+- **`16-api-design`**: Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.
+- **`17-spec-compliance`**: Verifies code implements exactly what documentation specifies for blockchain audits. Use when comparing code against whitepapers, finding gaps between specs and implementation, or performing compliance checks for protocol implementations.
+- **`18-memory-management`**: Use AI DevKit memory via CLI commands. Search before non-trivial work, store verified reusable knowledge, update stale entries, and avoid saving transcripts, secrets, or one-off task progress.
+- **`19-performance-profiling`**: Optimizes application performance. Use when performance requirements exist, when you suspect performance regressions, or when Core Web Vitals or load times need improvement. Use when profiling reveals bottlenecks that need fixing.
+- **`20-stitch-ui`**: Unified entry point for Stitch design work. Handles prompt enhancement (UI/UX keywords, atmosphere), design system synthesis (.stitch/DESIGN.md), and high-fidelity screen generation/editing via Stitch MCP.
 - **`22-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
-- **`22-registry-synchronizer`**: ## Purpose
+- **`22-registry-synchronizer`**: TRIGGER                              -> AFFECTED REGISTRIES New file in .agent/rules/            -> AGENTS.md rules section, install-state.json installed_rules New file in .agent/skills/           -> AGENTS.md skills section, install-state.json installed_foundational_skills New file in .agent/workflows/        -> AGENTS.md workflows section, install-state.json installed_workflows New dir in .agent/.agents/skills/    -> AGENTS.md agents section, install-state.json installed_skills New file in .agent/instincts/        -> AGENTS.md instincts section, install-state.json installed_instincts New file in .claude/commands/        -> AGENTS.md commands section, CLAUDE.md command registry New file in .claude/agents/          -> AGENTS.md personas section, /ship command description Server added to .mcp.json            -> .agent/mcps/README.md, install-state.json mcp_servers Version bump in PROJECT_METADATA.md  -> install-state.json version, CLAUDE.md identity block
 
 ---
 

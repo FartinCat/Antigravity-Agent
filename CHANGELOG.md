@@ -1,7 +1,10 @@
 # Antigravity Agent Changelog
 
+## [4.2.1] - 2026-05-09
+- Upgraded README Architect workflow and fixed infinite SemVer loops.
+
 ## [4.2.0] - 2026-05-09
-- Version bumped.
+- Introduced Autonomous Git Porcelain-based Semantic Versioning engine.
 
 ## [4.1.1] - 2026-05-09
 - Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
