@@ -37,8 +37,14 @@ When this .agent/ folder is copied to a new project, a fresh context will be ini
 **Action**: Executed `/11-release-project` workflow. Repository cleaned of stray artifacts. Market evaluation completed (Complexity Score: 96/100). Strict commercial license generated. Premium README with SVG banner and Mermaid lifecycle architecture finalized.
 **State Change**: Version v3.0.0 Released. Project is now public-ready with monetization strategy and 5-phase lifecycle governance.
 
-## 2026-05-06 — System Integrity Audit & Repair — v3.0.0
-**Agent**: scanner → cross-agent-validator
-**Action**: Diagnosed 4 critical issues. Fixed invisible workflows (`02-onboard-project.md` and `08-performance.md`) caused by missing YAML frontmatter. Corrected stale `order:` and `description:` values across 8 workflows. Enriched `06-tdd.md` (29→80 lines), `07-fix-bugs.md` (added build detection, guardrails, recovery strategies), and `10-cross-agent-validator.md` (added Technical Verification step) using patterns from `dump/.agent-reference/`. Added `zip/` to protected folders in `09-dump-awareness.md`. Added Rule 4 (Mandatory Frontmatter Visibility Gate) and Rule 5 (Pre-Commit Frontmatter Audit) to `00-workflow-orchestration.md` to prevent future invisible workflow creation. Restored `zip/` folder from dump, added Step 7 (Packaging) to `11-release-project.md`, regenerated `antigravity-agent-v3.0.0.zip` (95KB). Updated README with deep explanations of all agents, skills, and workflows.
-**State Change**: All 12 workflows now have valid frontmatter and appear in the IDE `+` menu. Workflow content enriched from reference material. Prevention rules added.
-**Next Step**: Run `/12-auto-commit` to finalize all changes.
+## 2026-05-08 — Infrastructure Discovery & MCP Auditor Integration — v3.0.0 → v3.1.0
+**Agent**: mcp-auditor (Agent 21)
+**Action**: Created `21-mcp-audit.md` skill, `21-mcp-auditor` UI agent, and `/21-mcp-audit` workflow. Integrated infrastructure discovery capability to bypass the standard `.agent/` exclusion rule for auditing integrated tools. Executed first full audit.
+**State Change**: Version v3.1.0. Ecosystem is now self-aware of its own technical capabilities and MCP toolset health.
+**Audit Findings**: Detected a major documentation mismatch between `.agent/mcps/README.md` (legacy baseline) and the actual runtime environment (modern UI/Design stack). 6 active servers verified; 5 ghost servers identified. `MCP_AUDIT_REPORT.md` generated.
+**Next Step**: Run `/21-mcp-audit` regularly to ensure documentation remains in sync with the environment.
+
+## 2026-05-09 — Release Project Pipeline — v4.1.1
+**Agent**: system
+**Action**: Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
+**State Change**: Version v4.1.1 Released.
