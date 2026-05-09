@@ -1,9 +1,9 @@
-# Instinct: Graveyard Management (Dump Awareness)
+# Instinct: Archive Management (Dump Awareness)
 
 **Trigger**: Activated upon analyzing a project directory, running `planner`, or executing the `/release-project` workflow.
 
 ## ⚠️ Protected Folders — NEVER Move These
-The following folders must NEVER be moved into `dump/` under any circumstances:
+The following folders must NEVER be moved into `archived/` under any circumstances:
 - `.agent/` — This is the agent operating system. Moving it would destroy all agent functionality.
 - `.git/` — Version control history.
 - `Plan/` — Active plan files being used for multi-plan synthesis.
@@ -18,6 +18,6 @@ The following folders must NEVER be moved into `dump/` under any circumstances:
 
 3. **Protected Folder Check**: Before moving any folder, verify it is NOT in the protected list above. If unsure, ask the user before moving.
 
-4. **Execution**: Create a `dump/` folder if it doesn't exist. Move all identified stray reference folders into `dump/`. Announce what was moved and what was skipped (protected).
+4. **Execution**: Create a `archived/` folder if it doesn't exist. Move all identified stray reference folders into `archived/`. Announce what was moved and what was skipped (protected).
 
 5. **Scan Scope**: Only scan the project root and one level deep. Do NOT recursively hunt inside `.agent/`, `.git/`, or `Plan/` for things to move.

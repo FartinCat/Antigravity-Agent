@@ -17,10 +17,10 @@ To ensure logical execution flow and UI clarity, all components must follow the 
 | **P5: Finalization** | 31–40 | Release, licensing, and semantic git commits. |
 
 ### Rule 2 — Component-Specific Numbering
-- **Workflows**: Must be numbered 01–12 sequentially.
-- **Rules**: Must be numbered 00–14 sequentially.
-- **Skills**: Must be numbered 01–12 sequentially.
-- **Agents**: Must be numbered 01–19 sequentially.
+- **Workflows**: Must be numbered 01–99 sequentially.
+- **Rules**: Must be numbered 00–99 sequentially.
+- **Skills**: Must be numbered 01–99 sequentially.
+- **Agents**: Must be numbered 01–99 sequentially.
 
 ### Rule 3 — Golden Path Enforcement
 When suggesting actions, the agent must favor components in their logical order:
