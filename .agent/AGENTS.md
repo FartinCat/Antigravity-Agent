@@ -1,4 +1,4 @@
-# Antigravity Agent Ecosystem (v4.2.4)
+# Antigravity Agent Ecosystem (v4.6.0)
 
 A portable AI operating system. Copy the `.agent/` folder into any project directory and the entire skill + workflow ecosystem activates immediately.
 
@@ -28,9 +28,9 @@ A portable AI operating system. Copy the `.agent/` folder into any project direc
 | **18** | **`/commercial-license`** | 18-commercial-license | P3 | Generates a custom LICENSE.md enforcing commerc... |
 | **19** | **`/git-commit-author`** | 19-git-commit-author | P3 | Analyzes git diff output and generates atomic, ... |
 | **20** | **`/code-reviewer`** | 20-code-reviewer | P3 | Senior code reviewer that evaluates changes acr... |
-| **21** | **`/mcp-auditor`** | 20-mcp-auditor | P3 | **Role**: Infrastructure Discovery & Capability... |
-| **22** | **`/security-auditor`** | 21-security-auditor | P3 | Security engineer focused on vulnerability dete... |
-| **23** | **`/test-engineer`** | 22-test-engineer | P3 | QA engineer specialized in test strategy, test ... |
+| **21** | **`/security-auditor`** | 21-security-auditor | P3 | Security engineer focused on vulnerability dete... |
+| **22** | **`/test-engineer`** | 22-test-engineer | P3 | QA engineer specialized in test strategy, test ... |
+| **23** | **`/mcp-auditor`** | 23-mcp-auditor | P3 | **Role**: Infrastructure Discovery & Capability... |
 
 ---
 

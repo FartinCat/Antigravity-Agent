@@ -1,5 +1,17 @@
 # Antigravity Agent Changelog
 
+## [4.6.0] - 2026-05-09
+- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+
+## [4.5.0] - 2026-05-09
+- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+
+## [4.4.0] - 2026-05-09
+- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+
+## [4.3.0] - 2026-05-09
+- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 9 others
+
 ## [4.2.4] - 2026-05-09
 - Generated knowledge-antigravity-capabilities.md documenting core AOS features.
 
@@ -13,7 +25,7 @@
 - Introduced Autonomous Git Porcelain-based Semantic Versioning engine.
 
 ## [4.1.1] - 2026-05-09
-- Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
+- Executed /21-release-project God Mode pipeline. Migrated all previous zip files to archived/old-versions/. Packaged core system to archived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
 
 ## [4.1.0] - 2026-05-09
 ### Added

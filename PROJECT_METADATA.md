@@ -1,7 +1,7 @@
 # Project Metadata
 
 **Project Name**: Antigravity Agent Ecosystem
-**Version**: 4.2.4
+**Version**: 4.6.0
 **Author**: FartinCat
 **Contact**: fartincat@proton.me
 **Created**: 2026-05-03
@@ -35,9 +35,9 @@ A high-performance, modular AI agent framework designed for autonomous coding, a
 - [x] Performance Optimization Workflow
 
 ## Changelog
+- v4.6.0 — Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+- v4.5.0 — Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+- v4.4.0 — Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+- v4.3.0 — Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 9 others
 - v4.2.4 — Generated knowledge-antigravity-capabilities.md documenting core AOS features.
-- v4.2.3 — Updated AGENTS.md
-- v4.2.1 — Upgraded README Architect workflow and fixed infinite SemVer loops.
-- v4.2.0 — Introduced Autonomous Git Porcelain-based Semantic Versioning engine.
-- v4.1.1 — Executed /21-release-project God Mode pipeline. Migrated all previous zip files to rchived/old-versions/. Packaged core system to rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
 

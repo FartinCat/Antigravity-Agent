@@ -4,11 +4,11 @@
 ![Antigravity Agent Banner](assets/banner.png)
 
 
-# 🌌 Antigravity Agent Ecosystem (v4.2.4)
+# 🌌 Antigravity Agent Ecosystem (v4.6.0)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.2.4-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
+[![Version](https://img.shields.io/badge/version-4.6.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
@@ -218,9 +218,9 @@ Antigravity features **22 Specialist Agents**, each with a dedicated YAML person
 | **18** | `commercial-license` | `/commercial-license` | Generates a custom LICENSE.md enforcing commercial fees and validation-based contributor access. |
 | **19** | `git-commit-author` | `/git-commit-author` | Analyzes git diff output and generates atomic, Conventional Commit commands for copy-paste execution. |
 | **20** | `code-reviewer` | `/code-reviewer` | Senior code reviewer that evaluates changes across five dimensions — correctness, readability, architecture, security, and performance. Use for thorough code review before merge. |
-| **20** | `mcp-auditor` | `/mcp-auditor` | Specialist Agent. |
 | **21** | `security-auditor` | `/security-auditor` | Security engineer focused on vulnerability detection, threat modeling, and secure coding practices. Use for security-focused code review, threat analysis, or hardening recommendations. |
 | **22** | `test-engineer` | `/test-engineer` | QA engineer specialized in test strategy, test writing, and coverage analysis. Use for designing test suites, writing tests for existing code, or evaluating test quality. |
+| **23** | `mcp-auditor` | `/mcp-auditor` | Specialist Agent. |
 
 ---
 
@@ -284,8 +284,8 @@ Implicit reasoning modules that govern every agent's internal logic.
 - **`18-memory-management`**: Use AI DevKit memory via CLI commands. Search before non-trivial work, store verified reusable knowledge, update stale entries, and avoid saving transcripts, secrets, or one-off task progress.
 - **`19-performance-profiling`**: Optimizes application performance. Use when performance requirements exist, when you suspect performance regressions, or when Core Web Vitals or load times need improvement. Use when profiling reveals bottlenecks that need fixing.
 - **`20-stitch-ui`**: Unified entry point for Stitch design work. Handles prompt enhancement (UI/UX keywords, atmosphere), design system synthesis (.stitch/DESIGN.md), and high-fidelity screen generation/editing via Stitch MCP.
-- **`22-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
-- **`22-registry-synchronizer`**: TRIGGER                              -> AFFECTED REGISTRIES New file in .agent/rules/            -> AGENTS.md rules section, install-state.json installed_rules New file in .agent/skills/           -> AGENTS.md skills section, install-state.json installed_foundational_skills New file in .agent/workflows/        -> AGENTS.md workflows section, install-state.json installed_workflows New dir in .agent/.agents/skills/    -> AGENTS.md agents section, install-state.json installed_skills New file in .agent/instincts/        -> AGENTS.md instincts section, install-state.json installed_instincts New file in .claude/commands/        -> AGENTS.md commands section, CLAUDE.md command registry New file in .claude/agents/          -> AGENTS.md personas section, /ship command description Server added to .mcp.json            -> .agent/mcps/README.md, install-state.json mcp_servers Version bump in PROJECT_METADATA.md  -> install-state.json version, CLAUDE.md identity block
+- **`21-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
+- **`22-registry-synchronizer`**: Run it with: ```bash python .agent/scripts/sync_registry.py ```
 
 ---
 

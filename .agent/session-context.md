@@ -1,4 +1,69 @@
-‣敓獳潩⁮潃瑮硥⁴胢ₔ湁楴牧癡瑩⁹杁湥൴䤊楮楴污穩摥›〲㘲〭ⴵ㌰਍牐橯捥⁴楄敲瑣牯㩹䄠瑮杩慲楶祴䄠敧瑮਍਍桔獩映汩⁥獩洠楡瑮楡敮⁤畡潴慭楴慣汬⁹祢琠敨䄠瑮杩慲楶祴䄠敧瑮猠獹整⹭਍瑉琠慲正⁳畣畭慬楴敶猠獥楳湯栠獩潴祲映牯吠䥈⁓牰橯捥⁴湯祬മ䐊⁯潮⁴慭畮污祬攠楤⁴偠潲敪瑣䐠物捥潴祲怺钀椠⁴獩甠敳⁤潦⁲業牧瑡潩⁮敤整瑣潩⹮਍桗湥琠楨⁳愮敧瑮 潦摬牥椠⁳潣楰摥琠⁯⁡敮⁷牰橯捥ⱴ愠映敲桳挠湯整瑸眠汩⁬敢椠楮楴污穩摥愠瑵浯瑡捩污祬മഊⴊⴭ਍਍⌣㈠㈰ⴶ㔰〭″胢ₔ祓瑳浥䄠捲楨整瑣牵⁥潃灭敬整⬠唠杰慲敤⁤潴瘠⸱⸴ര⨊䄪敧瑮⨪›祳瑳浥਍⨪捁楴湯⨪›畆汬䄠瑮杩慲楶祴䄠敧瑮猠獹整⁭畢汩⁴湡⁤灵牧摡摥‮汁⁬畢獧映硩摥‮敎⁷条湥獴愠摮爠汵獥愠摤摥മ⨊匪慴整䌠慨杮⩥㨪嘠牥楳湯瘠⸱⸳‱蛢ₒㅶ㐮〮‮摴ⵤ畧摩⁥条湥ⱴ〠ⴶ敲慦瑣牯洮Ɽ〠ⴱ敲敳牡档氭潯⹰摭‬㘰挭湯整瑸洭浥牯⹹摭‬牣獯⵳条湥⵴慶楬慤潴⁲潷歲汦睯愠汬挠敲瑡摥മ⨊个硥⁴瑓灥⨪›楆汬椠⁮剐䩏䍅彔䕍䅔䅄䅔洮⁤楷桴愠瑣慵⁬牰橯捥⁴慮敭‬畡桴牯‬湡⁤整档猠慴正മഊ⌊‣〲㘲〭ⴵ㔰钀䜠潬慢⁬瑓畲瑣牵污传敶桲畡⁬…潆湵慤楴湯污唠杰慲敤⁳胢ₔㅶ㔮ㄮ銆瘠⸲⸱ര⨊䄪敧瑮⨪›祳瑳浥਍⨪捁楴湯⨪›祓据牨湯穩摥倠潲畤瑣愠摮匠獹整⁭潃敲瘠牥楳湯⁳潴瘠⸲⸱⸰䄠灰楬摥渠浵牥捩猠煥敵据湩⁧捡潲獳愠汬删汵獥‬杁湥獴‬湡⁤歓汩獬‮灕牧摡摥怠㐰愭捲楨整瑣牵污搭獥杩⹮摭⁠䠨硥条湯污䄠捲楨整瑣牵⥥愠摮怠㔰挭摯ⵥ祳瑮敨楳⹳摭⁠在楥桧整⁤潃獮湥畳⥳琠⁯摡慶据摥攠杮湩敥楲杮猠慴摮牡獤‮浉汰浥湥整⁤ㅠⴴ敲敬獡ⵥ慰正条湩⹧摭⹠਍⨪瑓瑡⁥桃湡敧⨪›敖獲潩⁮㉶ㄮ〮‮湉牦獡牴捵畴敲椠⁳畦汬⁹敳畱湥散⹤䘠畯摮瑡潩慮⁬潬楧⁣灵牧摡摥琠⁯湥整灲楲敳札慲敤瀠潲潴潣獬മഊ⌊‣〲㘲〭ⴵ㔰钀䜠瑩䌠浯業⁴畁桴牯匠獹整⁭胢ₔ㉶ㄮ〮銆瘠⸲⸲ര⨊䄪敧瑮⨪›祳瑳浥਍⨪捁楴湯⨪›牃慥整⁤ㅠⴳ楧⵴潣浭瑩愭瑵潨恲愠敧瑮‬ㅠⴰ畡潴挭浯業恴眠牯晫潬ⱷ怠〱札瑩愭慷敲敮獳⁠畲敬‬湡⁤だⴵ潣浭瑩猭浥湡楴獣⁠潦湵慤楴湯污猠楫汬‮湉整牧瑡摥䐠偅佌⹙摭椠瑮⁯䕒䑁䕍洮⹤唠摰瑡摥愠汬洠瑥摡瑡⁡楦敬⁳湡⁤䕒䑁䕍眠瑩⁨敮⁷潣灭湯湥獴മ⨊匪慴整䌠慨杮⩥㨪嘠牥楳湯瘠⸲⸲⸰䄠瑵浯瑡摥䌠湯敶瑮潩慮⁬潃浭瑩⁳楰数楬敮映汵祬漠数慲楴湯污മ⨊个硥⁴瑓灥⨪›畒⁮⽠畡潴挭浯業恴琠⁯敧敮慲整琠敨挠浯業⁴潣浭湡獤映牯琠楨⁳敳獳潩⹮਍਍⌣㈠㈰ⴶ㔰〭‵胢ₔ硅潰敮瑮慩⁬慃慰楢楬祴䔠灸湡楳湯钀瘠⸲⸲‰蛢ₒ㍶〮〮਍⨪杁湥⩴㨪猠湹桴獥穩牥਍⨪捁楴湯⨪›祓瑮敨楳敺⁤‵䥁猠牴瑡来敩⁳䌨慬摵ⱥ䜠浥湩Ⱪ倠牥汰硥瑩ⱹ䌠慨䝴呐‬敄灥敓步 湩潴䴠十䕔归䱐乁洮⹤䔠數畣整⁤⁡汧扯污爠ⵥ敳畱湥楣杮漠⁦污⁬㠵猠獹整⁭楦敬⁳刨汵獥‬歓汩獬‬杁湥獴‬潗歲汦睯⥳椠瑮⁯⁡潬楧慣⁬ⴵ桰獡⁥楬敦祣汣⹥唠杰慲敤⁤〰猭獹整⵭牯档獥牴瑡潩⁮畲敬琠⁯慭慮敧琠敨渠睥愠捲楨整瑣牵⹥਍⨪瑓瑡⁥桃湡敧⨪›敖獲潩⁮㍶〮〮‮捅獯獹整⁭獩渠睯漠杲湡穩摥戠⁹硥捥瑵潩⁮楬敦祣汣⹥਍⨪敎瑸匠整⩰㨪删湵怠猯慣湮牥⁠潦⁲慶楬慤楴湯‬桴湥怠愯瑵ⵯ潣浭瑩⹠਍਍⌣㈠㈰ⴶ㔰〭‶胢ₔ牐摯捵楴湯删汥慥敳钀瘠⸳⸰ര⨊䄪敧瑮⨪›祳瑳浥਍⨪捁楴湯⨪›硅捥瑵摥怠ㄯⴱ敲敬獡ⵥ牰橯捥恴眠牯晫潬⹷删灥獯瑩牯⁹汣慥敮⁤景猠牴祡愠瑲晩捡獴‮慍歲瑥攠慶畬瑡潩⁮潣灭敬整⁤䌨浯汰硥瑩⁹捓牯㩥㤠⼶〱⤰‮瑓楲瑣挠浯敭捲慩⁬楬散獮⁥敧敮慲整⹤倠敲業浵删䅅䵄⁅楷桴匠䝖戠湡敮⁲湡⁤敍浲楡⁤楬敦祣汣⁥牡档瑩捥畴敲映湩污穩摥മ⨊匪慴整䌠慨杮⩥㨪嘠牥楳湯瘠⸳⸰‰敒敬獡摥‮牐橯捥⁴獩渠睯瀠扵楬ⵣ敲摡⁹楷桴洠湯瑥穩瑡潩⁮瑳慲整祧愠摮㔠瀭慨敳氠晩捥捹敬朠癯牥慮据⹥਍਍⌣㈠㈰ⴶ㔰〭‸胢ₔ湉牦獡牴捵畴敲䐠獩潣敶祲☠䴠偃䄠摵瑩牯䤠瑮来慲楴湯钀瘠⸳⸰‰蛢ₒ㍶ㄮ〮਍⨪杁湥⩴㨪洠灣愭摵瑩牯⠠杁湥⁴ㄲഩ⨊䄪瑣潩⩮㨪䌠敲瑡摥怠ㄲ洭灣愭摵瑩洮恤猠楫汬‬㉠ⴱ捭⵰畡楤潴恲唠⁉条湥ⱴ愠摮怠㈯ⴱ捭⵰畡楤恴眠牯晫潬⹷䤠瑮来慲整⁤湩牦獡牴捵畴敲搠獩潣敶祲挠灡扡汩瑩⁹潴戠灹獡⁳桴⁥瑳湡慤摲怠愮敧瑮怯攠捸畬楳湯爠汵⁥潦⁲畡楤楴杮椠瑮来慲整⁤潴汯⹳䔠數畣整⁤楦獲⁴畦汬愠摵瑩മ⨊匪慴整䌠慨杮⩥㨪嘠牥楳湯瘠⸳⸱⸰䔠潣祳瑳浥椠⁳潮⁷敳晬愭慷敲漠⁦瑩⁳睯⁮整档楮慣⁬慣慰楢楬楴獥愠摮䴠偃琠潯獬瑥栠慥瑬⹨਍⨪畁楤⁴楆摮湩獧⨪›敄整瑣摥愠洠橡牯搠捯浵湥慴楴湯洠獩慭捴⁨敢睴敥⁮⹠条湥⽴捭獰刯䅅䵄⹅摭⁠氨来捡⁹慢敳楬敮 湡⁤桴⁥捡畴污爠湵楴敭攠癮物湯敭瑮⠠潭敤湲唠⽉敄楳湧猠慴正⸩㘠愠瑣癩⁥敳癲牥⁳敶楲楦摥※‵桧獯⁴敳癲牥⁳摩湥楴楦摥‮䵠偃䅟䑕呉剟偅剏⹔摭⁠敧敮慲整⹤਍⨪敎瑸匠整⩰㨪删湵怠㈯ⴱ捭⵰畡楤恴爠来汵牡祬琠⁯湥畳敲搠捯浵湥慴楴湯爠浥楡獮椠⁮祳据眠瑩⁨桴⁥湥楶潲浮湥⹴਍਍⌣㈠㈰ⴶ㔰〭‹胢ₔ敒敬獡⁥牐橯捥⁴楐数楬敮钀瘠⸴⸱റ⨊䄪敧瑮⨪›祳瑳浥਍⨪捁楴湯⨪›硅捥瑵摥⼠ㄲ爭汥慥敳瀭潲敪瑣䜠摯䴠摯⁥楰数楬敮‮楍牧瑡摥愠汬瀠敲楶畯⁳楺⁰楦敬⁳潴ܠ捲楨敶⽤汯ⵤ敶獲潩獮ⸯ倠捡慫敧⁤潣敲猠獹整⁭潴ܠ捲楨敶⽤畣牲湥⵴敶獲潩⽮湡楴牧癡瑩⵹条湥⵴㑶ㄮㄮ種灩‮敇敮慲整⁤瑳楲瑣挠浯敭捲慩⁬楬散獮⁥湡⁤慭歲瑥攠慶畬瑡潩⹮਍⨪瑓瑡⁥桃湡敧⨪›敖獲潩⁮㑶ㄮㄮ删汥慥敳⹤਍⌊‣潇⁤潍敤删汥慥敳霠瘠⸴⸲ਲ⨪杁湥⩴㨪爠汥慥敳瀭潲敪瑣⨊䄪瑣潩⩮㨪䔠數畣整⁤潇⁤潍敤瀠灩汥湩ⱥ甠摰瑡摥䴠牡敫⁴癅污‬慰正条摥瘠⸴⸲′敲敬獡⁥牡档癩⹥਍
-## Knowledge Capture — v4.2.4
+# Session Context — Antigravity Agent
+Initialized: 2026-05-03
+Project Directory: Antigravity Agent
+
+This file is maintained automatically by the Antigravity Agent system.
+It tracks cumulative session history for THIS project only.
+Do not manually edit `Project Directory:` — it is used for migration detection.
+When this .agent/ folder is copied to a new project, a fresh context will be initialized automatically.
+
+---
+
+## 2026-05-03 — System Architecture Complete + Upgraded to v1.4.0
+**Agent**: system
+**Action**: Full Antigravity Agent system built and upgraded. All bugs fixed. New agents and rules added.
+**State Change**: Version v1.3.1 → v1.4.0. tdd-guide agent, 06-refactor.md, 01-research-loop.md, 06-context-memory.md, cross-agent-validator workflow all created.
+**Next Step**: Fill in PROJECT_METADATA.md with actual project name, author, and tech stack.
+
+## 2026-05-05 — Global Structural Overhaul & Foundational Upgrades — v1.5.1 → v2.1.0
+**Agent**: system
+**Action**: Synchronized Product and System Core versions to v2.1.0. Applied numeric sequencing across all Rules, Agents, and Skills. Upgraded `04-architectural-design.md` (Hexagonal Architecture) and `05-code-synthesis.md` (Weighted Consensus) to advanced engineering standards. Implemented `14-release-packaging.md`.
+**State Change**: Version v2.1.0. Infrastructure is fully sequenced. Foundational logic upgraded to enterprise-grade protocols.
+
+## 2026-05-05 — Git Commit Author System — v2.1.0 → v2.2.0
+**Agent**: system
+**Action**: Created `13-git-commit-author` agent, `10-auto-commit` workflow, `10-git-awareness` rule, and `05-commit-semantics` foundational skill. Integrated DEPLOY.md into README.md. Updated all metadata files and README with new components.
+**State Change**: Version v2.2.0. Automated Conventional Commits pipeline fully operational.
+**Next Step**: Run `/auto-commit` to generate the commit commands for this session.
+
+## 2026-05-05 — Exponential Capability Expansion — v2.2.0 → v3.0.0
+**Agent**: synthesizer
+**Action**: Synthesized 5 AI strategies (Claude, Gemini, Perplexity, ChatGPT, DeepSeek) into MASTER_PLAN.md. Executed a global re-sequencing of all 58 system files (Rules, Skills, Agents, Workflows) into a logical 5-phase lifecycle. Upgraded 00-system-orchestration rule to manage the new architecture.
+**State Change**: Version v3.0.0. Ecosystem is now organized by execution lifecycle.
+**Next Step**: Run `/scanner` for validation, then `/auto-commit`.
+
+## 2026-05-06 — Production Release — v3.0.0
+**Agent**: system
+**Action**: Executed `/11-release-project` workflow. Repository cleaned of stray artifacts. Market evaluation completed (Complexity Score: 96/100). Strict commercial license generated. Premium README with SVG banner and Mermaid lifecycle architecture finalized.
+**State Change**: Version v3.0.0 Released. Project is now public-ready with monetization strategy and 5-phase lifecycle governance.
+
+## 2026-05-06 — System Integrity Audit & Repair — v3.0.0
+**Agent**: scanner → cross-agent-validator
+**Action**: Diagnosed 4 critical issues. Fixed invisible workflows (`02-onboard-project.md` and `08-performance.md`) caused by missing YAML frontmatter. Corrected stale `order:` and `description:` values across 8 workflows. Enriched `06-tdd.md` (29→80 lines), `07-fix-bugs.md` (added build detection, guardrails, recovery strategies), and `10-cross-agent-validator.md` (added Technical Verification step) using patterns from `dump/.agent-reference/`. Added `zip/` to protected folders in `09-dump-awareness.md`. Added Rule 4 (Mandatory Frontmatter Visibility Gate) and Rule 5 (Pre-Commit Frontmatter Audit) to `00-workflow-orchestration.md` to prevent future invisible workflow creation. Restored `zip/` folder from dump, added Step 7 (Packaging) to `11-release-project.md`, regenerated `antigravity-agent-v3.0.0.zip` (95KB). Updated README with deep explanations of all agents, skills, and workflows.
+**State Change**: All 12 workflows now have valid frontmatter and appear in the IDE `+` menu. Workflow content enriched from reference material. Prevention rules added.
+**Next Step**: Run `/12-auto-commit` to finalize all changes.
+
+## 2026-05-08 — Infrastructure Discovery & MCP Auditor Integration — v3.0.0 → v3.1.0
+**Agent**: mcp-auditor (Agent 21)
+**Action**: Created `21-mcp-audit.md` skill, `21-mcp-auditor` UI agent, and `/21-mcp-audit` workflow. Integrated infrastructure discovery capability to bypass the standard `.agent/` exclusion rule for auditing integrated tools. Executed first full audit.
+**State Change**: Version v3.1.0. Ecosystem is now self-aware of its own technical capabilities and MCP toolset health.
+**Audit Findings**: Detected a major documentation mismatch between `.agent/mcps/README.md` (legacy baseline) and the actual runtime environment (modern UI/Design stack). 6 active servers verified; 5 ghost servers identified. `MCP_AUDIT_REPORT.md` generated.
+**Next Step**: Run `/21-mcp-audit` regularly to ensure documentation remains in sync with the environment.
+
+## 2026-05-09 — Release Project Pipeline — v4.1.1
+**Agent**: system
+**Action**: Executed /21-release-project God Mode pipeline. Migrated all previous zip files to archived/old-versions/. Packaged core system to archived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
+**State Change**: Version v4.1.1 Released.
+
+## 2026-05-09 — Knowledge Capture — v4.2.4
 **Agent**: knowledge-capture
 **Action**: Generated knowledge-antigravity-capabilities.md documenting core AOS features.
+## 2026-05-09 — Automated Registry Sync — v4.5.0
+**Agent**: system
+**Action**: Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+**State Change**: Version v4.5.0 synced.
+
+## 2026-05-09 — Automated Registry Sync — v4.6.0
+**Agent**: system
+**Action**: Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
+**State Change**: Version v4.6.0 synced.

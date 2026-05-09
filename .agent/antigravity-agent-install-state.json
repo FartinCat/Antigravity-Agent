@@ -1,5 +1,5 @@
 {
-  "version": "4.2.4",
+  "version": "4.6.0",
   "release_date": "2026-05-09",
   "installed_rules": [
     "00-workflow-orchestration.md",
@@ -11,7 +11,7 @@
     "06-context-memory.md",
     "07-metadata-awareness.md",
     "08-asset-awareness.md",
-    "09-dump-awareness.md",
+    "09-archive-management.md",
     "10-semantic-versioning.md",
     "11-git-awareness.md",
     "12-silent-ingest.md",
@@ -47,7 +47,7 @@
     "18-memory-management.md",
     "19-performance-profiling.md",
     "20-stitch-ui.md",
-    "22-mcp-audit.md",
+    "21-mcp-audit.md",
     "22-registry-synchronizer.md"
   ],
   "installed_workflows": [
@@ -97,9 +97,9 @@
     "18-commercial-license",
     "19-git-commit-author",
     "20-code-reviewer",
-    "20-mcp-auditor",
     "21-security-auditor",
-    "22-test-engineer"
+    "22-test-engineer",
+    "23-mcp-auditor"
   ],
   "installed_instincts": [
     "01-minimal-footprint.md",
@@ -148,16 +148,20 @@
     "commands": 15,
     "specialist_personas": 3
   },
-  "last_updated": "2026-05-09T07:14:00Z",
+  "last_updated": "2026-05-09T10:58:16Z",
   "changelog": {
     "4.1.0": "MAJOR: Complete v4.1 upgrade. CLAUDE.md, 3 specialist personas, 5 instincts, 9 new workflows, 9 new skills, 5 new rules, 14 commands, MCP config, sync-registry self-maintenance, output-organization rule, destructive-safety rule, archived/ system.",
     "4.0.0": "MAJOR: Upgraded OS to v4.0.0. Added MCP stack integration, probabilistic instincts, and comprehensive security/testing personas.",
     "2.2.0": "Added git-commit-author agent, auto-commit workflow.",
     "2.1.0": "Synchronized versions, applied numeric sequencing.",
-    "4.1.1": "Executed /21-release-project God Mode pipeline. Migrated all previous zip files to \u0007rchived/old-versions/. Packaged core system to \u0007rchived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.",
+    "4.1.1": "Executed /21-release-project God Mode pipeline. Migrated all previous zip files to archived/old-versions/. Packaged core system to archived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.",
     "4.2.0": "Version bumped.",
     "4.2.1": "Version bumped.",
     "4.2.3": "Updated AGENTS.md",
-    "4.2.4": "Generated knowledge-antigravity-capabilities.md documenting core AOS features."
+    "4.2.4": "Generated knowledge-antigravity-capabilities.md documenting core AOS features.",
+    "4.3.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 9 others",
+    "4.4.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others",
+    "4.5.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others",
+    "4.6.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others"
   }
 }
