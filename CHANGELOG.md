@@ -1,5 +1,8 @@
 # Antigravity Agent Changelog
 
+## [4.2.3] - 2026-05-09
+- Updated AGENTS.md
+
 ## [4.2.1] - 2026-05-09
 - Upgraded README Architect workflow and fixed infinite SemVer loops.
 
