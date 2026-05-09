@@ -1,28 +1,17 @@
 # Antigravity Agent Changelog
 
-## [4.6.0] - 2026-05-09
-- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
-
-## [4.5.0] - 2026-05-09
-- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
-
-## [4.4.0] - 2026-05-09
-- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
-
-## [4.3.0] - 2026-05-09
-- Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 9 others
+## [4.7.0] - 2026-05-09
+### Quality Hardening Release
+- **Sync Engine**: Upgraded changelog generation with deduplication, category-based descriptions, and --no-bump flag
+- **CLAUDE.md**: Auto-updated Section 12 (Project Structure) with actual component counts (23 rules, 22 skills, 24 workflows, 23 agents)
+- **Boot Sequence**: Converted skill loading from bulk (97KB) to on-demand with 8 core skills always loaded
+- **Workflows**: Expanded 6 thin workflows (06, 10, 11, 12, 19, 20) to 4-5KB each with failure paths and output formats
+- **Archive Rule**: Updated 09-archive-management.md content to match renamed terminology
+- **Instincts**: Fixed count from 6 to 5 (excluded README.md from component list)
+- **Commands**: Added 4 missing workflow commands to CLAUDE.md registry table
 
 ## [4.2.4] - 2026-05-09
 - Generated knowledge-antigravity-capabilities.md documenting core AOS features.
-
-## [4.2.3] - 2026-05-09
-- Updated AGENTS.md
-
-## [4.2.1] - 2026-05-09
-- Upgraded README Architect workflow and fixed infinite SemVer loops.
-
-## [4.2.0] - 2026-05-09
-- Introduced Autonomous Git Porcelain-based Semantic Versioning engine.
 
 ## [4.1.1] - 2026-05-09
 - Executed /21-release-project God Mode pipeline. Migrated all previous zip files to archived/old-versions/. Packaged core system to archived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.
@@ -38,10 +27,6 @@
 - **Workflow Renumbering**: Renumbered all 22 workflows strictly from 01 to 22 according to the 5-phase software lifecycle.
 - **Specialist Personas**: Rewrote `code-reviewer`, `security-auditor`, and `test-engineer` with comprehensive 80+ line frameworks including severity models and composition rules.
 - **File Encodings**: Stripped BOM markers and fixed corrupted UTF-8 em-dashes across all `.agent/workflows/*.md` files.
-
-### Fixed
-- Fixed numbering violation for `mcp-auditor` (changed from Agent 21 to Agent 20 to comply with Rule 00).
-- Cleaned up extraneous Advanced Operations Matrix data from `13-knowledge-capture.md`.
 
 ## [4.0.0] - 2026-05-08
 ### Added

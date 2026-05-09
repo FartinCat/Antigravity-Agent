@@ -1,5 +1,5 @@
 {
-  "version": "4.6.0",
+  "version": "4.7.0",
   "release_date": "2026-05-09",
   "installed_rules": [
     "00-workflow-orchestration.md",
@@ -106,8 +106,7 @@
     "02-verification-before-confidence.md",
     "03-user-intent-preservation.md",
     "04-graceful-degradation.md",
-    "05-commercial-quality-standard.md",
-    "README.md"
+    "05-commercial-quality-standard.md"
   ],
   "installed_commands": [
     "ag-ask.md",
@@ -144,24 +143,16 @@
     "foundational_skills": 22,
     "workflows": 24,
     "agent_personas": 23,
-    "instincts": 6,
+    "instincts": 5,
     "commands": 15,
     "specialist_personas": 3
   },
-  "last_updated": "2026-05-09T10:58:16Z",
+  "last_updated": "2026-05-09T11:31:12Z",
   "changelog": {
-    "4.1.0": "MAJOR: Complete v4.1 upgrade. CLAUDE.md, 3 specialist personas, 5 instincts, 9 new workflows, 9 new skills, 5 new rules, 14 commands, MCP config, sync-registry self-maintenance, output-organization rule, destructive-safety rule, archived/ system.",
-    "4.0.0": "MAJOR: Upgraded OS to v4.0.0. Added MCP stack integration, probabilistic instincts, and comprehensive security/testing personas.",
-    "2.2.0": "Added git-commit-author agent, auto-commit workflow.",
-    "2.1.0": "Synchronized versions, applied numeric sequencing.",
-    "4.1.1": "Executed /21-release-project God Mode pipeline. Migrated all previous zip files to archived/old-versions/. Packaged core system to archived/current-version/antigravity-agent-v4.1.1.zip. Generated strict commercial license and market evaluation.",
-    "4.2.0": "Version bumped.",
-    "4.2.1": "Version bumped.",
-    "4.2.3": "Updated AGENTS.md",
-    "4.2.4": "Generated knowledge-antigravity-capabilities.md documenting core AOS features.",
-    "4.3.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 9 others",
-    "4.4.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others",
-    "4.5.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others",
-    "4.6.0": "Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others"
+    "4.7.0": "Quality Hardening: Upgraded sync engine, expanded 6 thin workflows, fixed CLAUDE.md structure, converted boot to lazy-loading.",
+    "4.1.1": "Executed God Mode pipeline. Packaged v4.1.1 release archive.",
+    "4.1.0": "MAJOR: Self-maintenance framework, output organization, destructive safety, registry drift scanner.",
+    "4.0.0": "MAJOR: MCP integration, probabilistic instincts, specialist personas.",
+    "3.0.0": "Stabilized lifecycle. God Mode pipeline established."
   }
 }

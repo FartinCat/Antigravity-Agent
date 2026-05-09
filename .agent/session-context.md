@@ -67,3 +67,8 @@ When this .agent/ folder is copied to a new project, a fresh context will be ini
 **Agent**: system
 **Action**: Updated SKILL.md, 09-dump-awareness.md, 22-mcp-audit.md and 8 others
 **State Change**: Version v4.6.0 synced.
+
+## 2026-05-09 — Automated Registry Sync — v4.7.0
+**Agent**: system
+**Action**: Quality Hardening: Upgraded sync engine, expanded 6 thin workflows, fixed CLAUDE.md structure, converted boot to lazy-loading.
+**State Change**: Version v4.7.0 synced.

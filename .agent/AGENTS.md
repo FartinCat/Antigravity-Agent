@@ -1,4 +1,4 @@
-# Antigravity Agent Ecosystem (v4.6.0)
+# Antigravity Agent Ecosystem (v4.7.0)
 
 A portable AI operating system. Copy the `.agent/` folder into any project directory and the entire skill + workflow ecosystem activates immediately.
 
@@ -43,21 +43,21 @@ Workflows are listed below in **logical ascending order** corresponding to a sta
 - **`03-mcp-audit.md`**: Audit & map integrated MCP tool capabilities.
 - **`04-scaffold-assets.md`**: Initialize project structure and taxonomy.
 - **`05-spec-discovery.md`**: Functional and technical spec extraction.
-- **`06-parallel-research.md`**: Simultaneous research on multiple technical paths.
+- **`06-parallel-research.md`**: **Objective**: Execute simultaneous research across multiple technical paths, then synthesize findings into a unified comparison matrix. Use when evaluating competing technologies, frameworks, libraries, or architectural patterns.
 - **`07-multi-plan-synthesis.md`**: Merge competing AI strategies into one plan.
 - **`08-knowledge-capture.md`**: Distill project insights into persistent KIs.
 - **`09-new-requirement.md`**: Integrate new features into an existing plan.
-- **`10-feature-development.md`**: Incremental feature build cycle.
-- **`11-build-website.md`**: End-to-end website generation pipeline.
-- **`12-build-app.md`**: Production-ready application build cycle.
+- **`10-feature-development.md`**: **Objective**: Incrementally build a single feature from specification through implementation to verification. This is the inner loop of development — one feature at a time, fully tested before moving to the next.
+- **`11-build-website.md`**: **Objective**: End-to-end pipeline for building a production-quality website or web application from specification to deployment-ready state. Enforces premium aesthetics, SEO best practices, and responsive design.
+- **`12-build-app.md`**: **Objective**: End-to-end pipeline for building a production-ready software application from specification through implementation to deployment readiness. Enforces architectural discipline, test coverage, and clean code practices.
 - **`13-tdd.md`**: Disciplined Red-Green-Refactor orchestration.
 - **`14-debug-session.md`**: Intensive diagnostic and repair protocol.
 - **`15-fix-bugs.md`**: Build-detected bug hunting and resolution.
 - **`16-performance.md`**: Profiling and bottleneck elimination.
 - **`17-quality-gate.md`**: Compliance check against design/requirements.
 - **`18-cross-agent-validator.md`**: Audit previous steps for hallucinations/errors.
-- **`19-write-report.md`**: Generate status reports and technical summaries.
-- **`20-weekly-review.md`**: Strategic audit of project progress/health.
+- **`19-write-report.md`**: **Objective**: Generate a structured technical or academic report with proper formatting, citations, logical flow, and professional typography. Use for status reports, technical summaries, research writeups, post-mortems, and documentation deliverables.
+- **`20-weekly-review.md`**: **Objective**: Conduct a structured strategic audit of project health, progress, and trajectory. This is the retrospective heartbeat — run weekly to catch drift, celebrate wins, and course-correct before problems compound.
 - **`21-release-project.md`**: God Mode: License, README, Packaging.
 - **`22-readme-architect.md`**: Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills.
 - **`23-sync-registry.md`**: Synchronize all registry files with the actual .agent/ filesystem state.
@@ -75,7 +75,6 @@ Workflows are listed below in **logical ascending order** corresponding to a sta
 │   ├── 03-user-intent-preservation.md
 │   ├── 04-graceful-degradation.md
 │   ├── 05-commercial-quality-standard.md
-│   ├── README.md
 ├── rules/ (Governance)
 │   ├── 00-workflow-orchestration.md
 │   ├── 01-core.md
