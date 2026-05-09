@@ -18,11 +18,15 @@ Capabilities:
 """
 
 import os
+import sys
 import json
 import re
 import subprocess
 from datetime import datetime
 from collections import Counter
+
+# ─── CLI Flags ────────────────────────────────────────────────────────
+no_bump = "--no-bump" in sys.argv  # Skip version bumping entirely
 
 # ─── Dynamic Base Path ────────────────────────────────────────────────
 # Compute project root from this script's location: .agent/scripts/ -> root
@@ -36,11 +40,12 @@ session_path    = os.path.join(base, ".agent", "session-context.md")
 changelog_path  = os.path.join(base, "CHANGELOG.md")
 
 # ─── Helpers ──────────────────────────────────────────────────────────
-def get_files(rel_path):
+def get_files(rel_path, exclude=None):
     p = os.path.join(base, rel_path)
     if not os.path.exists(p): return []
+    exclude = exclude or []
     return sorted([f for f in os.listdir(p)
-                   if os.path.isfile(os.path.join(p, f)) and f.endswith('.md')])
+                   if os.path.isfile(os.path.join(p, f)) and f.endswith('.md') and f not in exclude])
 
 def get_dirs(rel_path):
     p = os.path.join(base, rel_path)
@@ -66,7 +71,7 @@ disk_rules     = get_files(os.path.join(".agent", "rules"))
 disk_skills    = get_files(os.path.join(".agent", "skills"))
 disk_workflows = get_files(os.path.join(".agent", "workflows"))
 disk_agents    = get_dirs(os.path.join(".agent", ".agents", "skills"))
-disk_instincts = get_files(os.path.join(".agent", "instincts"))
+disk_instincts = get_files(os.path.join(".agent", "instincts"), exclude=["README.md"])
 disk_commands  = get_files(os.path.join(".claude", "commands"))
 
 # ─── Load Registry State ─────────────────────────────────────────────
@@ -122,7 +127,26 @@ except Exception:
 version_bumped = False
 smart_fallback = "Updates and improvements."
 
-if diff_output:
+def classify_changes(sig_lines):
+    """Generate a category-based description instead of listing filenames."""
+    cats = {"rules": 0, "skills": 0, "workflows": 0, "agents": 0,
+            "commands": 0, "instincts": 0, "other": 0}
+    for status, fp in sig_lines:
+        if status == 'D': continue  # Skip deleted files from description
+        if '.agent/rules/' in fp: cats["rules"] += 1
+        elif '.agent/skills/' in fp: cats["skills"] += 1
+        elif '.agent/workflows/' in fp: cats["workflows"] += 1
+        elif '.agent/.agents/' in fp: cats["agents"] += 1
+        elif '.claude/commands/' in fp or '.claude/agents/' in fp: cats["commands"] += 1
+        elif '.agent/instincts/' in fp: cats["instincts"] += 1
+        else: cats["other"] += 1
+    parts = []
+    for cat, count in cats.items():
+        if count > 0:
+            parts.append(f"{count} {cat}" if count > 1 else f"1 {cat[:-1] if cat.endswith('s') else cat}")
+    return "Modified " + ", ".join(parts) if parts else "Updates and improvements."
+
+if diff_output and not no_bump:
     major, minor, patch = map(int, latest_version.split('.'))
     lines = diff_output.split('\n')
 
@@ -132,7 +156,6 @@ if diff_output:
         "CLAUDE.md", "AGENTS.md", ".agent/antigravity-agent-install-state.json",
         ".agent/session-context.md", ".agent/AGENTS.md"
     ]
-    # Infrastructure paths — changes to these are part of the sync engine itself
     infra_prefixes = [".agent/scripts/", ".gemini/"]
 
     significant_lines = []
@@ -141,19 +164,20 @@ if diff_output:
         is_registry = any(filepath.endswith(reg) or filepath == reg for reg in registry_files)
         is_infra = any(filepath.startswith(pfx) for pfx in infra_prefixes)
         if not is_registry and not is_infra:
-            significant_lines.append((l[:2].strip(), filepath))
+            # Filter out deleted files from version bump consideration
+            status_code = l[:2].strip()
+            if status_code != 'D':
+                significant_lines.append((status_code, filepath))
 
     if significant_lines:
         minor_triggers = [
             '.agent/rules/', '.agent/skills/', '.agent/workflows/',
             '.agent/.agents/skills/', '.claude/commands/', '.claude/agents/'
         ]
-        is_minor = False
-        for status, filepath in significant_lines:
-            if status.startswith('A') or status.startswith('?'):
-                if any(trigger in filepath for trigger in minor_triggers):
-                    is_minor = True
-                    break
+        is_minor = any(
+            (s.startswith('A') or s.startswith('?')) and any(t in fp for t in minor_triggers)
+            for s, fp in significant_lines
+        )
 
         if is_minor:
             minor += 1
@@ -164,19 +188,16 @@ if diff_output:
         latest_version = f"{major}.{minor}.{patch}"
         version_bumped = True
 
-        # Update Metadata file
         meta = re.sub(r'\*\*Version\*\*:\s*([^\n\r]+)', f'**Version**: {latest_version}', meta)
         meta = re.sub(r'\(v[0-9]+\.[0-9]+\.[0-9]+\)', f'(v{latest_version})', meta)
         with open(metadata_path, "w", encoding="utf-8") as f:
             f.write(meta)
 
-        # Capability F: Smart fallback changelog message
-        modified_names = [os.path.basename(fp) for _, fp in significant_lines[:3]]
-        smart_fallback = f"Updated {', '.join(modified_names)}"
-        if len(significant_lines) > 3:
-            smart_fallback += f" and {len(significant_lines) - 3} others"
+        smart_fallback = classify_changes(significant_lines)
     else:
         smart_fallback = "Registry synchronization."
+elif no_bump:
+    smart_fallback = "Registry synchronization (no-bump mode)."
 
 # ═══════════════════════════════════════════════════════════════════════
 # CAPABILITY F: Changelog Generation (with session-context fallback)
@@ -218,15 +239,36 @@ changelog_data = sanitize_bom(changelog_data)
 
 changelog_updated = False
 if f"## [{latest_version}]" not in changelog_data:
-    today = datetime.utcnow().strftime("%Y-%m-%d")
-    new_entry = f"## [{latest_version}] - {today}\n- {latest_action}\n\n"
-    changelog_data = re.sub(
-        r'(# Antigravity Agent Changelog\s*\n+)',
-        r'\1' + new_entry, changelog_data
-    )
-    with open(changelog_path, "w", encoding="utf-8") as f:
-        f.write(changelog_data)
-    changelog_updated = True
+    # Deduplication: check if latest_action is identical to previous entries
+    existing_actions = re.findall(r'## \[[^\]]+\][^\n]*\n- ([^\n]+)', changelog_data)
+    is_duplicate = latest_action in existing_actions[:3]
+    
+    if not is_duplicate:
+        today = datetime.utcnow().strftime("%Y-%m-%d")
+        new_entry = f"## [{latest_version}] - {today}\n- {latest_action}\n\n"
+        changelog_data = re.sub(
+            r'(# Antigravity Agent Changelog\s*\n+)',
+            r'\1' + new_entry, changelog_data
+        )
+        with open(changelog_path, "w", encoding="utf-8") as f:
+            f.write(changelog_data)
+        changelog_updated = True
+    else:
+        # Update version number on the most recent entry instead of adding duplicate
+        changelog_data = re.sub(
+            r'## \[' + re.escape(existing_actions[0].strip()) + r'\]',
+            f'## [{latest_version}]', changelog_data, count=0
+        )
+        # Just update the first entry's version
+        first_entry = re.search(r'## \[([^\]]+)\]', changelog_data)
+        if first_entry and first_entry.group(1) != latest_version:
+            old_ver = first_entry.group(1)
+            changelog_data = changelog_data.replace(
+                f'## [{old_ver}]', f'## [{latest_version}]', 1
+            )
+            with open(changelog_path, "w", encoding="utf-8") as f:
+                f.write(changelog_data)
+            changelog_updated = True
 
 # Sync PROJECT_METADATA.md changelog section from CHANGELOG.md
 log_sections = re.findall(
