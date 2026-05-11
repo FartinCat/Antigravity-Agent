@@ -1,5 +1,5 @@
 {
-  "version": "4.7.0",
+  "version": "4.8.0",
   "release_date": "2026-05-09",
   "installed_rules": [
     "00-workflow-orchestration.md",
@@ -147,12 +147,14 @@
     "commands": 15,
     "specialist_personas": 3
   },
-  "last_updated": "2026-05-09T11:31:12Z",
+  "last_updated": "2026-05-11T17:44:25Z",
   "changelog": {
     "4.7.0": "Quality Hardening: Upgraded sync engine, expanded 6 thin workflows, fixed CLAUDE.md structure, converted boot to lazy-loading.",
     "4.1.1": "Executed God Mode pipeline. Packaged v4.1.1 release archive.",
     "4.1.0": "MAJOR: Self-maintenance framework, output organization, destructive safety, registry drift scanner.",
     "4.0.0": "MAJOR: MCP integration, probabilistic instincts, specialist personas.",
-    "3.0.0": "Stabilized lifecycle. God Mode pipeline established."
+    "3.0.0": "Stabilized lifecycle. God Mode pipeline established.",
+    "4.8.1": "Modified 2 other",
+    "4.8.0": "Updates and improvements."
   }
 }

@@ -72,3 +72,13 @@ When this .agent/ folder is copied to a new project, a fresh context will be ini
 **Agent**: system
 **Action**: Quality Hardening: Upgraded sync engine, expanded 6 thin workflows, fixed CLAUDE.md structure, converted boot to lazy-loading.
 **State Change**: Version v4.7.0 synced.
+
+## 2026-05-11 — Automated Registry Sync — v4.8.1
+**Agent**: system
+**Action**: Modified 2 other
+**State Change**: Version v4.8.1 synced.
+
+## 2026-05-11 — Automated Registry Sync — v4.8.0
+**Agent**: system
+**Action**: Updates and improvements.
+**State Change**: Version v4.8.0 synced.

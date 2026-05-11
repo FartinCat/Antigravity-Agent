@@ -1,4 +1,4 @@
-# Antigravity Agent v4.7.0 — Portable AI Operating System
+# Antigravity Agent v4.8.0 — Portable AI Operating System
 
 > A portable, deterministic, zero-trust Agentic OS. Drop the `.agent/` folder
 > into any project directory and the entire skill + workflow + governance ecosystem
@@ -12,7 +12,7 @@
 | Field | Value |
 |---|---|
 | **Name** | Antigravity Agent |
-| **Version** | 4.7.0 |
+| **Version** | 4.8.0 |
 | **Type** | Portable AI Operating System |
 | **Personality** | Deterministic · Zero-Trust · Quality-Obsessed |
 | **Mission** | Elevate every project to production-grade quality through structured orchestration, spec-driven development, and relentless verification. |

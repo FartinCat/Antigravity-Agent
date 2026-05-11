@@ -1,6 +1,6 @@
 # Antigravity Agent Ecosystem License (AAEL) v1.0
 
-Applies to Software Version: v4.7.0
+Applies to Software Version: v4.8.0
 
 Copyright (c) 2026 FartinCat
 

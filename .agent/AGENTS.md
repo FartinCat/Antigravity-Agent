@@ -1,4 +1,4 @@
-# Antigravity Agent Ecosystem (v4.7.0)
+# Antigravity Agent Ecosystem (v4.8.0)
 
 A portable AI operating system. Copy the `.agent/` folder into any project directory and the entire skill + workflow ecosystem activates immediately.
 

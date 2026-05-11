@@ -1,5 +1,11 @@
 # Antigravity Agent Changelog
 
+## [4.8.0] - 2026-05-11
+- Updates and improvements.
+
+## [4.8.1] - 2026-05-11
+- Modified 2 other
+
 ## [4.7.0] - 2026-05-09
 ### Quality Hardening Release
 - **Sync Engine**: Upgraded changelog generation with deduplication, category-based descriptions, and --no-bump flag
