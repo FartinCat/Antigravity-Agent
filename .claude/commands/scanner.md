@@ -13,4 +13,4 @@ Actions:
 
 **IMPORTANT:** The `.agent/` folder is **EXCLUDED** from all scans. It is the agent's OS, not project code.
 
-Output: structured `SCAN_REPORT.md` + update `session-context.md`.
+Output: structured `SCAN_REPORT.md` (under `docs/scan-reports/`) + update **`AETHER.md` §18** when session logging is appropriate.

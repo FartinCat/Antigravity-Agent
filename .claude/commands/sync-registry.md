@@ -1,7 +1,7 @@
 ---
-description: Synchronize AGENTS.md and install-state.json with actual filesystem state
+description: Synchronize install-state.json and AETHER.md §13 with actual .agent/ filesystem state
 ---
-Run workflow 23-sync-registry.md.
-Detect drift between .agent/ filesystem and all registry documents.
-Update AGENTS.md, install-state.json, and CLAUDE.md if needed.
+Run workflow `16-sync-registry.md` (or execute `python .agent/scripts/sync_registry.py`).
+Detect drift between `.agent/` filesystem and registry documents.
+Updates **`AETHER.md`** (§13 registry, §16 changelog, §18 session as needed), `install-state.json`, and downstream `README.md` / `LICENSE.md` when drift is detected.
 Always run after adding new skills, workflows, rules, agents, or commands.

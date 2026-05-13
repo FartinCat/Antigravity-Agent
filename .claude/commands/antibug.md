@@ -11,6 +11,6 @@ Process:
 4. Propose fix with explanation
 5. Write a **REGRESSION TEST** for the fix
 6. Apply fix and verify test passes
-7. Document the bug and fix in `session-context.md`
+7. Document the bug and fix in **`AETHER.md` §18 Session Context**
 
 **Rule:** Never declare a bug fixed without running the regression test.
