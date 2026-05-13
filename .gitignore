@@ -16,6 +16,8 @@ archived/
 MARKET_EVALUATION.md
 docs/market-evaluations/
 
+__pycache__/
+
 # Node modules (MCP servers)
 node_modules/
 
