@@ -3,17 +3,15 @@ SCANNER REPORT — Antigravity Agent
 
 ==========================================
 
-Session Memory: Loaded from session-context.md
+Session Memory: Loaded from `AETHER.md` §18 (unified state)
 
 Project Type: Agentic OS Framework (Antigravity Agent)
 
 Root Files:
 - README.md
 - CLAUDE.md
-- CHANGELOG.md
+- AETHER.md
 - LICENSE.md
-- PROJECT_METADATA.md
-- DEPLOY.md
 - .mcp.json
 - .gitignore
 - antigravity.txt (Anomaly: Asset-like file at root)

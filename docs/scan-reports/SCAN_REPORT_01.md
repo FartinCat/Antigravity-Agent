@@ -1,57 +1,43 @@
-
-SCANNER REPORT — Antigravity Agent
+# SCANNER REPORT — Antigravity Agent Ecosystem
 
 ==========================================
 
-Session Memory: Loaded from session-context.md
+**Session Memory**: Loaded from `AETHER.md` §18 (unified state)
+**Project Type**: Agentic Operating System / Framework
+**Root Files**: `README.md`, `AETHER.md`, `CLAUDE.md`, `LICENSE.md`
+**Key Directories**: 
+- `.agent/`: Core infrastructure (rules, skills, agents, workflows)
+- `assets/`: Branding and visual assets
+- `docs/`: Documentation and scan reports
+- `archived/`: Versioned releases and old artifacts
 
-Project Type: Agentic OS Framework (Antigravity Agent)
+**Tech Stack**: 
+- **Languages**: HTML, Javascript, Markdown
+- **Orchestration**: Antigravity Agentic Ecosystem
+- **Integrations**: MCP (21st-dev-magic, StitchMCP, Figma, Supabase, Playwright, MongoDB)
 
-Root Files:
-- README.md
-- CLAUDE.md
-- CHANGELOG.md
-- LICENSE.md
-- PROJECT_METADATA.md
-- DEPLOY.md
-- .mcp.json
-- .gitignore
-- install-mcps.sh
+**Plan Files**: No active `Plan/` folder detected at root.
+**Assets**: `assets/banner.png` (Nominal taxonomy)
 
-Key Directories:
-- .agent/ (System core)
-- .claude/ (IDE integration)
-- .gemini/ (Persistent context)
-- archived/ (Protected archives)
-- assets/ (Static resources)
-- docs/ (Managed outputs)
+**Structural Anomalies**: None
+**Registry Status**: **IN SYNC** (v4.8.0)
+**Root Pollution**: **CLEAN**
 
-Tech Stack:
-- Languages: Markdown, Python (skills/scripts), Bash
-- Infrastructure: MCP (21st-dev-magic, StitchMCP, figma-remote, mongodb, playwright, supabase)
+**Confidence**: **HIGH**
 
-Plan Files:
-- Plan/ not found
+**Recommended Next Step**: Continue with planned feature development or run `/20-weekly-review` if it's the end of a cycle.
 
-Assets:
-- assets/ (Verified)
+---
 
-Structural Anomalies:
-- None
+## Agent Capabilities Summary (AOS v4.8.0)
 
-Registry Status: IN SYNC
-- Rules: 22/22
-- Skills: 22/22
-- Workflows: 23/23
-- Agents: 23/23
-- Instincts: 6/6
-- Commands: 15/15
-- Version: 4.1.1/4.1.1
+The Antigravity Agent is a self-evolving, IDE-agnostic Agentic Operating System capable of:
 
-Root Pollution: CLEAN / 0 output files at root
-
-Confidence: HIGH
-
-Recommended Next Step: System is fully nominal. Await next command.
-
-*(Logic: If registry drift AND root pollution -> "Run /sync-registry then move files to docs/". If only registry drift -> "Run /sync-registry". If only root pollution -> "Move files to docs/ or run /migrate-docs".)*
+| Category | Key Capabilities |
+| :--- | :--- |
+| **Orchestration** | 24 Workflows covering the entire SDLC (Scanner → Release). |
+| **Intelligence** | 23 Specialist Agents (TDD Guide, Security Auditor, Web Aesthetics, etc.). |
+| **Logic** | 22 Foundational Skills (Research Loop, Spec Compliance, Code Synthesis). |
+| **Instincts** | 5 Probabilistic Behaviors (Minimal Footprint, Verification Before Confidence). |
+| **Governance** | 23 Integrity Rules (Output Organization, Semantic Versioning, Context Memory). |
+| **Tooling** | Native MCP support for UI building, Browser automation, and DB management. |
