@@ -13,7 +13,7 @@ Prevents solving the same problem three sessions in a row, repeating research th
 ## Mandatory Behaviors
 1. Search memory before initiating any non-trivial work.
 2. At session end, explicitly evaluate what should persist (conventions, gotchas, decisions, reusable fixes).
-3. Write a session summary to `session-context.md` before closing out.
+3. Write a session summary to **`AETHER.md` Section 18** before closing out.
 4. Output code-level knowledge to `docs/ai/`.
 5. Use the Memory MCP (if available) for cross-project knowledge persistence.
 

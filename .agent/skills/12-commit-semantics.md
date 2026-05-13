@@ -28,7 +28,7 @@ When presented with a massive list of changed files:
 The agent must present the commits clearly:
 ```bash
 # 1. Update project documentation
-git add README.md DEPLOY.md
+git add README.md AETHER.md
 git commit -m "docs: integrate deployment guide and update architecture"
 
 # 2. Fix authentication bypass bug

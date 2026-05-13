@@ -11,7 +11,7 @@ Generate the ultimate project documentation. The README must not be boring. It m
 ## Pre-Task Protocol
 Before generating anything, execute the **Research Loop**:
 1. Run `/scanner` to understand the project structure.
-2. Read root `PROJECT_METADATA.md` for name, version, author, and tech stack.
+2. Read root **`AETHER.md` §14** for name, version, author, and tech stack.
 3. Check if `MARKET_EVALUATION.md` exists for commercial positioning information.
 4. Read `LICENSE.md` for accurate license terms to include.
 
@@ -29,7 +29,7 @@ The generated `README.md` MUST follow this exact premium sequence:
    - Use `<div align="center">`.
    - **Banner**: If a banner image exists in `assets/images/`, reference it. If not, create an elegant SVG banner inline using the project name and a subtitle. Do NOT reference `generate_image` — this tool does not exist. Use SVG or ask the user to provide a banner path.
    - **Title & Subtitle**: Engaging and bold.
-   - **Badges**: Include Shields.io badges for Version (from `PROJECT_METADATA.md`), languages (from tech stack), and License.
+   - **Badges**: Include Shields.io badges for Version (from **`AETHER.md` §14**), languages (from tech stack), and License.
    - **The Hook**: A relevant quote in a blockquote.
 
 2. **Architecture Section**: Explain the core structure — the high-level logic flow and key design decisions.
@@ -42,13 +42,13 @@ The generated `README.md` MUST follow this exact premium sequence:
 
 5. **Visual Logic**: Include a Mermaid.js diagram to map the core application logic.
 
-6. **Session Memory Section**: Explain how `session-context.md` provides cross-session memory and how the project-directory detection works on migration.
+6. **Session Memory Section**: Explain how **`AETHER.md` §18 Session Context** provides cross-session memory and how the `Project Directory:` detection works on migration.
 
-7. **Deployment Guide**: Reference `DEPLOY.md` for instructions on copying `.agent/` to new projects.
+7. **Deployment Guide**: Reference **`AETHER.md` §15** (Deployment Protocol) for instructions on copying `.agent/` to new projects.
 
 8. **Release & Legal**:
    - **License**: Summarize from `LICENSE.md`. Mention commercial fee, contributor access, academic verification requirement.
-   - **Data Privacy**: Note that `MARKET_EVALUATION.md` and `PROJECT_METADATA.md` may contain sensitive data and should be reviewed before making public.
+   - **Data Privacy**: Note that `MARKET_EVALUATION.md` and **`AETHER.md` §14** may contain sensitive data and should be reviewed before making public.
 
 ## Design Principles
 - **Rich Aesthetics**: Use emojis, horizontal rules, and alignment divs.

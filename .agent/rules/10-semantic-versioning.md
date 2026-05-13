@@ -3,14 +3,14 @@
 **Trigger**: Whenever code is generated, bugs are patched, features are added, or a project enters a release state.
 
 ## Single Source of Truth
-**The version is stored in one place only: `PROJECT_METADATA.md` at the project root.**
-If a `package.json` also exists, keep it in sync — but the root `PROJECT_METADATA.md` is the master. Never bump both independently and never create a second copy of `PROJECT_METADATA.md` inside `assets/information/`.
+**The version is stored in one place only: root `AETHER.md`** (identity table §1 and **§14 Project Metadata**).
+If a `package.json` also exists, keep it in sync — but **`AETHER.md` is the master**. Never bump both independently and never create a second copy of metadata inside `assets/information/`.
 
 ## Core Rules
 
 1. **Patch Bumps (v0.1.X)**:
    - Trigger: Following a bug fix, syntax correction, or when the `/antibug` skill executes successfully.
-   - Action: Increment the third digit. Append a changelog entry to `PROJECT_METADATA.md`.
+   - Action: Increment the third digit. Append a changelog line to **`AETHER.md` §16** and a short session note to **§18** when meaningful.
 
 2. **Minor Bumps (v0.X.0)**:
    - Trigger: Following the completion of a `planner` roadmap, adding a new feature, or successful structural refactoring.
@@ -21,10 +21,10 @@ If a `package.json` also exists, keep it in sync — but the root `PROJECT_METAD
    - Action: Change to `1.0.0`. Append a changelog entry noting the release milestone.
 
 ## Changelog Append Format
-When bumping any version, add this to the `## Changelog` section of `PROJECT_METADATA.md`:
+When bumping any version, add an entry under **`AETHER.md` §16 Changelog** using:
 ```
 - v[NEW VERSION] ([DATE]): [Brief description of what changed — e.g., "Fixed PDF annotation crash on empty files."]
 ```
 
 ## Sync Rule
-If `package.json` exists alongside `PROJECT_METADATA.md`, update its `"version"` field to match after every bump. Use the root `PROJECT_METADATA.md` as the trigger — never the other way around.
+If `package.json` exists, update its `"version"` field to match after every bump. Use **`AETHER.md`** as the trigger — never the other way around. Prefer running `python .agent/scripts/sync_registry.py` so README/LICENSE/install-state stay aligned.

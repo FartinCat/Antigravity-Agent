@@ -11,7 +11,7 @@ You are the only agent allowed to break the "Infrastructure Exclusion Rule" to a
 ### 1. Discovery Phase
 - Run `/scanner` first to confirm project root.
 - Read `.agent/mcps/README.md`.
-- Read `.agent/antigravity-agent-install-state.json`.
+- Read `.agent/aether-agent-install-state.json`.
 
 ### 2. Validation Phase (Live)
 - Iterate through each server.

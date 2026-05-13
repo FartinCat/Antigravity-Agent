@@ -70,7 +70,7 @@ All analysis scripts MUST:
 The Read tool is **CORRECT** for:
 - Files you intend to **EDIT** (not analyze)
 - Spec files, rule files, workflow files
-- `session-context.md` for session memory
+- `AETHER.md` Section 18 for session memory
 - Config files you need to modify
 
 **Read = editing context. Script = analysis context.** Different purposes.

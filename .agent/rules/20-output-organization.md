@@ -11,7 +11,7 @@ never the project root.
 ## Why This Exists
 After 10 sessions the project root becomes a junk drawer of MARKET_EVALUATION.md,
 SCAN_REPORT.md, MASTER_PLAN.md, and WEEKLY_REVIEW files. The root is for entry
-points only: README.md, CLAUDE.md, package.json, LICENSE.md, CHANGELOG.md.
+points only: README.md, `CLAUDE.md` (IDE stub), `AETHER.md` (unified state), package.json, LICENSE.md.
 
 ## The docs/ Structure
 docs/
@@ -37,8 +37,7 @@ Before writing any output file:
 4. Never overwrite existing output — always increment.
 
 ## Root File Exceptions (ONLY these belong at root)
-README.md, CLAUDE.md, DEPLOY.md, LICENSE.md, CHANGELOG.md,
-PROJECT_METADATA.md, .mcp.json, all dotfiles,
+README.md, CLAUDE.md, AETHER.md, LICENSE.md, .mcp.json, all dotfiles,
 source entry points: package.json, pyproject.toml, Cargo.toml, go.mod
 
 ## Migration of Existing Root Files

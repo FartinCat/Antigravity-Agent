@@ -10,13 +10,13 @@ This skill defines the three-tier memory system and the evolution logic that pro
 ## Memory Tiers
 
 ### Tier 1: Session Memory (Ephemeral)
-- Stored in: `.agent/session-context.md`
+- Stored in: **`AETHER.md` Section 18** at project root
 - Lifecycle: Written at session close, distilled into Tier 2 at end of session
 - Contains: Tasks attempted, succeeded, failed, with root causes
 
 ### Tier 2: Project Memory (Per-Repository)
 - Stored in: `.agent/project_memory/{repo_name}.md` (future)
-- Currently approximated by: session-context.md history entries
+- Currently approximated by: **`AETHER.md` §18** history entries
 - Contains: Architecture decisions, known quirks, recurring bugs, team conventions
 
 ### Tier 3: Global Memory (Universal)

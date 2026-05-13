@@ -18,7 +18,7 @@
    - `videos/`: Temporal media, simulation recordings, and demonstration assets.
    - `audios/`: Phonetic outputs, TTS generated waves, and sound effects.
    - `texts/`: Raw contextual dumps, JSON fixtures, and unparsed string literals.
-   - `information/`: Core project metadata (`PROJECT_METADATA.md`), architectural decision records (ADRs), and monetization requirement documents.
+   - `information/`: Supplementary ADRs, monetization notes, and copies of **root `AETHER.md` §14** excerpts when a project keeps long-form metadata here (never a second authoritative version file).
    - `icons/`: Vector graphics (SVG), UI iconography, and favicons.
 
 5. **Autonomous Resolution**: If the topological assessment fails to locate this taxonomy, immediately execute or recommend the `/scaffold-assets` workflow to mutate the file system before any further asset-dependent code is synthesized.

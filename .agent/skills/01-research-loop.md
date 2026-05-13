@@ -18,11 +18,12 @@ The `.agent/` folder is agent infrastructure. Reading it as "project evidence" i
 **The only project evidence sources are:**
 - `Plan/` folder — external AI plans and prior decisions
 - `archived/` folder — discarded previous iterations
-- `PROJECT_METADATA.md` at root or `assets/information/PROJECT_METADATA.md`
-- `MASTER_PLAN.md` at root
+- Root **`AETHER.md`** — **§14 Project Metadata** (version, checklist) and **§18 Session Context** (prior sessions). Treat as project memory, not `.agent/` infrastructure.
+- `MASTER_PLAN.md` at root (if present)
 - Actual project source files (`.py`, `.js`, `.ts`, `.html`, `.css`, `.tex`, `.rs`, etc.)
 - Dependency files (`package.json`, `requirements.txt`, `Cargo.toml`, `.bib`)
-- `session-context.md` inside `.agent/` — this ONE file from `.agent/` is read-only context memory, not project code. Read it silently for session history but do not scan other `.agent/` files.
+
+**Do not read anything under `.agent/`** as project evidence (rules, skills, workflows, agents). Those are tooling — not the product under analysis.
 
 ---
 
@@ -32,9 +33,9 @@ The `.agent/` folder is agent infrastructure. Reading it as "project evidence" i
 Read every relevant **project** file that exists before forming any opinion:
 - `Plan/` folder: What has been decided before? What AI perspectives already exist?
 - `archived/` folder: What was tried and discarded? Why did previous iterations fail?
-- Root `PROJECT_METADATA.md` and/or `assets/information/PROJECT_METADATA.md`: What version are we at? What features are complete vs pending?
+- Root **`AETHER.md` §14**: What version are we at? What features are complete vs pending?
 - `MASTER_PLAN.md` (if it exists): Is there an active synthesis in progress?
-- `.agent/session-context.md`: What happened in previous sessions? (Read silently — this is the only `.agent/` file to reference.)
+- **`AETHER.md` §18**: What happened in previous sessions? (Read silently when relevant.)
 - Any existing **project** source files relevant to the task at hand.
 - **Do NOT scan `.agent/rules/`, `.agent/workflows/`, `.agent/.agents/`, or `.agent/skills/`** — these are agent tools, not project evidence.
 

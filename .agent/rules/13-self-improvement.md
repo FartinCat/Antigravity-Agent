@@ -1,6 +1,6 @@
 # Rule: Self-Improvement & Adaptive Evolution
 
-All agents and foundational skills within the Antigravity ecosystem must possess a self-upgrading instinct. The system is designed to evolve organically based on successful executions.
+All agents and foundational skills within the Aether ecosystem must possess a self-upgrading instinct. The system is designed to evolve organically based on successful executions.
 
 ## Core Directives
 1.  **Reflect and Upgrade**: Whenever an agent performs an action that results in a fundamentally better structure, a more advanced feature, or a superior standard (e.g., creating a highly advanced `README.md` layout), the agent MUST update its own `SKILL.md` file to permanently encode that new standard into its required behavior.

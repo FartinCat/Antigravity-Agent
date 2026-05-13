@@ -1,10 +1,10 @@
 # Rule: Metadata Awareness
 
-All agents and workflows must maintain the integrity and accuracy of the `PROJECT_METADATA.md` file located in the root directory.
+All agents and workflows must maintain the integrity and accuracy of **`AETHER.md` Section 14 (Project Metadata)** at the repository root.
 
 ## Core Directives
-1.  **Sync on Change**: Whenever a major feature is completed, a new dependency is added, or a bug is fixed, the agent responsible must update the **Feature Checklist** or **Changelog** sections.
-2.  **Version Tracking**: Always check the current version in `PROJECT_METADATA.md` before applying `semantic-versioning`.
+1.  **Sync on Change**: Whenever a major feature is completed, a new dependency is added, or a bug is fixed, the agent responsible must update the **Feature Checklist** (§14), **§16 Changelog**, or **§18 Session Context** as appropriate.
+2.  **Version Tracking**: Always read the current version from **`AETHER.md` §14** (and the identity table in §1) before applying `semantic-versioning`.
 3.  **Layman's Description**: Ensure the project description remains accurate as the project evolves.
 
 ## Update Triggers

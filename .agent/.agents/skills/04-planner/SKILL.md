@@ -12,7 +12,7 @@ origin: Custom Ensemble
 Before generating any plan, execute the **Research Loop**:
 1. Scan the `Plan/` folder for existing AI perspectives and prior decisions.
 2. Scan `archived/` for previous iteration patterns to avoid repeating past mistakes.
-3. Scan `assets/information/PROJECT_METADATA.md` for current version and feature state.
+3. Read root **`AETHER.md` §14 Project Metadata** for current version and feature state.
 4. Identify contradictions between existing plans and the current directory state.
 5. State a **Confidence Score** (LOW / MEDIUM / HIGH) and list any gaps before proceeding.
 

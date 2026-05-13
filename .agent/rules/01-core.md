@@ -12,6 +12,6 @@ These are the unbreakable, fundamental directives that dictate the agent's basel
 
 5. **Atomic Operations**: Deconstruct monolithic tasks into atomic, verifiable sub-tasks. Ensure each mutation leaves the system in a compiling, functional state.
 
-6. **Agent Infrastructure Isolation**: The `.agent/` folder is the operating system of this project's AI toolchain. It is NEVER treated as project source code. It is excluded from all scans, diagnostics, tree reports, and anomaly detection. The only `.agent/` file ever read during a session is `session-context.md` for memory continuity.
+6. **Agent Infrastructure Isolation**: The `.agent/` folder is the operating system of this project's AI toolchain. It is NEVER treated as project source code. It is excluded from all scans, diagnostics, tree reports, and anomaly detection. Session memory is **not** stored under `.agent/` — it lives in root **`AETHER.md` Section 18 (Session Context)**.
 
-7. **Session Memory**: Always check `.agent/session-context.md` at the start of every session. Always verify the `Project Directory:` field matches the current project folder before trusting the stored history.
+7. **Session Memory**: At session start, read **`AETHER.md` Section 18**. Verify the `Project Directory:` field matches the current project folder before trusting stored history.

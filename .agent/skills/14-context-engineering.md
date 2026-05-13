@@ -23,7 +23,7 @@ Structure context from most persistent to most transient:
 
 ```
 ┌─────────────────────────────────────┐
-│  1. Rules Files (CLAUDE.md, etc.)   │ ← Always loaded, project-wide
+│  1. Rules + unified state (AETHER.md, CLAUDE.md stub) │ ← Always loaded, project-wide
 ├─────────────────────────────────────┤
 │  2. Spec / Architecture Docs        │ ← Loaded per feature/session
 ├─────────────────────────────────────┤
@@ -39,7 +39,7 @@ Structure context from most persistent to most transient:
 
 Create a rules file that persists across sessions. This is the highest-leverage context you can provide.
 
-**CLAUDE.md** (for Claude Code):
+**CLAUDE.md** (for Claude Code / Cursor when using a stub) — often points to **`AETHER.md`** in Aether-based projects:
 ```markdown
 # Project: [Name]
 
@@ -75,7 +75,7 @@ Create a rules file that persists across sessions. This is the highest-leverage 
 - `.cursorrules` or `.cursor/rules/*.md` (Cursor)
 - `.windsurfrules` (Windsurf)
 - `.github/copilot-instructions.md` (GitHub Copilot)
-- `AGENTS.md` (OpenAI Codex)
+- `AGENTS.md` (OpenAI Codex) or root **`AETHER.md`** (Aether Agent unified file)
 
 ### Level 2: Specs and Architecture
 

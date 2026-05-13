@@ -14,7 +14,7 @@ AND a logged record of what was removed. Move first. Confirm deletion second.
 - Running rm, rmdir, Remove-Item, del on anything
 - Bulk operations affecting more than 2 files
 - Removing a reference repository
-- Clearing session-context.md
+- Clearing **`AETHER.md` §18 Session Context** (or deleting `AETHER.md` entirely)
 - Overwriting a file with different content
 
 ## The Move-First Protocol

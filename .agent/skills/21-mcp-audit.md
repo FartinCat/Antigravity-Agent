@@ -1,6 +1,6 @@
 # MCP Capability Audit Protocol
 
-This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
+This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Aether Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
 
 ## Objective
 To map, validate, and summarize the operational capabilities (tools, resources, and endpoints) available to the agent via MCP.
@@ -9,7 +9,7 @@ To map, validate, and summarize the operational capabilities (tools, resources, 
 
 ### Step 1 — Configuration Ingestion
 1. Read `.agent/mcps/README.md` to identify the documented servers.
-2. Read `.agent/antigravity-agent-install-state.json` to verify installation timestamps and versions.
+2. Read `.agent/aether-agent-install-state.json` to verify installation timestamps and versions.
 3. Locate and read the MCP configuration file (e.g., `mcp_config.json`) if present in the project root or `.agent/`.
 
 ### Step 2 — Live Discovery
@@ -62,4 +62,4 @@ Confidence in Tools: [HIGH / MEDIUM / LOW]
 ## Guardrails
 - **DO NOT** modify the MCP configuration files during the audit unless explicitly instructed.
 - **DO NOT** share the content of private resources scanned during the audit; only report on the *availability* of the resource.
-- **EXEMPTION**: This skill is authorized to read `.agent/mcps/` and `.agent/antigravity-agent-install-state.json`.
+- **EXEMPTION**: This skill is authorized to read `.agent/mcps/` and `.agent/aether-agent-install-state.json`.
