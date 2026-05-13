@@ -30,9 +30,9 @@ order: 24
 
 4. **Semantic Grouping**: Apply `12-commit-semantics.md` for atomic chunking.
 
-5. **Continuous Auto-Versioning**: ENFORCE Rule `22-continuous-versioning.md`. If files were modified, increment `PROJECT_METADATA.md` (Patch/Minor) based on the diff intent.
+5. **Continuous Auto-Versioning**: ENFORCE Rule `22-continuous-versioning.md`. If files were modified, bump version in **`AETHER.md`** (identity §1 + §14 Project Metadata) per patch/minor rules from the diff intent.
 
-6. **Registry Sync**: Execute `/23-sync-registry` to ripple the new version to `README.md`, `LICENSE.md`, and `CHANGELOG.md`. 
+6. **Registry Sync**: Run `python .agent/scripts/sync_registry.py` to ripple the new version to `README.md`, `LICENSE.md`, `install-state.json`, and **`AETHER.md` §13**. 
 
 7. **Message Generation**: Agent `19-git-commit-author` drafts messages per `11-git-awareness.md`.
 
@@ -56,7 +56,7 @@ git commit -m "[prefix]: [message]"
 
 **N/N — Version bump (always last)**
 ```bash
-git add PROJECT_METADATA.md .agent/antigravity-agent-install-state.json
+git add AETHER.md .agent/aether-agent-install-state.json
 git commit -m "chore(version): bump to v[X.Y.Z]"
 ```
 

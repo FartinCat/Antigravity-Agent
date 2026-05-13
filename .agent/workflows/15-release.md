@@ -30,7 +30,7 @@ order: 21
 
 
 
-3. **Evaluate**: Invoke `/market-evaluator` (Agent 17). Read root `PROJECT_METADATA.md` and the scanner output to determine codebase complexity and suggest commercial pricing tiers.
+3. **Evaluate**: Invoke `/market-evaluator` (Agent 17). Read **`AETHER.md` §14** and the scanner output to determine codebase complexity and suggest commercial pricing tiers.
 
 
 
@@ -42,7 +42,7 @@ order: 21
 
 
 
-6. **Version Bump**: Invoke `10-semantic-versioning.md` to finalize the release version (read current version from `PROJECT_METADATA.md` and bump accordingly) in root `PROJECT_METADATA.md`.
+6. **Version Bump**: Invoke `10-semantic-versioning.md` to finalize the release version (read current version from **`AETHER.md` §1 / §14** and bump accordingly) in **`AETHER.md`**.
 
 
 
@@ -50,7 +50,7 @@ order: 21
 
 
 
-8. **Log**: Append a release entry to `.agent/session-context.md` with the release version and date.
+8. **Log**: Append a release entry to **`AETHER.md` §18 Session Context** with the release version and date.
 
 
 

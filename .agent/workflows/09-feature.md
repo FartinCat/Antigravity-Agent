@@ -41,7 +41,7 @@
 1. **Stage Changes**: `git add` only files related to this feature.
 2. **Conventional Commit**: Write a commit message following `12-commit-semantics.md`.
 3. **Update Task List**: Mark the task as complete in the plan.
-4. **Session Context**: Log the feature completion in `session-context.md`.
+4. **Session Context**: Log the feature completion in **`AETHER.md` §18**.
 
 ## Failure Paths
 - **Test Failures**: If tests fail after 3 fix attempts, escalate to `/antibug` for root-cause analysis.
@@ -52,7 +52,7 @@
 ## Rollback Protocol
 If the feature is abandoned mid-implementation:
 1. `git stash` or `git checkout -- .` to revert changes
-2. Log the reason for abandonment in session-context.md
+2. Log the reason for abandonment in **`AETHER.md` §18**
 3. Update the task list with a "BLOCKED" status and the reason
 
 ## Output Format
@@ -69,4 +69,4 @@ Commit: [hash] — [message]
 ```
 
 ## Output Organization (Rule 20)
-Feature reports are ephemeral — logged to `session-context.md` only, not saved as standalone files.
+Feature reports are ephemeral — logged to **`AETHER.md` §18** only, not saved as standalone files.

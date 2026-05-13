@@ -98,7 +98,7 @@ order: 4
 
 
 
-7. **Session Log**: Append a session entry to `.agent/session-context.md` confirming synthesis complete and recording which plans were merged.
+7. **Session Log**: Append a session entry to **`AETHER.md` §18** confirming synthesis complete and recording which plans were merged.
 
 
 

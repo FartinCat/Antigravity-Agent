@@ -26,7 +26,7 @@ order: 1
 
 
 
-## ⚠️ Mandatory Exclusion
+## Mandatory Exclusion
 
 
 
@@ -46,7 +46,7 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 
 
 
-1. **Session Memory Check**: Read `.agent/session-context.md`.
+1. **Session Memory Check**: Read **`AETHER.md` Section 18 (Session Context)**.
 
 
 
@@ -58,7 +58,7 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 
 
 
-   - If it does NOT match → this is a new project. Reinitialize session-context.md for this project per `06-context-memory.md` rule.
+   - If it does NOT match → this is a new project. Reinitialize **§18 Session Context** for this project per `06-context-memory.md` rule.
 
 
 
@@ -98,7 +98,7 @@ The `.agent/` directory, `.git/`, `node_modules/`, `__pycache__/`, `target/`, `.
 
 
 
-6. **Anomaly Detection**: Flag anything that violates project structure rules — missing `PROJECT_METADATA.md`, stray archived folders at root, missing `assets/` taxonomy.
+6. **Anomaly Detection**: Flag anything that violates project structure rules — missing root **`AETHER.md`**, stray archived folders at root, missing `assets/` taxonomy.
 
 ### Step 6a — Workflow Sequence Verification
 Run a check of the `.agent/workflows/` directory to ensure workflows are sequentially numbered (e.g., `01`, `02`, ... `N`).
@@ -112,7 +112,7 @@ Run a script (not raw file reads) that checks:
 - Count .agent/skills/*.md vs installed_foundational_skills count
 - Count .agent/workflows/*.md vs installed_workflows count
 - Count .agent/.agents/skills/ directories vs installed_skills count
-- Compare install-state.json version with AGENTS.md header version
+- Compare install-state.json version with **`AETHER.md` title** (`# Aether Agent vX.Y.Z`) and identity table version
 
 Report:
   REGISTRY STATUS: IN SYNC / DRIFT DETECTED
@@ -123,7 +123,7 @@ Report:
 Check project root for output files that belong in docs/:
 Patterns to flag: *EVALUATION*.md, *MASTER_PLAN*.md, *SCAN_REPORT*.md,
 *RESEARCH_*.md, *AUDIT_REPORT*.md, WEEKLY_REVIEW_*.md
-Exclude: README.md, CLAUDE.md, DEPLOY.md, LICENSE.md, CHANGELOG.md, PROJECT_METADATA.md
+Exclude: README.md, CLAUDE.md, AETHER.md, LICENSE.md
 
 Report:
   ROOT POLLUTION: CLEAN / [N] files found
@@ -140,25 +140,29 @@ Report:
 
 ### Step 6e — Encoding Integrity Check
 Scan all `.md` files in the project root and `.agent/` for bell characters (`\x07`) — remnants of BOM encoding bugs.
-Also scan `.agent/antigravity-agent-install-state.json` string values.
+Also scan `.agent/aether-agent-install-state.json` string values.
 Report:
   ENCODING: CLEAN / [N] files contain BOM corruption
   If found: "Run `python .agent/scripts/sync_registry.py` to auto-sanitize"
 
-### Step 6f — CLAUDE.md Version Consistency
-Read `CLAUDE.md` header line and identity table version.
-Compare against `PROJECT_METADATA.md` version field.
+### Step 6f — AETHER.md Version Consistency
+Read **`AETHER.md`**: title line (`# Aether Agent vX.Y.Z`), identity table `| **Version** | … |`, and **§14 Project Metadata** `**Version**:` line. All three MUST match.
 Report:
-  CLAUDE.md VERSION: IN SYNC / DRIFT DETECTED
-  If drift: "CLAUDE.md says vX.Y.Z but PROJECT_METADATA.md says vA.B.C — run /sync-registry"
+  AETHER.md VERSION: IN SYNC / DRIFT DETECTED
+  If drift: "Version fields disagree inside AETHER.md — edit manually or run /sync-registry"
 
 ### Step 6g — Cross-Reference Validation
 Scan all workflow files for hardcoded version numbers (e.g., `v3.0.0`, `v4.0.0`).
-Flag any workflow that references a specific version number instead of reading from PROJECT_METADATA.md.
+Flag any workflow that references a specific version number instead of reading from **`AETHER.md` §14 / §1**.
 Also check that Rule 20 (output routing) is not contradicted by any workflow step that says "at project root".
 Report:
   CROSS-REFERENCES: CLEAN / [N] issues found
   If found: list each file and the hardcoded reference
+### Step 6h — Asset Utility Verification
+Scan `assets/` for any images or files, and cross-reference them against `.md` files in the repository. Also evaluate `docs/` and `archived/` subdirectories for active use.
+Report:
+  ORPHANED ASSETS: CLEAN / DETECTED
+  If detected: list the orphaned files/folders and suggest "Orphaned assets detected. Propose deletion per 06-asset-pruning instinct."
 
 7. **Output Report**: Produce a clean, structured report using the Deep Scan output format.
 
@@ -192,7 +196,7 @@ SCANNER REPORT — [Project Directory Name]
 
 
 
-Session Memory: [Loaded from session-context.md / Fresh — new project detected]
+Session Memory: [Loaded from AETHER.md §18 / Fresh — new project detected]
 
 
 
@@ -225,6 +229,7 @@ Structural Anomalies: [list, or "None"]
 Registry Status: [IN SYNC / DRIFT DETECTED — details]
 
 Root Pollution: [CLEAN / N output files at root]
+Orphaned Assets: [CLEAN / DETECTED — details]
 
 
 

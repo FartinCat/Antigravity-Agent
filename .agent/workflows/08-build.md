@@ -89,7 +89,7 @@ Repeat for each feature in priority order. Features are built sequentially — n
 1. **Production Build**: Generate optimized production artifacts.
 2. **Deployment Guide**: Write step-by-step deployment instructions.
 3. **Environment Config**: Document all required environment variables.
-4. **Log**: Record the application build in `session-context.md`.
+4. **Log**: Record the application build in **`AETHER.md` §18**.
 
 ## Failure Paths
 - **Architecture Disagreement**: Return to Phase 1 and iterate on the design.
@@ -107,4 +107,4 @@ Repeat for each feature in priority order. Features are built sequentially — n
 - ❌ NO commented-out code blocks
 
 ## Output Organization (Rule 20)
-Application code lives in the project directory. Log creation to `session-context.md`.
+Application code lives in the project directory. Log creation to **`AETHER.md` §18**.
