@@ -1,7 +1,9 @@
-# Antigravity Agent v4.0.0 — .gitignore
+# Aether Agent — .gitignore
+#
+# Session memory lives in root AETHER.md §18 (committed). Optional legacy
+# `.agent/session-context.md` pointer stubs may be committed if your toolchain
+# requires that path — do not add it here.
 
-# Session memory (contains local state)
-.agent/session-context.md
 .gemini/
 
 # Reference repositories (cloned for synthesis, not distributed)
