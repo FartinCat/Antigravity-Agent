@@ -1,6 +1,6 @@
-# Antigravity Agent — MCP Integrations
+# Aether Agent — MCP Integrations
 
-This directory documents the Model Context Protocol (MCP) servers integrated into the Antigravity ecosystem.
+This directory documents the Model Context Protocol (MCP) servers integrated into the Aether ecosystem.
 
 ## Configured Servers (`.mcp.json`)
 

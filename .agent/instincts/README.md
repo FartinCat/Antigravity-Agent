@@ -1,4 +1,4 @@
-# Antigravity Agent — Instincts Layer
+# Aether Agent — Instincts Layer
 
 **Instincts are probabilistic warnings — they fire a flag, not a halt.** 
 
@@ -14,10 +14,10 @@ Unlike rules (which are non-negotiable governance laws), a user can override an 
 | `04-graceful-degradation` | Keep working when one part fails — never hide failures. | No (Always report failures) |
 | `05-commercial-quality-standard` | Every output should be production-ready. | Yes ("rough draft is fine") |
 
-## Integration with CLAUDE.md
+## Integration with `AETHER.md`
 
 These instincts are loaded during the boot sequence:
 1. Core Rules
 2. **Instincts**
 3. Skills
-4. Agent Registry
+4. Agent Registry (see **`AETHER.md` §13**)
