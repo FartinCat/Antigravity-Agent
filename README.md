@@ -1,15 +1,15 @@
 <div align="center">
 
 
-![Antigravity Agent Banner](assets/banner.png)
+![Aether Agent Banner](assets/banner.png)
 
 
-# 🌌 Antigravity Agent Ecosystem (v4.8.0)
+# 🌌 Aether Agent Ecosystem (v4.9.0)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.8.0-blueviolet?style=for-the-badge)](PROJECT_METADATA.md)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
+[![Version](https://img.shields.io/badge/version-4.9.0-blueviolet?style=for-the-badge)](AETHER.md)
+[![License](https://img.shields.io/badge/license-AAEL-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
 
@@ -38,7 +38,7 @@
 
 ## 🧠 Introduction & Philosophy
 
-Antigravity is not just a collection of prompts; it is a **portable, self-contained Agentic Operating System (AOS)**. It is designed to be injected into any codebase to provide immediate high-level oversight, architectural governance, and automated execution.
+Aether Agent is not just a collection of prompts; it is a **portable, self-contained Agentic Operating System (AOS)**. It is designed to be injected into any codebase to provide immediate high-level oversight, architectural governance, and automated execution.
 
 
 ### The Dual-Skill Model
@@ -52,98 +52,80 @@ Antigravity is not just a collection of prompts; it is a **portable, self-contai
 
 ## 🏗️ Architecture: The 5-Phase Lifecycle
 
-Every project lifecycle in Antigravity follows a strict, non-linear progression managed by specialized workflows.
+Every project lifecycle in Aether Agent follows a strict, non-linear progression managed by specialized workflows.
 
 
 ```mermaid
 graph TD
     subgraph P1: Awareness
-    SCANNER[/01-scanner/]
-    ONBOARDPROJECT[/02-onboard-project/]
+    SCANNER[/01-scan/]
+    ONBOARDPROJECT[/02-onboard/]
     SCANNER --> ONBOARDPROJECT
-    MCPAUDIT[/03-mcp-audit/]
-    ONBOARDPROJECT --> MCPAUDIT
-    SCAFFOLDASSETS[/04-scaffold-assets/]
-    MCPAUDIT --> SCAFFOLDASSETS
+    SCAFFOLDASSETS[/03-scaffold/]
+    ONBOARDPROJECT --> SCAFFOLDASSETS
+    SPECDISCOVERY[/04-spec/]
+    SCAFFOLDASSETS --> SPECDISCOVERY
     end
 
     subgraph P2: Strategy
-    SPECDISCOVERY[/05-spec-discovery/]
-    PARALLELRESEARCH[/06-parallel-research/]
-    SPECDISCOVERY --> PARALLELRESEARCH
-    MULTIPLANSYNTHESIS[/07-multi-plan-synthesis/]
-    PARALLELRESEARCH --> MULTIPLANSYNTHESIS
-    KNOWLEDGECAPTURE[/08-knowledge-capture/]
+    Research[/05-research/]
+    MULTIPLANSYNTHESIS[/06-plan-synthesis/]
+    Research --> MULTIPLANSYNTHESIS
+    KNOWLEDGECAPTURE[/07-knowledge-capture/]
     MULTIPLANSYNTHESIS --> KNOWLEDGECAPTURE
-    NEWREQUIREMENT[/09-new-requirement/]
-    KNOWLEDGECAPTURE --> NEWREQUIREMENT
+    Build[/08-build/]
+    KNOWLEDGECAPTURE --> Build
+    Feature[/09-feature/]
+    Build --> Feature
     end
 
     subgraph P3: Execution
-    FEATUREDEVELOPMENT[/10-feature-development/]
-    05ABUILDWEBSITE[/11-build-website/]
-    FEATUREDEVELOPMENT --> 05ABUILDWEBSITE
-    05BBUILDAPP[/12-build-app/]
-    05ABUILDWEBSITE --> 05BBUILDAPP
-    TDD[/13-tdd/]
-    05BBUILDAPP --> TDD
-    DEBUGSESSION[/14-debug-session/]
+    TDD[/10-tdd/]
+    DEBUGSESSION[/11-debug/]
     TDD --> DEBUGSESSION
-    FIXBUGS[/15-fix-bugs/]
-    DEBUGSESSION --> FIXBUGS
-    PERFORMANCE[/16-performance/]
-    FIXBUGS --> PERFORMANCE
+    PERFORMANCE[/12-performance/]
+    DEBUGSESSION --> PERFORMANCE
+    QUALITYGATE[/13-quality-gate/]
+    PERFORMANCE --> QUALITYGATE
+    CROSSAGENTVALIDATOR[/14-validate/]
+    QUALITYGATE --> CROSSAGENTVALIDATOR
+    RELEASEPROJECT[/15-release/]
+    CROSSAGENTVALIDATOR --> RELEASEPROJECT
+    SYNCREGISTRY[/16-sync-registry/]
+    RELEASEPROJECT --> SYNCREGISTRY
     end
 
     subgraph P4: Quality
-    QUALITYGATE[/17-quality-gate/]
-    CROSSAGENTVALIDATOR[/18-cross-agent-validator/]
-    QUALITYGATE --> CROSSAGENTVALIDATOR
-    WRITEREPORT[/19-write-report/]
-    CROSSAGENTVALIDATOR --> WRITEREPORT
-    WEEKLYREVIEW[/20-weekly-review/]
-    WRITEREPORT --> WEEKLYREVIEW
+    AUTOCOMMIT[/17-auto-commit/]
     end
 
     subgraph P5: Finalization
-    RELEASEPROJECT[/21-release-project/]
     READMEARCHITECT[/22-readme-architect/]
-    RELEASEPROJECT --> READMEARCHITECT
-    SYNCREGISTRY[/23-sync-registry/]
-    READMEARCHITECT --> SYNCREGISTRY
-    AUTOCOMMIT[/24-auto-commit/]
-    SYNCREGISTRY --> AUTOCOMMIT
     end
 
-    SCAFFOLDASSETS --> SPECDISCOVERY
-    NEWREQUIREMENT --> FEATUREDEVELOPMENT
-    PERFORMANCE --> QUALITYGATE
-    WEEKLYREVIEW --> RELEASEPROJECT
+    SPECDISCOVERY --> Research
+    Feature --> TDD
+    SYNCREGISTRY --> AUTOCOMMIT
+    AUTOCOMMIT --> READMEARCHITECT
 
     style SCANNER fill:#0d47a1,color:#fff
     style ONBOARDPROJECT fill:#0d47a1,color:#fff
-    style MCPAUDIT fill:#0d47a1,color:#fff
     style SCAFFOLDASSETS fill:#0d47a1,color:#fff
-    style SPECDISCOVERY fill:#1565c0,color:#fff
-    style PARALLELRESEARCH fill:#1565c0,color:#fff
+    style SPECDISCOVERY fill:#0d47a1,color:#fff
+    style Research fill:#1565c0,color:#fff
     style MULTIPLANSYNTHESIS fill:#1565c0,color:#fff
     style KNOWLEDGECAPTURE fill:#1565c0,color:#fff
-    style NEWREQUIREMENT fill:#1565c0,color:#fff
-    style FEATUREDEVELOPMENT fill:#1976d2,color:#fff
-    style 05ABUILDWEBSITE fill:#1976d2,color:#fff
-    style 05BBUILDAPP fill:#1976d2,color:#fff
+    style Build fill:#1565c0,color:#fff
+    style Feature fill:#1565c0,color:#fff
     style TDD fill:#1976d2,color:#fff
     style DEBUGSESSION fill:#1976d2,color:#fff
-    style FIXBUGS fill:#1976d2,color:#fff
     style PERFORMANCE fill:#1976d2,color:#fff
-    style QUALITYGATE fill:#1e88e5,color:#fff
-    style CROSSAGENTVALIDATOR fill:#1e88e5,color:#fff
-    style WRITEREPORT fill:#1e88e5,color:#fff
-    style WEEKLYREVIEW fill:#1e88e5,color:#fff
-    style RELEASEPROJECT fill:#2196f3,color:#fff
+    style QUALITYGATE fill:#1976d2,color:#fff
+    style CROSSAGENTVALIDATOR fill:#1976d2,color:#fff
+    style RELEASEPROJECT fill:#1976d2,color:#fff
+    style SYNCREGISTRY fill:#1976d2,color:#fff
+    style AUTOCOMMIT fill:#1e88e5,color:#fff
     style READMEARCHITECT fill:#2196f3,color:#fff
-    style SYNCREGISTRY fill:#2196f3,color:#fff
-    style AUTOCOMMIT fill:#2196f3,color:#fff
 ```
 
 
@@ -152,7 +134,7 @@ graph TD
 
 ## 📥 Deployment Guide (Installation)
 
-Antigravity is designed to be **injected** into any directory. To install, you only need to copy the `.agent/` and `.claude/` folders to your project root.
+Aether Agent is designed to be **injected** into any directory. To install, you only need to copy the `.agent/` and `.claude/` folders to your project root.
 
 
 ### 🐧 Linux / 🍎 macOS / 💻 WSL
@@ -164,8 +146,8 @@ Use `rsync` to preserve file permissions and structure:
 cd /path/to/your-project
 
 # Copy the core infrastructure
-rsync -av --exclude='.git' "/path/to/Antigravity-Agent/.agent/" "./.agent/"
-rsync -av --exclude='.git' "/path/to/Antigravity-Agent/.claude/" "./.claude/"
+rsync -av --exclude='.git' "/path/to/Aether-Agent/.agent/" "./.agent/"
+rsync -av --exclude='.git' "/path/to/Aether-Agent/.claude/" "./.claude/"
 ```
 
 
@@ -175,18 +157,18 @@ Use `Copy-Item` with recurse:
 
 ```powershell
 # Copy the .agent folder
-Copy-Item -Recurse -Force "C:\Antigravity-Agent\.agent" "C:\Your-Project\.agent"
+Copy-Item -Recurse -Force "C:\Aether-Agent\.agent" "C:\Your-Project\.agent"
 
 # Copy the .claude folder
-Copy-Item -Recurse -Force "C:\Antigravity-Agent\.claude" "C:\Your-Project\.claude"
+Copy-Item -Recurse -Force "C:\Aether-Agent\.claude" "C:\Your-Project\.claude"
 ```
 
 
 ### 🚀 First-Boot Sequence
 
-Once installed, run these two commands in order via your AI IDE (Cursor/Windsurf/Claude Code):
-1. `/01-scanner` — Detects the environment and initializes project memory.
-2. `/02-onboard-project` — Performs initial analysis and sets the first milestones.
+Once installed, run these two commands in order via your AI IDE (Cursor/Windsurf/Claude Code/Gemini):
+1. `/01-scan` — Detects the environment and initializes project memory.
+2. `/02-onboard` — Performs initial analysis and sets the first milestones.
 
 
 ---
@@ -194,7 +176,7 @@ Once installed, run these two commands in order via your AI IDE (Cursor/Windsurf
 
 ## 🤖 The Agent Arsenal (Specialists)
 
-Antigravity features **22 Specialist Agents**, each with a dedicated YAML persona.
+Aether Agent features **23 Specialist Agents**, each with a dedicated YAML persona.
 
 | ID | Agent Name | Command | Primary Function |
 |:---|:---|:---|:---|
@@ -232,30 +214,24 @@ They are listed in logical ascending order of the 5-Phase software lifecycle.
 
 | ID | Workflow | Slash Command | Trigger Phrase | Objective |
 |:---|:---|:---|:---|:---|
-| **01** | `SCANNER` | `/01-scanner` | "scanner" | Build situational awareness and map directories. |
-| **02** | `ONBOARD PROJECT` | `/02-onboard-project` | "onboard project" | Analyze legacy code and suggest initial strategy. |
-| **03** | `MCP AUDIT` | `/03-mcp-audit` | "mcp audit" | Audit & map integrated MCP tool capabilities. |
-| **04** | `SCAFFOLD ASSETS` | `/04-scaffold-assets` | "scaffold assets" | Initialize project structure and taxonomy. |
-| **05** | `SPEC DISCOVERY` | `/05-spec-discovery` | "spec discovery" | Functional and technical spec extraction. |
-| **06** | `PARALLEL RESEARCH` | `/06-parallel-research` | "parallel research" | Simultaneous research on multiple technical paths. |
-| **07** | `MULTI PLAN SYNTHESIS` | `/07-multi-plan-synthesis` | "multi plan synthesis" | Merge competing AI strategies into one plan. |
-| **08** | `KNOWLEDGE CAPTURE` | `/08-knowledge-capture` | "knowledge capture" | Distill project insights into persistent KIs. |
-| **09** | `NEW REQUIREMENT` | `/09-new-requirement` | "new requirement" | Integrate new features into an existing plan. |
-| **10** | `FEATURE DEVELOPMENT` | `/10-feature-development` | "feature development" | Incremental feature build cycle. |
-| **11** | `05A BUILD WEBSITE` | `/11-build-website` | "05a build website" | End-to-end website generation pipeline. |
-| **12** | `05B BUILD APP` | `/12-build-app` | "05b build app" | Production-ready application build cycle. |
-| **13** | `TDD` | `/13-tdd` | "tdd" | Disciplined Red-Green-Refactor orchestration. |
-| **14** | `DEBUG SESSION` | `/14-debug-session` | "debug session" | Intensive diagnostic and repair protocol. |
-| **15** | `FIX BUGS` | `/15-fix-bugs` | "fix bugs" | Build-detected bug hunting and resolution. |
-| **16** | `PERFORMANCE` | `/16-performance` | "performance" | Profiling and bottleneck elimination. |
-| **17** | `QUALITY GATE` | `/17-quality-gate` | "quality gate" | Compliance check against design/requirements. |
-| **18** | `CROSS AGENT VALIDATOR` | `/18-cross-agent-validator` | "cross agent validator" | Audit previous steps for hallucinations/errors. |
-| **19** | `WRITE REPORT` | `/19-write-report` | "write report" | Generate status reports and technical summaries. |
-| **20** | `WEEKLY REVIEW` | `/20-weekly-review` | "weekly review" | Strategic audit of project progress/health. |
-| **21** | `RELEASE PROJECT` | `/21-release-project` | "release project" | God Mode: License, README, Packaging. |
+| **01** | `SCANNER` | `/01-scan` | "scanner" | Build situational awareness and map directories. |
+| **02** | `ONBOARD PROJECT` | `/02-onboard` | "onboard project" | Analyze legacy code and suggest initial strategy. |
+| **03** | `SCAFFOLD ASSETS` | `/03-scaffold` | "scaffold assets" | Initialize project structure and taxonomy. |
+| **04** | `SPEC DISCOVERY` | `/04-spec` | "spec discovery" | Functional and technical spec extraction. |
+| **05** | `Research` | `/05-research` | "research" | Workflow execution. |
+| **06** | `MULTI PLAN SYNTHESIS` | `/06-plan-synthesis` | "multi plan synthesis" | Merge competing AI strategies into one plan. |
+| **07** | `KNOWLEDGE CAPTURE` | `/07-knowledge-capture` | "knowledge capture" | Distill project insights into persistent KIs. |
+| **08** | `Build` | `/08-build` | "build" | Workflow execution. |
+| **09** | `Feature` | `/09-feature` | "feature" | Workflow execution. |
+| **10** | `TDD` | `/10-tdd` | "tdd" | Disciplined Red-Green-Refactor orchestration. |
+| **11** | `DEBUG SESSION` | `/11-debug` | "debug session" | Intensive diagnostic and repair protocol. |
+| **12** | `PERFORMANCE` | `/12-performance` | "performance" | Profiling and bottleneck elimination. |
+| **13** | `QUALITY GATE` | `/13-quality-gate` | "quality gate" | Compliance check against design/requirements. |
+| **14** | `CROSS AGENT VALIDATOR` | `/14-validate` | "cross agent validator" | Audit previous steps for hallucinations/errors. |
+| **15** | `RELEASE PROJECT` | `/15-release` | "release project" | God Mode: License, README, Packaging. |
+| **16** | `SYNC REGISTRY` | `/16-sync-registry` | "sync registry" | Synchronize all registry files with the actual .agent/ filesystem state. |
+| **17** | `AUTO COMMIT` | `/17-auto-commit` | "auto commit" | Atomic, semantic commit generation loop. |
 | **22** | `README ARCHITECT` | `/22-readme-architect` | "readme architect" | Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills. |
-| **23** | `SYNC REGISTRY` | `/23-sync-registry` | "sync registry" | Synchronize all registry files with the actual .agent/ filesystem state. |
-| **24** | `AUTO COMMIT` | `/24-auto-commit` | "auto commit" | Atomic, semantic commit generation loop. |
 
 ---
 
@@ -284,7 +260,7 @@ Implicit reasoning modules that govern every agent's internal logic.
 - **`18-memory-management`**: Use AI DevKit memory via CLI commands. Search before non-trivial work, store verified reusable knowledge, update stale entries, and avoid saving transcripts, secrets, or one-off task progress.
 - **`19-performance-profiling`**: Optimizes application performance. Use when performance requirements exist, when you suspect performance regressions, or when Core Web Vitals or load times need improvement. Use when profiling reveals bottlenecks that need fixing.
 - **`20-stitch-ui`**: Unified entry point for Stitch design work. Handles prompt enhancement (UI/UX keywords, atmosphere), design system synthesis (.stitch/DESIGN.md), and high-fidelity screen generation/editing via Stitch MCP.
-- **`21-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Antigravity Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
+- **`21-mcp-audit`**: This protocol defines the technical procedure for auditing the Model Context Protocol (MCP) servers integrated into the Aether Agent. It is the only protocol authorized to bypass the `.agent/` exclusion rule for infrastructure discovery.
 - **`22-registry-synchronizer`**: Run it with: ```bash python .agent/scripts/sync_registry.py ```
 
 ---
@@ -305,6 +281,6 @@ All agents are now augmented with the **Advanced Operations Matrix (v4.0.0)**, e
 
 <div align="center">
 
-Built with ❤️ by **FartinCat** — <i>"Defying the gravity of standard development."</i>
+Built with ❤️ by **FartinCat** — <i>"Transcending the limits of standard development."</i>
 
 </div>
