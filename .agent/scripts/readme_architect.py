@@ -1,7 +1,8 @@
 import os
 import re
+from detect_root import detect_root
 
-base = r"d:\Git_Work\Antigravity Agent"
+base = str(detect_root(interactive=False))
 
 def get_frontmatter(filepath):
     if not os.path.exists(filepath): return {}
