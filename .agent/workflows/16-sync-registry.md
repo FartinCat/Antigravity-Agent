@@ -6,7 +6,7 @@ order: 23
 # Workflow: Sync Registry
 
 **Objective:** Keep **`AETHER.md`** (§13 registry, §14 metadata, §16 changelog, §18 session),
-**`.agent/aether-agent-install-state.json`** (plus **`.agent/antigravity-agent-install-state.json`** mirror when sync writes state), `README.md`, and `LICENSE.md` synchronized with the actual `.agent/`
+**`.agent/aether-agent-install-state.json`** (plus **`.agent/antigravity-agent-install-state.json`** mirror when sync writes state), `README.md`, `LICENSE.md`, and `archived/archive-registry/DELETION_REGISTRY.md` synchronized with the actual `.agent/`
 filesystem. Enforced by the executable engine at `.agent/scripts/sync_registry.py`.
 
 ## Trigger Conditions
@@ -40,8 +40,9 @@ Compares filesystem vs **`.agent/aether-agent-install-state.json`** for:
 1. **`.agent/aether-agent-install-state.json`**: Updates component lists, counts, version, changelog map, timestamp (and mirrors to **`.agent/antigravity-agent-install-state.json`** for legacy tooling)
 2. **`AETHER.md` §13**: Full regeneration of agents + workflows registry from filesystem
 3. **`AETHER.md` §16 / §18**: Inserts changelog + session entries when the engine bumps or reconciles version
-4. **README.md**: Updates version badges
-5. **LICENSE.md**: Updates applies-to-version field
+4. **`archived/archive-registry/DELETION_REGISTRY.md`**: Reconciles deletion/archival entries created by move-first operations
+5. **README.md**: Updates version badges
+6. **LICENSE.md**: Updates applies-to-version field
 
 ### Step 5 — Verification & Report
 Re-validates all components. Outputs:
@@ -55,6 +56,7 @@ AETHER.md: UPDATED / UNCHANGED
 §18 Session Context: UPDATED / UNCHANGED
 README.md: UPDATED / UNCHANGED
 LICENSE.md: UPDATED / UNCHANGED
+DELETION_REGISTRY.md: UPDATED / UNCHANGED
 
 HEALTH: GREEN / YELLOW (collisions or gaps found)
 ```

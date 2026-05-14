@@ -50,7 +50,7 @@ Option 3: No move, proceed to logging
 Option 4: User MUST type the word DELETE. Anything else -> abort and default to Option 1.
 
 ### Step 5 — Log to DELETION REGISTRY (always, for all options)
-Append to archived/deleted/DELETION_REGISTRY.md:
+Append to archived/archive-registry/DELETION_REGISTRY.md:
 ---
 ## Entry [NN] — [date]
 **Item:** [name]

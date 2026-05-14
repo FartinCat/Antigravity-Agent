@@ -20,6 +20,10 @@ order: 1
 
 **Objective**: Build complete situational awareness of the project before any work begins. This is always the first step in any session. It deliberately excludes `.agent/` infrastructure from all output so the report reflects only project code.
 
+If the scanner needs a temporary helper script, write it to
+`.agent/scripts/` in the current project. Never create a `scratch/` folder for
+scan code.
+
 
 
 

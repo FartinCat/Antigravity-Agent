@@ -4,11 +4,11 @@
 ![Aether Agent Banner](assets/banner.png)
 
 
-# 🌌 Aether Agent Ecosystem (v4.9.0)
+# 🌌 Aether Agent Ecosystem (v4.10.0)
 **The Ultimate Agentic Operating System for Professional Software Engineering**
 
 
-[![Version](https://img.shields.io/badge/version-4.9.0-blueviolet?style=for-the-badge)](AETHER.md)
+[![Version](https://img.shields.io/badge/version-4.10.0-blueviolet?style=for-the-badge)](AETHER.md)
 [![License](https://img.shields.io/badge/license-AAEL-blue?style=for-the-badge)](LICENSE.md)
 [![Status](https://img.shields.io/badge/status-Production_Ready-green?style=for-the-badge)](#)
 
@@ -134,7 +134,7 @@ graph TD
 
 ## 📥 Deployment Guide (Installation)
 
-Aether Agent is designed to be **injected** into any directory. To install, you only need to copy the `.agent/` and `.claude/` folders to your project root.
+Aether Agent is designed to be **injected** into any directory. To install, copy the agent runtime, IDE stubs, and root metadata into the folder you want to use as the new project root.
 
 
 ### 🐧 Linux / 🍎 macOS / 💻 WSL
@@ -148,6 +148,11 @@ cd /path/to/your-project
 # Copy the core infrastructure
 rsync -av --exclude='.git' "/path/to/Aether-Agent/.agent/" "./.agent/"
 rsync -av --exclude='.git' "/path/to/Aether-Agent/.claude/" "./.claude/"
+cp "/path/to/Aether-Agent/AETHER.md" "./AETHER.md"
+cp "/path/to/Aether-Agent/CLAUDE.md" "./CLAUDE.md"
+cp "/path/to/Aether-Agent/AGENTS.md" "./AGENTS.md"
+cp "/path/to/Aether-Agent/.mcp.json" "./.mcp.json"
+# Optional: copy .codex/ if your IDE uses it
 ```
 
 
@@ -161,6 +166,12 @@ Copy-Item -Recurse -Force "C:\Aether-Agent\.agent" "C:\Your-Project\.agent"
 
 # Copy the .claude folder
 Copy-Item -Recurse -Force "C:\Aether-Agent\.claude" "C:\Your-Project\.claude"
+
+# Copy root metadata and IDE stubs
+Copy-Item -Force "C:\Aether-Agent\AETHER.md" "C:\Your-Project\AETHER.md"
+Copy-Item -Force "C:\Aether-Agent\CLAUDE.md" "C:\Your-Project\CLAUDE.md"
+Copy-Item -Force "C:\Aether-Agent\AGENTS.md" "C:\Your-Project\AGENTS.md"
+Copy-Item -Force "C:\Aether-Agent\.mcp.json" "C:\Your-Project\.mcp.json"
 ```
 
 
@@ -168,7 +179,9 @@ Copy-Item -Recurse -Force "C:\Aether-Agent\.claude" "C:\Your-Project\.claude"
 
 Once installed, run these two commands in order via your AI IDE (Cursor/Windsurf/Claude Code/Gemini):
 1. `/01-scan` — Detects the environment and initializes project memory.
-2. `/02-onboard` — Performs initial analysis and sets the first milestones.
+2. `/03-scaffold` — Creates the portable project skeleton, including `assets/`, `docs/`, and `archived/`.
+
+After `/01-scan`, the session context rebases to the folder you copied into. If you move the same `.agent/` bundle into a different directory, run `/01-scan` again and it will rebind to the new project root.
 
 
 ---
@@ -231,6 +244,7 @@ They are listed in logical ascending order of the 5-Phase software lifecycle.
 | **15** | `RELEASE PROJECT` | `/15-release` | "release project" | God Mode: License, README, Packaging. |
 | **16** | `SYNC REGISTRY` | `/16-sync-registry` | "sync registry" | Synchronize all registry files with the actual .agent/ filesystem state. |
 | **17** | `AUTO COMMIT` | `/17-auto-commit` | "auto commit" | Atomic, semantic commit generation loop. |
+| **18** | `MCP AUDIT` | `/21-mcp-audit` | "audit mcp servers" | Audits MCP servers, syncs validated server definitions, and writes reports under `docs/audit-reports/`. |
 | **22** | `README ARCHITECT` | `/22-readme-architect` | "readme architect" | Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills. |
 
 ---

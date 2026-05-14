@@ -29,20 +29,28 @@ order: 3
 2. **Taxonomy Generation**: Create the following sub-directories inside `ASSETS_ROOT`:
 
    - `images/`
-
    - `videos/`
-
    - `audios/`
-
    - `texts/`
-
    - `information/`
-
    - `icons/`
 
+3. **Documentation Bootstrap**: Ensure the following folders exist in the new project root so generated reports always land in the documented location:
 
+   - `docs/scan-reports/`
+   - `docs/audit-reports/`
+   - `docs/master-plans/`
+   - `docs/research/`
+   - `docs/market-evaluations/`
 
-3. **Root Metadata Bootstrap**: If root **`AETHER.md`** is missing, create a minimal stub that includes **§14 Project Metadata** and **§18 Session Context** using this template (otherwise only fill empty §14 fields in-place):
+4. **Archive Bootstrap**: Ensure the archive hierarchy exists for moved, deleted, and versioned artifacts:
+
+   - `archived/archive-registry/`
+   - `archived/current-version/`
+   - `archived/old-versions/`
+   - `archived/references/`
+
+5. **Root Metadata Bootstrap**: If root **`AETHER.md`** is missing, create a minimal stub that includes **§14 Project Metadata** and **§18 Session Context** using this template (otherwise only fill empty §14 fields in-place):
 
    ```markdown
    # Aether Agent v0.1.0 — [Project Name]
@@ -77,13 +85,13 @@ order: 3
    Project Directory: [DETECTED PROJECT DIRECTORY NAME]
    ```
 
-4. **Single Source of Truth**: **`AETHER.md` at the project root** is the authoritative version + changelog + session file. Do NOT maintain a competing `PROJECT_METADATA.md` or `.agent/session-context.md`. The `market-evaluator` and `commercial-license` agents read from **`AETHER.md` §14**.
+6. **Single Source of Truth**: **`AETHER.md` at the project root** is the authoritative version + changelog + session file. Do NOT maintain a competing `PROJECT_METADATA.md` or `.agent/session-context.md`. The `market-evaluator` and `commercial-license` agents read from **`AETHER.md` §14**.
 
-5. **Session Context Init**: Trigger the `06-context-memory.md` rule — ensure **`AETHER.md` §18** exists and has the correct `Project Directory:` field for this project.
+7. **Session Context Init**: Trigger the `06-context-memory.md` rule — ensure **`AETHER.md` §18** exists and has the correct `Project Directory:` field for this project.
 
 
 
-6. **Path Resolution Broadcast**: Announce the resolved `ASSETS_ROOT` path so all subsequent code synthesis uses the correct relative paths.
+8. **Path Resolution Broadcast**: Announce the resolved `ASSETS_ROOT` path so all subsequent code synthesis uses the correct relative paths.
 
 
 

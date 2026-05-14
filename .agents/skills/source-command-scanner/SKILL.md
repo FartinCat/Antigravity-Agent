@@ -1,11 +1,15 @@
 ---
-description: Map the entire repository before any work begins — project-aware deep scan
+name: "source-command-scanner"
+description: "Map the entire repository before any work begins — project-aware deep scan"
 ---
 
-Invoke `.agent/.agents/skills/01-deep-scan`.
+# source-command-scanner
 
-If the scan requires a helper script, place it in `.agent/scripts/` in the
-current project. Do not create a `scratch/` folder for generated code.
+Use this skill when the user asks to run the migrated source command `scanner`.
+
+## Command Template
+
+Invoke `.agent/.agents/skills/01-deep-scan`.
 
 Actions:
 1. List all directories and files

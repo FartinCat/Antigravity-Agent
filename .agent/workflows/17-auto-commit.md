@@ -4,7 +4,7 @@ title: "AUTO COMMIT"
 
 description: "Atomic, semantic commit generation loop."
 
-order: 24
+order: 17
 
 ---
 

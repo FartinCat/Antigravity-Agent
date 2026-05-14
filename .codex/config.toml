@@ -1,0 +1,41 @@
+[mcp_servers.21st-dev-magic]
+args = [
+    "-y",
+    "@21st-dev/magic-mcp-server",
+]
+command = "npx"
+
+[mcp_servers.StitchMCP]
+args = [
+    "-y",
+    "@stitch-ui/mcp-server",
+]
+command = "npx"
+
+[mcp_servers.figma-remote]
+args = [
+    "-y",
+    "@modelcontextprotocol/server-figma",
+]
+command = "npx"
+
+[mcp_servers.mongodb]
+args = [
+    "-y",
+    "@modelcontextprotocol/server-mongodb",
+]
+command = "npx"
+
+[mcp_servers.playwright]
+args = [
+    "-y",
+    "@modelcontextprotocol/server-playwright",
+]
+command = "npx"
+
+[mcp_servers.supabase]
+args = [
+    "-y",
+    "@supabase/mcp-server",
+]
+command = "npx"

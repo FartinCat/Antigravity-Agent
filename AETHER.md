@@ -1,4 +1,4 @@
-# Aether Agent v4.9.0 — Portable AI Operating System
+# Aether Agent v4.10.0 — Portable AI Operating System
 
 > A portable, deterministic, zero-trust Agentic OS. Drop the `.agent/` folder
 > into any project directory and the entire skill + workflow + governance ecosystem
@@ -28,7 +28,7 @@ IDE auto-load: keep a root **`CLAUDE.md` stub** (see §17) so tools that only re
 | Field | Value |
 |---|---|
 | **Name** | Aether Agent |
-| **Version** | 4.9.0 |
+| **Version** | 4.10.0 |
 | **Type** | Portable AI Operating System |
 | **Personality** | Deterministic · Zero-Trust · Quality-Obsessed |
 | **Mission** | Elevate every project to production-grade quality through structured orchestration, spec-driven development, and relentless verification. |
@@ -82,6 +82,10 @@ BOOT ORDER:
 **THE LAW:** For any operation that reads, analyzes, filters, counts, searches,
 parses, or transforms data: **WRITE AND EXECUTE A SCRIPT** — never read raw
 content into context.
+
+If that script is an agent-side helper or workflow engine, place it under
+`.agent/scripts/` in the current project. Do not create ad hoc `scratch/`,
+`temp/`, or similarly named folders for agent code.
 
 ### Bash Whitelist (safe to run directly — no script needed)
 ```
@@ -302,6 +306,8 @@ Aether Agent/
     ├── aether-agent-install-state.json ← Component registry (canonical)
     ├── antigravity-agent-install-state.json ← Legacy filename; mirror of canonical JSON when sync runs
     ├── scripts/                       ← Agentic engines (internal)
+   │   ├── Helper scripts and workflow engines live here only.
+   │   └── Never create `scratch/` for agent code.
     │   ├── sync_registry.py           ← Self-maintenance engine
     │   ├── readme_architect.py        ← README table/chart generator
     │   ├── detect_root.py             ← Dynamic root detection
@@ -309,7 +315,7 @@ Aether Agent/
     ├── rules/                         ← 23 governance rules (00–22)
     ├── instincts/                     ← 6 behavioral patterns
     ├── skills/                        ← 22 foundational skills (01–22)
-    ├── workflows/                     ← 18 pipeline workflows (01–18)
+   ├── workflows/                     ← 19 pipeline workflows (01–19)
     ├── .agents/skills/                ← 23 agent persona directories
     └── mcps/                          ← MCP server documentation
 ```
@@ -385,6 +391,7 @@ Workflow files are listed in **01 → N numeric order** (standard software lifec
 - **`16-sync-registry.md`**: Synchronize all registry files with the actual .agent/ filesystem state.
 - **`17-auto-commit.md`**: Atomic, semantic commit generation loop.
 - **`18-readme-architect.md`**: Dynamically updates the README.md to accurately reflect all active agents, workflows, and skills.
+- **`19-mcp-audit.md`**: Audit & map integrated MCP tool capabilities.
 
 ### After this workflow … (typical handoffs)
 
@@ -449,13 +456,14 @@ Workflow files are listed in **01 → N numeric order** (standard software lifec
     ├── 16-sync-registry.md
     ├── 17-auto-commit.md
     ├── 18-readme-architect.md
+    ├── 19-mcp-audit.md
 ```
 
 
 ## 14. Project Metadata
 
 **Project Name**: Aether Agent Ecosystem
-**Version**: 4.9.0
+**Version**: 4.10.0
 **Author**: FartinCat
 **Contact**: fartincat@proton.me
 **Created**: 2026-05-03
@@ -496,7 +504,7 @@ This guide solves the migration problem: copying only the `.agent/` system (not 
 
 ### What to Copy
 
-You need to copy the **`.agent/`**, **`.claude/`** folders, and **`.mcp.json`** into your new project. Also create or copy a **consumer** root **`AETHER.md`** (metadata §14 + session §18) — use `/scanner` in the new repo to bootstrap it; do **not** paste this source repo's narrative verbatim.
+You need to copy the **`.agent/`**, **`.claude/`** folders, and the root metadata files into your new project. Also create or copy a **consumer** root **`AETHER.md`** (metadata §14 + session §18) — use `/scanner` in the new repo to bootstrap it; do **not** paste this source repo's narrative verbatim.
 
 ```
 Aether Agent/           ← Source repository (do not copy all of this)
@@ -509,6 +517,9 @@ Aether Agent/           ← Source repository (do not copy all of this)
 ├── .claude/                 ← ✅ Copy ONLY this folder
 │   ├── agents/
 │   └── commands/
+├── .codex/                  ← ✅ Optional: copy if your IDE uses Codex-style commands
+├── AGENTS.md                ← ✅ Copy this root stub for IDEs that auto-load AGENTS.md
+├── CLAUDE.md                ← ✅ Copy this root stub for IDEs that auto-load CLAUDE.md
 ├── .mcp.json                ← ✅ Copy this file
 ├── AETHER.md                ← ✅ Consumer project: keep a root AETHER.md (§14 + §18). Bootstrap via `/scanner`; do not mirror this source file as-is
 ├── README.md                ← ❌ Do not copy (belongs to this repo)
@@ -548,8 +559,13 @@ Copy-Item -Force "D:\Git_Work\Aether Agent\.mcp.json" "D:\Git_Work\Project\YOUR_
    - Archive the old project's context below a separator.
    - Initialize a fresh session context for your new project.
    - Auto-generate `CLAUDE.md` pointing to `AETHER.md` if the IDE requires it.
-3. **Run `/scaffold-assets`** — creates `assets/` taxonomy and initializes metadata in `AETHER.md` for the new project.
+3. **Run `/scaffold-assets`** — creates `assets/`, `docs/`, and `archived/` taxonomy plus initializes metadata in `AETHER.md` for the new project.
 4. **Proceed with your workflow.**
+
+   - If you create a helper script while onboarding or scanning the new
+     project, put it in `.agent/scripts/` inside that project.
+   - Do not create a `scratch/` folder for generated agent code in any IDE.
+   - If you move the bundle to another folder later, run `/01-scan` again so the session context rebases to the new project directory.
 
 ### Troubleshooting
 
@@ -568,6 +584,9 @@ This is expected on the first run after migration. Run `/scanner` — the contex
 ---
 
 ## 16. Changelog
+
+### [4.10.0] - 2026-05-14
+- Modified 1 rule, 4 workflows, 1 command, 5 other
 
 ### [4.9.0] - 2026-05-13
 - Modified 17 workflows, 6 other
@@ -715,6 +734,11 @@ When this .agent/ folder is copied to a new project, a fresh context will be ini
 **Agent**: system
 **Action**: Modified 17 workflows, 6 other
 **State Change**: Version v4.9.0 synced.
+### 2026-05-14 — Automated Registry Sync — v4.10.0
+**Agent**: system
+**Action**: Modified 1 rule, 4 workflows, 1 command, 5 other
+**State Change**: Version v4.10.0 synced.
+
 
 ---
 
